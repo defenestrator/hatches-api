@@ -1,4 +1,4 @@
-<?php namespace App\Providers;
+<?php namespace hatches\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 
