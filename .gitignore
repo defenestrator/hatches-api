@@ -1,3 +1,7 @@
-/vendor
+vendor/
 .env
 .idea
+config/ide-helper.php
+_ide_helper.php
+composer.lock
+storage/

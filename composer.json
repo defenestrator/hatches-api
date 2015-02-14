@@ -8,7 +8,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "laravel/framework": "~5.1.0",
+    "laravel/framework": "~5",
     "league/glide":      "~0.3.1"
   },
   "require-dev": {
@@ -17,7 +17,9 @@
     "behat/behat": "~3.0@dev",
     "behat/mink": "~1.7@dev",
     "behat/mink-extension": "~2.0@dev",
-    "laracasts/behat-laravel-extension": "dev-master#205a3d2"
+    "laracasts/behat-laravel-extension": "dev-master#205a3d2",
+    "laracasts/testdummy": "dev-master#44807c5",
+    "barryvdh/laravel-ide-helper": "dev-master#1f5e436"
   },
   "autoload": {
     "classmap": [
