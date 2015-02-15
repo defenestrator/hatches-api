@@ -140,12 +140,16 @@ return [
 		/*
 		 * Application Service Providers...
 		 */
-		'hatches\Providers\AppServiceProvider',
-		'hatches\Providers\BusServiceProvider',
-		'hatches\Providers\ConfigServiceProvider',
-		'hatches\Providers\EventServiceProvider',
-		'hatches\Providers\RouteServiceProvider',
+		'Hatches\Providers\AppServiceProvider',
+		'Hatches\Providers\BusServiceProvider',
+		'Hatches\Providers\ConfigServiceProvider',
+		'Hatches\Providers\EventServiceProvider',
+		'Hatches\Providers\RouteServiceProvider',
 
+		/*
+		 * Dev Service Providers... (which is an improper use of an ellipsis)
+		 */
+		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 	],
 
 	/*
@@ -191,6 +195,9 @@ return [
 		'URL'       => 'Illuminate\Support\Facades\URL',
 		'Validator' => 'Illuminate\Support\Facades\Validator',
 		'View'      => 'Illuminate\Support\Facades\View',
+		'Activation' => 'Cartalyst\Sentinel\Laravel\Facades\Activation',
+		'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
+		'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
 
 	],
 

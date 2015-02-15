@@ -1,6 +1,6 @@
 <?php
 
-namespace spec\hatches;
+namespace spec\Hatches;
 
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;

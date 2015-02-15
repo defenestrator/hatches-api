@@ -1,4 +1,4 @@
-<?php namespace hatches\Console\Commands;
+<?php namespace Hatches\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;

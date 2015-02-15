@@ -1,4 +1,4 @@
-<?php namespace hatches\Http\Middleware;
+<?php namespace Hatches\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

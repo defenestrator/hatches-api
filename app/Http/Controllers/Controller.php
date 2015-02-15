@@ -1,4 +1,4 @@
-<?php namespace hatches\Http\Controllers;
+<?php namespace Hatches\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Routing\Controller as BaseController;

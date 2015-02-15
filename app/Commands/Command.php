@@ -1,4 +1,4 @@
-<?php namespace hatches\Commands;
+<?php namespace Hatches\Commands;
 
 abstract class Command {
 

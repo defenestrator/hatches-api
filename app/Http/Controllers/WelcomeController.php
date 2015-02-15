@@ -1,4 +1,4 @@
-<?php namespace hatches\Http\Controllers;
+<?php namespace Hatches\Http\Controllers;
 
 class WelcomeController extends Controller {
 

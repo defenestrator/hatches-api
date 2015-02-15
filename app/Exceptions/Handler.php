@@ -1,4 +1,4 @@
-<?php namespace hatches\Exceptions;
+<?php namespace Hatches\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;

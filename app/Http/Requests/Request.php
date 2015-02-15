@@ -1,4 +1,4 @@
-<?php namespace hatches\Http\Requests;
+<?php namespace Hatches\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

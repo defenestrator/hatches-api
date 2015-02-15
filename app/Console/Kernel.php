@@ -1,4 +1,4 @@
-<?php namespace hatches\Console;
+<?php namespace Hatches\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -11,7 +11,7 @@ class Kernel extends ConsoleKernel {
 	 * @var array
 	 */
 	protected $commands = [
-		'hatches\Console\Commands\Inspire',
+		'Hatches\Console\Commands\Inspire',
 	];
 
 	/**

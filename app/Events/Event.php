@@ -1,4 +1,4 @@
-<?php namespace hatches\Events;
+<?php namespace Hatches\Events;
 
 abstract class Event {
 

@@ -1,6 +1,6 @@
-<?php namespace hatches\Http\Controllers\Auth;
+<?php namespace Hatches\Http\Controllers\Auth;
 
-use hatches\Http\Controllers\Controller;
+use Hatches\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller {

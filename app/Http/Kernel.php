@@ -1,4 +1,4 @@
-<?php namespace hatches\Http;
+<?php namespace Hatches\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -24,9 +24,9 @@ class Kernel extends HttpKernel {
 	 * @var array
 	 */
 	protected $routeMiddleware = [
-		'auth' => 'hatches\Http\Middleware\Authenticate',
+		'auth' => 'Hatches\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
-		'guest' => 'hatches\Http\Middleware\RedirectIfAuthenticated',
+		'guest' => 'Hatches\Http\Middleware\RedirectIfAuthenticated',
 	];
 
 }

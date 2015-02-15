@@ -1,4 +1,4 @@
-<?php namespace hatches\Providers;
+<?php namespace Hatches\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

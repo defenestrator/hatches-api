@@ -1,6 +1,6 @@
-<?php namespace hatches\Services;
+<?php namespace Hatches\Services;
 
-use hatches\User;
+use Hatches\User;
 use Validator;
 use Illuminate\Contracts\Auth\Registrar as RegistrarContract;
 

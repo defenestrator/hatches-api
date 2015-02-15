@@ -1,6 +1,6 @@
 suites:
     main:
-        namespace: hatches
-        psr4_prefix: hatches
+        namespace: Hatches
+        psr4_prefix: Hatches
         src_path: app
         spec_prefix: spec

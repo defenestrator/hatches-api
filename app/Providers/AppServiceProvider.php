@@ -1,4 +1,4 @@
-<?php namespace hatches\Providers;
+<?php namespace Hatches\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider {
 	{
 		$this->app->bind(
 			'Illuminate\Contracts\Auth\Registrar',
-			'hatches\Services\Registrar'
+			'Hatches\Services\Registrar'
 		);
 	}
 
