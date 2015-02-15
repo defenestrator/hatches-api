@@ -12,7 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\HatchType whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\HatchType whereType($value)
  * @method static \Illuminate\Database\Query\Builder|\HatchType whereDescription($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class HatchType extends Model {
 

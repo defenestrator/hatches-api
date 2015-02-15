@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $privacy
  * @method static \Illuminate\Database\Query\Builder|\Privacy whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Privacy wherePrivacy($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 
 class Privacy extends Model {

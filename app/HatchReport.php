@@ -31,8 +31,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\HatchReport wherePrivacyId($value)
  * @method static \Illuminate\Database\Query\Builder|\HatchReport whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\HatchReport whereUpdatedAt($value)
- * @property integer $hatch_id 
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property integer $hatch_id
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  * @method static \Illuminate\Database\Query\Builder|\Hatches\HatchReport whereHatchId($value)
  */
 class HatchReport extends Model {

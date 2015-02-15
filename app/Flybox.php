@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Flybox wherePrivacyId($value)
  * @method static \Illuminate\Database\Query\Builder|\Flybox whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Flybox whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Flybox extends Model {
 	protected $fillable = [];

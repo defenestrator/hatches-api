@@ -38,7 +38,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Fishery whereStillwater($value)
  * @method static \Illuminate\Database\Query\Builder|\Fishery whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Fishery whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Fishery extends Model {
 	protected $fillable = [];

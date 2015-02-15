@@ -32,7 +32,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\TripReport wherePrivacyId($value)
  * @method static \Illuminate\Database\Query\Builder|\TripReport whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\TripReport whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 
 //use Eloquent;

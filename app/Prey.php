@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Prey whereHatchTypeId($value)
  * @method static \Illuminate\Database\Query\Builder|\Prey whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Prey whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Prey extends Model {
 	protected $fillable = ['common_name', 'genus','species'];

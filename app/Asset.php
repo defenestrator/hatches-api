@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Asset whereUri($value)
  * @method static \Illuminate\Database\Query\Builder|\Asset whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Asset whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 
 

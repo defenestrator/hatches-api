@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $user
  * @method static \Illuminate\Database\Query\Builder|\Role whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Role whereRoles($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Role extends Model {
 //    @TODO: In production, guard this vs injection.

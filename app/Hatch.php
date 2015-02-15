@@ -20,7 +20,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Hatch whereHatchTypeId($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatch whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatch whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Hatch extends Model {
 	protected $fillable = [];

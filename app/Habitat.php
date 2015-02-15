@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\FishSpecies[] $fishSpecies
  * @method static \Illuminate\Database\Query\Builder|\Habitat whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Habitat whereHabitat($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Habitat extends Model {
 	protected $fillable = [];

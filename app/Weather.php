@@ -19,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Weather whereWeatherData($value)
  * @method static \Illuminate\Database\Query\Builder|\Weather whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Weather whereUpdatedAt($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Weather extends Model {
 	protected $fillable = ['date', 'lat', 'lng', 'weather_data'];

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Hatches\Report
  *
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Report extends Model
 {

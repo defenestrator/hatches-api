@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\HatchReport[] $TripReport
  * @method static \Illuminate\Database\Query\Builder|\Tag whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Tag whereTag($value)
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 
 //use Eloquent;
