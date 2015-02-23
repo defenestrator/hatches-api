@@ -11,29 +11,21 @@ class UsersTableSeeder extends DatabaseSeeder {
         User::unguard();
 
 		$faker = Faker::create('en-US');
+        User::create([
+            'name' => 'HatchGod',
+            'email' => 'jeremy@edos.io',
+            'password' => Hash::make('changeme!')
+        ]);
 
-		foreach(range(1, 50) as $index) {
-            $first = $faker->firstName;
-            $last = $faker->lastName;
-            $dotName = $first.".".$last;
-            $email = $dotName."@".$faker->freeEmailDomain;
+		foreach(range(2, 50) as $index) {
+            $name = $faker->userName;
+            $email = $name."@".$faker->freeEmailDomain;
             User::create([
-                'roles_id' => $faker->numberBetween($min=2, $max=9),
-                'first_name' => $first,
-                'last_name' => $last,
-                'nickname' => $dotName,
+                'name' => $name,
                 'email' => $email,
                 'password' => Hash::make($faker->word)
             ]);
 		}
-        User::create([
-            'roles_id' => 6,
-            'first_name' => '',
-            'last_name' => '',
-            'nickname' => 'pjaustin',
-            'email' => 'love2board21@hotmail.com',
-            'password' => Hash::make($faker->word)
-        ]);
 	}
 
 }

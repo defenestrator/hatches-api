@@ -22,10 +22,10 @@ class CreateEmptyTables extends Migration
     'password_reminders',
     'prey',
     'privacy',
-    'roles',
+    'roles', 'role_user',
     'tags',
     'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
-    'users', 'user_buddy', 'user_role',
+    'users', 'user_buddy',
     'waterdata',
     'weather'
 ];
@@ -54,7 +54,7 @@ class CreateEmptyTables extends Migration
                     'Banned'
                 );
                 $table->increments('id');
-                $table->enum('roles', $roles);
+                $table->enum('role', $roles)->unique();
             }
         );
 
@@ -132,17 +132,11 @@ class CreateEmptyTables extends Migration
 
         Schema::create('users', function ($table) {
             $table->increments('id');
-            $table->integer('roles_id')->unsigned()->default('6');
-            $table->foreign('roles_id')
-                ->references('id')
-                ->on('roles');
-            $table->string('first_name', 64)->nullable();
-            $table->string('last_name', 64)->nullable();
-            $table->string('nickname', 64)->unique();
+            $table->string('name', 64)->unique();
             $table->string('email')->unique();
             $table->string('password', 200);
             $table->string('remember_token', 100)->nullable();
-            $table->date('deleted_at');
+            $table->date('deleted_at')->nullable()->default(null);
             $table->timestamps();
         });
 
@@ -502,16 +496,18 @@ class CreateEmptyTables extends Migration
             }
         );
 
-        Schema::create('user_role', function($table)
+        Schema::create('role_user', function($table)
             {
                 $table->integer('user_id')->unsigned();
                 $table->foreign('user_id')
                     ->references('id')
-                    ->on('users');
+                    ->on('users')
+                    ->onDelete('cascade');
                 $table->integer('role_id')->unsigned();
                 $table->foreign('role_id')
                     ->references('id')
-                    ->on('roles');
+                    ->on('roles')
+                    ->onDelete('cascade');
             }
         );
 

@@ -5,6 +5,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Contracts\Auth\Authenticatable as AuthenticatableContract;
 use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 
 /**
  * Hatches\User
@@ -41,11 +43,14 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereDeletedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereUpdatedAt($value)
+ * @property string $name 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles 
+ * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereName($value)
  */
 
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
-	use Authenticatable, CanResetPassword;
+	use Authenticatable, CanResetPassword, SoftDeletes;
 
 	/**
 	 * The database table used by the model.
@@ -59,7 +64,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['nickname', 'email', 'password', 'first_name', 'last_name'];
+	protected $fillable = ['name', 'email', 'password'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.
@@ -127,7 +132,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	/**
 	 * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
 	 */
-	public function role()
+	public function roles()
 	{
 		return $this->belongsToMany('Role');
 	}

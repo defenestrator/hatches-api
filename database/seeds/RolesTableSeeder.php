@@ -22,7 +22,7 @@ class RolesTableSeeder extends DatabaseSeeder {
 		foreach($roles as $role)
 		{
 			Role::create([
-                'roles' => $role
+                'role' => $role
 			]);
 		}
 	}

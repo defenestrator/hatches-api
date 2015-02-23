@@ -5,10 +5,10 @@ namespace spec\Hatches;
 use PhpSpec\ObjectBehavior;
 use Prophecy\Argument;
 
-class UserSpec extends ObjectBehavior
+class HabitatSpec extends ObjectBehavior
 {
     function it_is_initializable()
     {
-        $this->shouldHaveType('Hatches\User');
+        $this->shouldHaveType('Hatches\Habitat');
     }
 }

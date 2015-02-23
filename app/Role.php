@@ -13,11 +13,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Role extends Model {
-//    @TODO: In production, guard this vs injection.
-//    protected $guarded = ['*'];
-
-    protected $fillable = [];
     public $timestamps = false;
+    protected $fillable = ['role'];
 
     public function user()
     {
