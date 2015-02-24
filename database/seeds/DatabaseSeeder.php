@@ -58,7 +58,7 @@ class DatabaseSeeder extends Seeder {
 		$this->call('TagsTableSeeder');
 		$this->command->info('Tag table seeded!');
 
-		$this->call('WaterdataTableSeeder');
+		$this->call('WaterDataTableSeeder');
 		$this->command->info('Waterdata table seeded!');
 
 		$this->call('WeatherTableSeeder');
