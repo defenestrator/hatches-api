@@ -470,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "68571f07e6645ef49cbef9d0b20165a0fec472d5"
+                "reference": "ea2f12837ed07864f58e2648e032c06d47ffb093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/68571f07e6645ef49cbef9d0b20165a0fec472d5",
-                "reference": "68571f07e6645ef49cbef9d0b20165a0fec472d5",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ea2f12837ed07864f58e2648e032c06d47ffb093",
+                "reference": "ea2f12837ed07864f58e2648e032c06d47ffb093",
                 "shasum": ""
             },
             "require": {
@@ -492,7 +492,7 @@
                 "mtdowling/cron-expression": "~1.0",
                 "nesbot/carbon": "~1.0",
                 "php": ">=5.4.0",
-                "psy/psysh": "0.3.*",
+                "psy/psysh": "0.4.*",
                 "swiftmailer/swiftmailer": "~5.1",
                 "symfony/console": "2.6.*",
                 "symfony/debug": "2.6.*",
@@ -587,7 +587,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2015-02-21 04:20:15"
+            "time": "2015-02-23 22:48:09"
         },
         {
             "name": "league/flysystem",
@@ -739,12 +739,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "f05ed3a44a8e40533d4cf60a0669db6b1887b499"
+                "reference": "fa3bc975c2ff42a40c4c565b191a31a7e7ca08b1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/f05ed3a44a8e40533d4cf60a0669db6b1887b499",
-                "reference": "f05ed3a44a8e40533d4cf60a0669db6b1887b499",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fa3bc975c2ff42a40c4c565b191a31a7e7ca08b1",
+                "reference": "fa3bc975c2ff42a40c4c565b191a31a7e7ca08b1",
                 "shasum": ""
             },
             "require": {
@@ -803,7 +803,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-02-11 14:20:33"
+            "time": "2015-02-23 00:57:27"
         },
         {
             "name": "mtdowling/cron-expression",
@@ -985,16 +985,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "dev-develop",
+            "version": "v0.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "c0115488891e46f40561d12beeb5b8f51d275c02"
+                "reference": "eee16e9525405b32646b5a0f8a12fb84d566905d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/c0115488891e46f40561d12beeb5b8f51d275c02",
-                "reference": "c0115488891e46f40561d12beeb5b8f51d275c02",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/eee16e9525405b32646b5a0f8a12fb84d566905d",
+                "reference": "eee16e9525405b32646b5a0f8a12fb84d566905d",
                 "shasum": ""
             },
             "require": {
@@ -1012,6 +1012,7 @@
             },
             "suggest": {
                 "ext-pcntl": "Enabling the PCNTL extension makes PsySH a lot happier :)",
+                "ext-pdo-sqlite": "The doc command requires SQLite to work.",
                 "ext-posix": "If you have PCNTL, you'll want the POSIX extension as well.",
                 "ext-readline": "Enables support for arrow-key history navigation, and showing and manipulating command history."
             },
@@ -1051,7 +1052,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2015-02-20 16:52:22"
+            "time": "2015-02-23 21:21:17"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -2728,12 +2729,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "74f58bbda974d0820183d228f120c2f3258bf7f6"
+                "reference": "2495d3361ac1e9fc15608a1b33ec2dd41c56b2dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/74f58bbda974d0820183d228f120c2f3258bf7f6",
-                "reference": "74f58bbda974d0820183d228f120c2f3258bf7f6",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/2495d3361ac1e9fc15608a1b33ec2dd41c56b2dc",
+                "reference": "2495d3361ac1e9fc15608a1b33ec2dd41c56b2dc",
                 "shasum": ""
             },
             "require": {
@@ -2772,7 +2773,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-02-19 08:29:00"
+            "time": "2015-02-23 10:49:44"
         },
         {
             "name": "laracasts/behat-laravel-extension",
