@@ -15,7 +15,7 @@ class WaterDataTableSeeder extends DatabaseSeeder {
             'date' => $faker->dateTimeThisYear(),
             'lat'   => $faker->latitude,
             'lng'   => $faker->longitude,
-            'water_data' => $faker->paragraph()
+            'data' => $faker->paragraph()
 			]);
 		}
 	}
