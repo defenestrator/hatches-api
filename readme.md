@@ -1,5 +1,5 @@
-## Hatch.es API
-
+# Hatch.es API
+[![Build Status](https://travis-ci.org/defenestrator/hatches-api.svg?branch=master)](https://travis-ci.org/defenestrator/hatches-api)
 ## Mobile Fly Fishing Tools
 
  Track your angling success on-stream with offline fisheries maps and
