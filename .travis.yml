@@ -10,7 +10,7 @@ before_script:
     # and grab chromedriver for headless browser tests
 
   - composer self-update
-  - composer install --dev --prefer-dist
+  - composer install --prefer-dist
   - chmod -R 777 storage
 
 script:
