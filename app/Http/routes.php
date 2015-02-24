@@ -23,38 +23,39 @@ Route::get('attach', function()
 	Hatches\User::find(1)->roles()->attach(1);
 });
 
-Route::group(['prefix' => 'api/v1'], function ()
+Route::group(['prefix' => 'v1'], function ()
 {
 	Route::get('/', function()
 	{
 		return 'hey fishies!';
 	});
 
-	Route::resource('users', 'UsersController', ['except' => ['create', 'store']]);
+	Route::get('users', 'UsersController@index');
+    Route::get('users/{id}', 'UsersController@show');
 
 	Route::resource('fisheries', 'FisheriesController');
 
 	Route::resource('trip-reports', 'TripReportsController');
 
-	Route::resource('fish-species', 'FishSpeciesController');
-
-	Route::resource('flyboxes', 'FlyboxesController');
-
-	Route::resource('habitats', 'HabitatsController');
-
-	Route::resource('hatches', 'HatchesController');
-
-	Route::resource('hatch-types', 'HatchTypesController');
-
-	Route::resource('hatch-reports', 'HatchReportsController');
-
-	Route::resource('maps', 'MapsController');
-
-	Route::resource('prey', 'PreyController');
-
-	Route::resource('waterdata', 'WaterdataController');
-
-	Route::resource('weather', 'WeatherController');
+//	Route::resource('fish-species', 'FishSpeciesController');
+//
+//	Route::resource('flyboxes', 'FlyboxesController');
+//
+//	Route::resource('habitats', 'HabitatsController');
+//
+//	Route::resource('hatches', 'HatchesController');
+//
+//	Route::resource('hatch-types', 'HatchTypesController');
+//
+//	Route::resource('hatch-reports', 'HatchReportsController');
+//
+//	Route::resource('maps', 'MapsController');
+//
+//	Route::resource('prey', 'PreyController');
+//
+//	Route::resource('waterdata', 'WaterdataController');
+//
+//	Route::resource('weather', 'WeatherController');
 
 });
 
