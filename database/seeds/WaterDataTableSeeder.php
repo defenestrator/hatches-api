@@ -19,5 +19,4 @@ class WaterDataTableSeeder extends DatabaseSeeder {
 			]);
 		}
 	}
-
 }
