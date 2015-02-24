@@ -31,14 +31,15 @@ Route::group(['prefix' => 'v1'], function ()
 	});
 
 	Route::get('users', 'UsersController@index');
+
     Route::get('users/{id}', 'UsersController@show');
 
 	Route::resource('fisheries', 'FisheriesController');
 
 	Route::resource('trip-reports', 'TripReportsController');
 
-//	Route::resource('fish-species', 'FishSpeciesController');
-//
+	Route::resource('fish-species', 'FishSpeciesController');
+
 //	Route::resource('flyboxes', 'FlyboxesController');
 //
 //	Route::resource('habitats', 'HabitatsController');

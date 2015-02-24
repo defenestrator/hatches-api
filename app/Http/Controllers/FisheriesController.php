@@ -2,15 +2,19 @@
 
 use Hatches\Fishery;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Hatches\Transformers\FisheryTransformer;
 
 /**
  * Class FisheriesController
+ *
  */
 class FisheriesController extends Controller
 {
 
+    /**
+     * A New instance of this controller
+     * uses 'auth' middleware
+     */
     public function __construct()
     {
         $this->middleware('auth');
@@ -21,30 +25,26 @@ class FisheriesController extends Controller
      * GET /fisheries
      *
      *
-     * @param Request $request
-     * @param Response $response
-     * @param FisheryTransformer $fisheryTransformer
-     * @return Response
+     * @param Request                                  $request
+     * @param \Hatches\Transformers\FisheryTransformer $fisheryTransformer
+     * @return \Illuminate\Http\Response
+     * @internal param $
      * @internal param $
      */
-    public function index(Request $request, Response $response, FisheryTransformer $fisheryTransformer)
+    public function index(Request $request, FisheryTransformer $fisheryTransformer)
     {
         $limit = intval($request->input('limit', 25));
-        $checkExistence = Fishery::count();
-        $page = $request->input('page', 1);
-        $pageLimit = $checkExistence / $limit;
-        $pages = round($pageLimit, 0, 1);
-        if ($page > $pages) {
-            return $this->respondBadRequest('There are not that many pages of results');
-        }elseif ($limit >= 100) {
-            return $this->respondBadRequest('Bad Request, Naughty Request!');
-        } elseif ($checkExistence < 1) {
+        $countFisheries = Fishery::count();
+
+        if ($limit >= 100) {
+            return $this->respondBadRequest('Maximum response limit is 100');
+        } elseif ($countFisheries < 1) {
             return $this->respondNotFound('There are no Fisheries!?');
         } else {
             $fishery = Fishery::paginate($limit);
-            return $response->setContent([
-                'data' => $fisheryTransformer->transformCollection($fishery->all())
-            ], 200
+            return response()->json([
+                'data' => $fisheryTransformer->transformCollection($fishery->all())],
+                200
             );
         }
     }

@@ -19,7 +19,6 @@ class FisheryTransformer extends Transformer
     {
 
             return [
-                'id' => (int)$fishery['id'],
                 'name' => $fishery['name'],
                 'regs' => $fishery['regs'],
                 'management' => $fishery['notes'],

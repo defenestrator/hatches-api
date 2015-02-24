@@ -135,6 +135,8 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
+        //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
+        'Spatie\Glide\GlideServiceProvider',
 
 
 		/*
@@ -145,6 +147,7 @@ return [
 		'Hatches\Providers\ConfigServiceProvider',
 		'Hatches\Providers\EventServiceProvider',
 		'Hatches\Providers\RouteServiceProvider',
+        'Hatches\Providers\JsonApiServiceProvider',
 
 		/*
 		 * Dev Service Providers... (which is an improper use of an ellipsis)
@@ -198,6 +201,7 @@ return [
 		'Activation' => 'Cartalyst\Sentinel\Laravel\Facades\Activation',
 		'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
 		'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
+        'GlideImage' => 'Spatie\Glide\GlideImageFacade',
 
 	],
 

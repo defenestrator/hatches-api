@@ -39,7 +39,7 @@ class UsersController extends Controller
         if ($limit > 100) {
             return $this->respondBadRequest('Bad Request, Naughty Request! Limit maximum is 100 per page.');
         }
-        elseif ($countUsers == 0) {
+        elseif ($countUsers < 1) {
             return $this->respondNotFound('There are no Users!?');
         }
         else {
