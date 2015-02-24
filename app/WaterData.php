@@ -20,6 +20,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\WaterData whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\WaterData whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
+ * @property string $data
+ * @method static \Illuminate\Database\Query\Builder|\Hatches\WaterData whereData($value)
  */
 class WaterData extends Model {
 	protected $fillable = [];

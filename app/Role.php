@@ -11,6 +11,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Role whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Role whereRoles($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
+ * @property string $role
+ * @method static \Illuminate\Database\Query\Builder|\Hatches\Role whereRole($value)
  */
 class Role extends Model {
     public $timestamps = false;

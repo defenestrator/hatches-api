@@ -7,6 +7,14 @@ use Illuminate\Database\Eloquent\Model;
  * Hatches\Report
  *
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
+ * @property-read \User $user
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Tag[] $tags
+ * @property-read \Fishery $fishery
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $comments
+ * @property-read \WaterData $waterData
+ * @property-read \Weather $weather
+ * @property-read \Privacy $privacy
  */
 class Report extends Model
 {

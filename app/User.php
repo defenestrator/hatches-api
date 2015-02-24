@@ -8,46 +8,38 @@ use Illuminate\Contracts\Auth\CanResetPassword as CanResetPasswordContract;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
 
+
+
 /**
  * Hatches\User
  *
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
- * @property integer $id
- * @property integer $roles_id
- * @property string $first_name
- * @property string $last_name
- * @property string $nickname
- * @property string $email
- * @property string $password
- * @property string $remember_token
- * @property string $deleted_at
- * @property \Carbon\Carbon $created_at
- * @property \Carbon\Carbon $updated_at
- * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets
- * @property-read \Illuminate\Database\Eloquent\Collection|\TripReport[] $tripReports
- * @property-read \Illuminate\Database\Eloquent\Collection|\HatchReport[] $hatchReports
- * @property-read \Illuminate\Database\Eloquent\Collection|\FlyPattern[] $flyPatterns
- * @property-read \Illuminate\Database\Eloquent\Collection|\Flybox[] $flyboxes
- * @property-read \Illuminate\Database\Eloquent\Collection|\Fishery[] $fisheries
- * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $comments
- * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $role
- * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $buddies
+ * @property integer $id 
+ * @property string $name 
+ * @property string $email 
+ * @property string $password 
+ * @property string $remember_token 
+ * @property string $deleted_at 
+ * @property \Carbon\Carbon $created_at 
+ * @property \Carbon\Carbon $updated_at 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\TripReport[] $tripReports 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\HatchReport[] $hatchReports 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\FlyPattern[] $flyPatterns 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Flybox[] $flyboxes 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Fishery[] $fisheries 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $comments 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $buddies 
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereId($value)
- * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereRolesId($value)
- * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereFirstName($value)
- * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereLastName($value)
- * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereNickname($value)
+ * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereName($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereEmail($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User wherePassword($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereRememberToken($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereDeletedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereUpdatedAt($value)
- * @property string $name 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles 
- * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereName($value)
  */
-
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
 	use Authenticatable, CanResetPassword, SoftDeletes;

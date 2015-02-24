@@ -34,6 +34,10 @@ use Illuminate\Database\Eloquent\Model;
  * @property integer $hatch_id
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  * @method static \Illuminate\Database\Query\Builder|\Hatches\HatchReport whereHatchId($value)
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets
+ * @property-read \Fishery $fishery
+ * @property-read \WaterData $waterData
+ * @property-read \Weather $weather
  */
 class HatchReport extends Report {
 	protected $fillable = ['hatch_type', 'hatch_intensity'];

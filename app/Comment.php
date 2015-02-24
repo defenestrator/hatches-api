@@ -17,6 +17,10 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Comment whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Comment whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
+ * @property-read \TripReport $tripReport
+ * @property-read \HatchReport $HatchReport
+ * @property-read \FlyPattern $flyPattern
+ * @property-read \Fishery $fishery
  */
 class Comment extends Model {
     protected $fillable = [];
