@@ -26,24 +26,24 @@ class Comment extends Model {
         return $this->belongsTo('User');
     }
 
-//    public function tripReport()
-//    {
-//        return $this->hasOne('TripReport');
-//    }
-//
-//    public function HatchReport()
-//    {
-//        return $this->hasOne('HatchReport');
-//    }
-//
-//    public function flyPattern()
-//    {
-//        return $this->hasOne('FlyPattern');
-//    }
-//
-//    public function fishery()
-//    {
-//        return $this->hasOne('Fishery');
-//    }
+    public function tripReport()
+    {
+        return $this->hasOne('TripReport');
+    }
+
+    public function HatchReport()
+    {
+        return $this->hasOne('HatchReport');
+    }
+
+    public function flyPattern()
+    {
+        return $this->hasOne('FlyPattern');
+    }
+
+    public function fishery()
+    {
+        return $this->hasOne('Fishery');
+    }
 
 }

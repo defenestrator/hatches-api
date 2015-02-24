@@ -37,29 +37,13 @@ use Illuminate\Database\Eloquent\Model;
 
 //use Eloquent;
 
-class TripReport extends Model
+class TripReport extends Report
 {
-    protected $fillable = [];
+    protected $fillable = ['user_id', 'fishery_id', 'start_time', 'end_time', 'title', 'report_body', 'privacy_id' ];
 
-    public function user()
-    {
-        return $this->belongsTo('User');
-    }
 
-    public function assets()
-    {
-        return $this->belongsToMany('Asset');
-    }
 
-    public function tags()
-    {
-        return $this->belongsToMany('Tag');
-    }
 
-    public function fishery()
-    {
-        return $this->hasOne('Fishery');
-    }
 
     public function createReport()
     {

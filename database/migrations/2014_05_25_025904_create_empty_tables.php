@@ -26,7 +26,7 @@ class CreateEmptyTables extends Migration
     'tags',
     'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
     'users', 'user_buddy',
-    'waterdata',
+    'water_data',
     'weather'
 ];
 
@@ -120,12 +120,12 @@ class CreateEmptyTables extends Migration
             }
         );
 
-        Schema::create('waterdata', function ($table) {
+        Schema::create('water_data', function ($table) {
                 $table->increments('id');
                 $table->date('date');
                 $table->decimal('lat', 10, 7);
                 $table->decimal('lng', 11, 8);
-                $table->text('water_data');
+                $table->text('data');
                 $table->timestamps();
             }
         );

@@ -35,28 +35,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  * @method static \Illuminate\Database\Query\Builder|\Hatches\HatchReport whereHatchId($value)
  */
-class HatchReport extends Model {
-	protected $fillable = ['start_time', 'end_time', 'title', 'report_body', 'hatch_intensity'];
-
-    public function user()
-    {
-        return $this->belongsTo('User');
-    }
-
-    public function tags()
-    {
-        return $this->belongsToMany('Tag');
-
-    }
-
-    public function comments()
-    {
-        return $this->hasMany('Comment');
-    }
-
-    public function privacy()
-    {
-        return $this->hasOne('Privacy');
-    }
+class HatchReport extends Report {
+	protected $fillable = ['hatch_type', 'hatch_intensity'];
 
 }
