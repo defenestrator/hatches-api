@@ -4,12 +4,16 @@ php:
   - 5.6
 
 before_script:
+    # setup mysql,
     # update composer,
     # then grab the packages,
     # chmod storage
+    # migrate and seed db
+  - mysql -e 'create database homestead;'
   - composer self-update
   - composer install --prefer-dist
   - chmod -R 777 storage
+  - php artisan migrate --seed
 
 script:
     # Run them tests, y'all
