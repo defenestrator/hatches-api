@@ -17,14 +17,11 @@ Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'WelcomeController@index');
 
-Route::get('main', 'MainController@index');
-
-
 /*
  * API routes:
  */
 
-Route::group(['prefix' => 'v1'], function ()
+Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
 {
 	Route::get('/', function()
 	{

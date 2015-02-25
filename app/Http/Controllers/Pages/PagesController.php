@@ -1,6 +1,6 @@
 <?php namespace Hatches\Http\Controllers;
 
-class MainController extends Controller {
+class PagesController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
@@ -20,7 +20,7 @@ class MainController extends Controller {
 	 */
 	public function __construct()
 	{
-		$this->middleware('auth');
+		//$this->middleware('auth');
 	}
 
 	/**
