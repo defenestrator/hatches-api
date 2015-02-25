@@ -1,6 +1,6 @@
 <?php namespace Hatches\Http\Controllers;
 
-class HomeController extends Controller {
+class MainController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------

@@ -24,8 +24,8 @@ class UserSpec extends ObjectBehavior
 
     function it_should_store_name_as_a_string()
     {
-        $this['name'] = 'specman';
-        $this['name']->shouldReturn('specman');
+        $this['name'] = 'donkey';
+        $this['name']->shouldReturn('donkey');
     }
 
     function it_should_store_email_as_a_string()
@@ -33,5 +33,4 @@ class UserSpec extends ObjectBehavior
         $this['email'] = 'specman@example.com';
         $this['email']->shouldReturn('specman@example.com');
     }
-
 }

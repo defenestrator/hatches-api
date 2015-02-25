@@ -1,3 +1,5 @@
+"use strict"
+
 var elixir = require('laravel-elixir');
 require('laravel-elixir-behat');
 
@@ -15,7 +17,9 @@ require('laravel-elixir-behat');
 
 
 elixir(function (mix) {
-    mix.phpUnit().behat().phpSpec();
+    mix.behat();
+    mix.phpUnit();
+    mix.phpSpec();
 });
 
 

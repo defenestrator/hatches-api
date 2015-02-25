@@ -14,14 +14,15 @@
 //Protect data injection changes from csrf
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
+
 Route::get('/', 'WelcomeController@index');
 
-Route::get('home', 'HomeController@index');
+Route::get('main', 'MainController@index');
 
-Route::get('attach', function()
-{
-	Hatches\User::find(1)->roles()->attach(1);
-});
+
+/*
+ * API routes:
+ */
 
 Route::group(['prefix' => 'v1'], function ()
 {
