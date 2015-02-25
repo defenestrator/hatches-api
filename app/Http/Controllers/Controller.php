@@ -3,7 +3,6 @@
 use Illuminate\Foundation\Bus\DispatchesCommands;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
-//use Illuminate\Contracts\Routing\ResponseFactory;
 
 abstract class Controller extends BaseController {
 
@@ -13,7 +12,7 @@ abstract class Controller extends BaseController {
      * @var int
      */
     protected $statusCode = 200;
-
+    protected $resourceKey = 'data';
     /**
      * @param mixed $statusCode
      * @return $this

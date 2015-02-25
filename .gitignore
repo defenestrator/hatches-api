@@ -4,4 +4,5 @@ vendor/
 config/ide-helper.php
 _ide_helper.php
 composer.lock
+node_modules/
 storage/

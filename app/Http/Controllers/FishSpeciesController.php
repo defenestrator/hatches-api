@@ -15,6 +15,8 @@ class FishSpeciesController extends Controller {
 
     protected $fractal;
 
+    protected $resourceKey = 'fish-species';
+
     public function __construct(Larasponse $fractal)
     {
         $this->fractal = $fractal;
@@ -39,7 +41,7 @@ class FishSpeciesController extends Controller {
             return $this->respondNotFound('There are no Users!?');
         } else {
             $fishSpecies = FishSpecies::paginate($limit);
-            return $this->fractal->paginatedCollection($fishSpecies, new FishSpeciesTransformer);
+            return $this->fractal->paginatedCollection($fishSpecies, new FishSpeciesTransformer, $this->resourceKey);
         }
     }
 	/**
@@ -59,7 +61,7 @@ class FishSpeciesController extends Controller {
 	 */
 	public function store()
 	{
-		//
+		FishSpecies::save();
 	}
 
 	/**

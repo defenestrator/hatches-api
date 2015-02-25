@@ -1,4 +1,5 @@
 var elixir = require('laravel-elixir');
+require('laravel-elixir-behat');
 
 /*
  |--------------------------------------------------------------------------
@@ -11,6 +12,16 @@ var elixir = require('laravel-elixir');
  |
  */
 
-elixir(function(mix) {
-    mix.less('app.less');
+
+
+elixir(function (mix) {
+    mix.phpUnit().behat().phpSpec();
 });
+
+
+//gulp.task('behat', function() {
+//    var options = {debug: false};
+//    gulp.src('./features/**/*.php').pipe(behat('./vendor/bin/behat',options));
+//});
+//
+//gulp.task('default', ['behat', 'elixir']);
