@@ -18,7 +18,7 @@ class UsersTableSeeder extends DatabaseSeeder
             'password' => Hash::make('changeme!')
         ]);
 
-        foreach (range(2, 50) as $index) {
+        foreach (range(2, 30) as $index) {
             $name = $faker->userName;
             $email = $name . "@" . $faker->freeEmailDomain;
             User::create([

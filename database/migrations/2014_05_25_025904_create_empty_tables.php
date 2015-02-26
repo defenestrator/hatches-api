@@ -137,6 +137,17 @@ class CreateEmptyTables extends Migration
             $table->timestamps();
         });
 
+        Schema::create('hatches', function ($table) {
+            $table->increments('id');
+            $table->string('name');
+            $table->text('description');
+            $table->integer('hatch_type_id')->unsigned();
+            $table->foreign('hatch_type_id')
+                ->references('id')
+                ->on('hatch_types');
+            $table->timestamps();
+        }
+        );
         Schema::create('assets', function ($table) {
             $asset_type = array('image', 'video', 'link', 'document');
             $table->increments('id');
@@ -260,17 +271,7 @@ class CreateEmptyTables extends Migration
         }
         );
 
-        Schema::create('hatches', function ($table) {
-            $table->increments('id');
-            $table->string('name');
-            $table->text('description');
-            $table->integer('hatch_type_id')->unsigned();
-            $table->foreign('hatch_type_id')
-                ->references('id')
-                ->on('hatch_types');
-            $table->timestamps();
-        }
-        );
+
 
         Schema::create('prey', function ($table) {
             $table->increments('id');
@@ -531,8 +532,6 @@ class CreateEmptyTables extends Migration
             }
         );
     }
-
-
     /**
      * Reverse the migrations.
      *
@@ -540,8 +539,14 @@ class CreateEmptyTables extends Migration
      */
     public function down()
     {
+        if (app()->environment() !== 'acceptance' || 'testing') {
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        }
         foreach ($this->tables as $tableName) {
             Schema::drop($tableName);
+        }
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=1');
         }
     }
 }
