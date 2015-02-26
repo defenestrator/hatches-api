@@ -39,10 +39,6 @@ class DatabaseSeeder extends Seeder
         $this->cleanDatabase();
 
         Model::unguard();
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        }
-
 
         $this->call('RolesTableSeeder');
         $this->command->info('Roles table seeded!');
@@ -110,15 +106,11 @@ class DatabaseSeeder extends Seeder
 
     private function cleanDatabase()
     {
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        }
+
             foreach ($this->tables as $tableName) {
                 DB::table($tableName)->truncate();
             }
-        if (app()->environment() !== 'acceptance' || 'testing') {
-        DB::statement('SET FOREIGN_KEY_CHECKS=1');
-        }
+
     }
 
 }

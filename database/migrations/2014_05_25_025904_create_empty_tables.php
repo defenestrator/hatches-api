@@ -37,11 +37,6 @@ class CreateEmptyTables extends Migration
      */
     public function up()
     {
-        // using sqlite for test env portability
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//        }
-
         Schema::create('roles', function ($table) {
             // In descending order of permissions
             $roles = array(
@@ -551,22 +546,9 @@ class CreateEmptyTables extends Migration
 //        }
         foreach ($this->tables as $tableName) {
             Schema::drop($tableName);
-//        }
+        }
 //        if (app()->environment() !== 'acceptance' || 'testing') {
 //            DB::statement('SET FOREIGN_KEY_CHECKS=1');
 //        }
-
     }
-
-//    private function dropDatabase()
-//    {
-//        DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//
-//        foreach ($this->tables as $tableName) {
-//            DB::statement('DROP ' . $tableName . ';');
-//        }
-//
-//        DB::statement('SET FOREIGN_KEY_CHECKS=1');
-    }
-
 }
