@@ -13,5 +13,6 @@ Feature: Membership
     Then I should be logged in
 
   Scenario: Failed Authentication
+    Given I am on "auth/login"
     When I sign in with invalid credentials
     Then I should not be logged in
