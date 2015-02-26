@@ -16,7 +16,7 @@ before_script:
   - composer install --prefer-dist
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
-  - php artisan migrate --seed
+  #- php artisan migrate --seed
   - php artisan key:generate
   #- mysql -e 'create database travis;'
 
