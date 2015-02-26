@@ -55,9 +55,9 @@ return [
 		'mysql' => [
 			'driver'    => 'mysql',
 			'host'      => env('DB_HOST', '127.0.0.1'),
-			'database'  => env('DB_DATABASE', 'travis'),
-			'username'  => env('DB_USERNAME', 'travis'),
-			'password'  => env('DB_PASSWORD', ''),
+			'database'  => env('DB_DATABASE', 'homestead'),
+			'username'  => env('DB_USERNAME', 'homestead'),
+			'password'  => env('DB_PASSWORD', 'secret'),
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -66,9 +66,9 @@ return [
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
-			'host'     => env('DB_HOST', '127.0.0.1'),
-			'database' => env('DB_DATABASE', 'travis'),
-			'username' => env('DB_USERNAME', 'travis'),
+			'host'     => env('DB_HOST', 'homestead'),
+			'database' => env('DB_DATABASE', 'homestead'),
+			'username' => env('DB_USERNAME', 'secret'),
 			'password' => env('DB_PASSWORD', ''),
 			'charset'  => 'utf8',
 			'prefix'   => '',

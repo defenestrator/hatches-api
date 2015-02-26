@@ -9,17 +9,15 @@ before_script:
   # then grab the packages,
   # chmod storage
   # migrate and seed db
-
   - mv .env.travis .env
-
+  - mysql -e 'create database travis;'
   - composer self-update
   - composer install --prefer-source
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
-  #- php artisan migrate --seed
+  - php artisan migrate --seed
   - php artisan key:generate
-  #- mysql -e 'create database travis;'
-  - php -S localhost:8000 public/index.php &
+  - php -S localhost:8000 public/
   - sleep 5
 
 script:
