@@ -17,6 +17,7 @@ before_script:
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
   - php artisan migrate --seed
+  - php artisan key:generate
 
 script:
     # Run them tests, y'all
