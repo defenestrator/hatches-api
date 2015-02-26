@@ -10,7 +10,7 @@ before_script:
   # chmod storage
   # migrate and seed db
 
-  - mv .env.example .env
+  - mv .env.travis .env
   #- mysql -e 'create database travis;'
   - composer self-update
   - composer install --prefer-dist
