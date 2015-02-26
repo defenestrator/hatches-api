@@ -46,7 +46,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iRegister($name, $email)
     {
-        dd(app()->environment());
+       // dd(app()->environment());
         $this->name = $name;
         $this->email = $email;
 
