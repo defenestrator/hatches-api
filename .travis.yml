@@ -11,12 +11,12 @@ before_script:
   - mv .env.travis .env
   - mv .env.behat.travis .env.behat
   #- mysql -e 'create database travis;'
+  - chmod -R 777 storage
   - touch storage/acceptance.sqlite
   - composer self-update
   - composer install --prefer-source
-  - chmod -R 777 storage
-  - php artisan migrate --seed
   - php artisan key:generate
+  - php artisan migrate --seed
   - npm install
 
 
