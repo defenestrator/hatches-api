@@ -13,15 +13,17 @@ before_script:
   - mv .env.travis .env
 
   - composer self-update
-  - composer install --prefer-dist
+  - composer install --prefer-source
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
   #- php artisan migrate --seed
   - php artisan key:generate
   #- mysql -e 'create database travis;'
+   - php -S localhost:8000 public/index.php &
+   - sleep 3
 
 script:
     # Run them tests, y'all
   - phpunit tests/
   - vendor/bin/phpspec run -v
-  - vendor/bin/behat
+  - vendor/bin/behat --config behat.yml
