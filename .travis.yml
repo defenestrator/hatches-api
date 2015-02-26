@@ -8,21 +8,18 @@ before_script:
   # then grab the packages,
   # chmod storage
   # migrate and seed db
-  #- mv .env.travis .env
   - mv .env.behat.travis .env.behat
-  #- mysql -e 'create database travis;'
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
   - composer self-update
   - composer install --prefer-source
   - php artisan key:generate
-#  - php artisan migrate --seed
-  #- npm install
+  #- npm install - if you want to use gulp/elixir
 
 
 script:
-    # Run them tests, y'all
-  - gulp
+  # Run them tests, y'all
+  #- gulp # if you are running 'npm install' in before_script
   - phpunit tests/
   - vendor/bin/phpspec run -v
   - vendor/bin/behat --config behat.yml
