@@ -39,9 +39,9 @@ class DatabaseSeeder extends Seeder
         $this->cleanDatabase();
 
         Model::unguard();
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        }
+//        if (app()->environment() !== 'acceptance' || 'testing') {
+//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+//        }
 
 
         $this->call('RolesTableSeeder');
@@ -103,20 +103,20 @@ class DatabaseSeeder extends Seeder
 
         $this->call('LookupTableSeeder');
         $this->command->info('Pivot tables seeded!');
-
-        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+//
+//        DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
     }
 
     private function cleanDatabase()
     {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+//        DB::statement('SET FOREIGN_KEY_CHECKS=0');
 
         foreach ($this->tables as $tableName) {
             DB::table($tableName)->truncate();
         }
 
-        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+//        DB::statement('SET FOREIGN_KEY_CHECKS=1');
     }
 
 }
