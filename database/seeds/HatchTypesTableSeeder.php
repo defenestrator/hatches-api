@@ -2,7 +2,8 @@
 
 use Hatches\HatchType;
 
-class HatchTypesTableSeeder extends DatabaseSeeder {
+class HatchTypesTableSeeder extends DatabaseSeeder
+{
 
     public function run()
     {
@@ -19,8 +20,7 @@ class HatchTypesTableSeeder extends DatabaseSeeder {
             'other'
         ];
 
-        foreach($hatch_types as $hatch_type)
-        {
+        foreach ($hatch_types as $hatch_type) {
             HatchType::create([
                 'type' => $hatch_type,
                 'description' => strtoupper($hatch_type)

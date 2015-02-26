@@ -9,10 +9,11 @@ use Faker\Factory as Faker;
 /**
  * Class FisheriesTableSeeder
  */
-class FisheriesTableSeeder extends DatabaseSeeder {
+class FisheriesTableSeeder extends DatabaseSeeder
+{
 
-	public function run()
-	{
+    public function run()
+    {
         Fishery::unguard();
 
         $faker = Faker::create('en-US');
@@ -21,7 +22,7 @@ class FisheriesTableSeeder extends DatabaseSeeder {
         $userIds = User::lists('id');
         $habitatIds = Habitat::lists('id');
 
-        foreach(range(1, 30) as $index) {
+        foreach (range(1, 30) as $index) {
 
             Fishery::create([
                 'name' => $faker->sentence(),
@@ -36,6 +37,6 @@ class FisheriesTableSeeder extends DatabaseSeeder {
                 'stillwater' => $faker->boolean()
             ]);
         }
-	}
+    }
 
 }

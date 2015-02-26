@@ -26,7 +26,7 @@ return [
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => env('DB_TYPE', 'mysql'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -48,7 +48,7 @@ return [
 
 		'sqlite' => [
 			'driver'   => 'sqlite',
-			'database' => storage_path().'/database.sqlite',
+			'database' => storage_path(env('TEST_DB', 'database.sqlite')),
 			'prefix'   => '',
 		],
 
@@ -66,9 +66,9 @@ return [
 
 		'pgsql' => [
 			'driver'   => 'pgsql',
-			'host'     => env('DB_HOST', 'localhost'),
-			'database' => env('DB_DATABASE', 'forge'),
-			'username' => env('DB_USERNAME', 'forge'),
+			'host'     => env('DB_HOST', '127.0.0.1'),
+			'database' => env('DB_DATABASE', 'travis'),
+			'username' => env('DB_USERNAME', 'travis'),
 			'password' => env('DB_PASSWORD', ''),
 			'charset'  => 'utf8',
 			'prefix'   => '',
@@ -77,9 +77,9 @@ return [
 
 		'sqlsrv' => [
 			'driver'   => 'sqlsrv',
-			'host'     => env('DB_HOST', 'localhost'),
-			'database' => env('DB_DATABASE', 'forge'),
-			'username' => env('DB_USERNAME', 'forge'),
+			'host'     => env('DB_HOST', '127.0.0.1'),
+			'database' => env('DB_DATABASE', 'travis'),
+			'username' => env('DB_USERNAME', 'travis'),
 			'password' => env('DB_PASSWORD', ''),
 			'prefix'   => '',
 		],

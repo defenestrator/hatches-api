@@ -1,13 +1,15 @@
 <?php
 
 use Hatches\Role;
+
 /**
  * Class RolesTableSeeder
  */
-class RolesTableSeeder extends DatabaseSeeder {
+class RolesTableSeeder extends DatabaseSeeder
+{
 
     public function run()
-	{
+    {
         $roles = [
             'God',
             'Administrator',
@@ -19,12 +21,11 @@ class RolesTableSeeder extends DatabaseSeeder {
             'Warned',
             'Banned'
         ];
-		foreach($roles as $role)
-		{
-			Role::create([
+        foreach ($roles as $role) {
+            Role::create([
                 'role' => $role
-			]);
-		}
-	}
+            ]);
+        }
+    }
 
 }

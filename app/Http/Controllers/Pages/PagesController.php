@@ -4,7 +4,7 @@ class PagesController extends Controller {
 
 	/*
 	|--------------------------------------------------------------------------
-	| Home Controller
+	| Pages Controller
 	|--------------------------------------------------------------------------
 	|
 	| This controller renders your application's "dashboard" for users that
@@ -30,7 +30,7 @@ class PagesController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		return view('main');
 	}
 
 }

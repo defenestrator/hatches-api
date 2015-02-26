@@ -31,7 +31,7 @@ class LookupTableSeeder extends DatabaseSeeder
         $fishSpeciesIds = FishSpecies::lists('id');
         $flyPatternIds = FishSpecies::lists('id');
         $flyboxIds = Flybox::lists('id');
-        $roleIds = ['2','3','4','5','6','7','8','9'];
+        $roleIds = ['2', '3', '4', '5', '6', '7', '8', '9'];
 
         foreach (range(1, 30) as $index) {
             DB::table('fishery_comment')->insert([
