@@ -10,7 +10,7 @@ before_script:
   # migrate and seed db
   - mv .env.travis .env
   - mv .env.behat.travis .env.behat
-  - mysql -e 'create database travis;'
+  #- mysql -e 'create database travis;'
   - touch storage/acceptance.sqlite
   - composer self-update
   - composer install --prefer-source
