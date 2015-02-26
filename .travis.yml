@@ -19,8 +19,8 @@ before_script:
   #- php artisan migrate --seed
   - php artisan key:generate
   #- mysql -e 'create database travis;'
-   - php -S localhost:8000 public/index.php &
-   - sleep 5
+  - php -S localhost:8000 public/index.php &
+  - sleep 5
 
 script:
     # Run them tests, y'all
