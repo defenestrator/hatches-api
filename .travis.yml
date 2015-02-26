@@ -23,4 +23,4 @@ script:
     # Run them tests, y'all
   - phpunit tests/
   - vendor/bin/phpspec run -v
-  - vendor/bin/behat
+  #- vendor/bin/behat
