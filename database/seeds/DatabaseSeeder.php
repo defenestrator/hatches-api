@@ -39,9 +39,7 @@ class DatabaseSeeder extends Seeder
         $this->cleanDatabase();
 
         Model::unguard();
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//        }
+
         $this->call('RolesTableSeeder');
         $this->command->info('Roles table seeded!');
 
@@ -101,22 +99,14 @@ class DatabaseSeeder extends Seeder
 
         $this->call('LookupTableSeeder');
         $this->command->info('Lookup tables seeded!');
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=1');
-        }
+
     }
 
     private function cleanDatabase()
     {
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-        }
             foreach ($this->tables as $tableName) {
                 DB::table($tableName)->truncate();
             }
-        if (app()->environment() !== 'acceptance' || 'testing') {
-            DB::statement('SET FOREIGN_KEY_CHECKS=1');
-        }
     }
 
 }
