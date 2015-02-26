@@ -9,7 +9,7 @@ before_script:
   # chmod storage
   # migrate and seed db
   - mv .env.travis .env
-  - mv .env.behat.travis .env.behat
+  #- mv .env.behat.travis .env.behat
   #- mysql -e 'create database travis;'
   - chmod -R 777 storage
   - touch storage/acceptance.sqlite
