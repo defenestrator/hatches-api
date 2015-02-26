@@ -17,7 +17,7 @@ use PHPUnit_Framework_Assert as PHPUnit;
 /** @noinspection PhpUndefinedClassInspection */
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
-   // use Migrator, DatabaseTransactions;
+    use Migrator, DatabaseTransactions;
 
     /**
      * @var name
