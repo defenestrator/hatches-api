@@ -546,9 +546,9 @@ class CreateEmptyTables extends Migration
      */
     public function down()
     {
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//        }
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        }
         foreach ($this->tables as $tableName) {
             Schema::drop($tableName);
         }
