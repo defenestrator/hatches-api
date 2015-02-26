@@ -17,7 +17,7 @@ use PHPUnit_Framework_Assert as PHPUnit;
 /** @noinspection PhpUndefinedClassInspection */
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
-    use Migrator, DatabaseTransactions;
+   // use Migrator, DatabaseTransactions;
 
     /**
      * @var name
@@ -46,6 +46,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
      */
     public function iRegister($name, $email)
     {
+        dd(app()->environment());
         $this->name = $name;
         $this->email = $email;
 
@@ -56,7 +57,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->fillField('password_confirmation', 'password');
 
         $this->pressButton('Register');
-        dd(app()->environment());
+
     }
 
     /**
