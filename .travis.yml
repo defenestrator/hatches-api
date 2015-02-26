@@ -4,16 +4,18 @@ php:
   - 5.6
 
 before_script:
-    # setup mysql,
-    # update composer,
-    # then grab the packages,
-    # chmod storage
-    # migrate and seed db
+  # setup mysql (to test production) , and sqlite (for behat acceptance)
+  # update composer,
+  # then grab the packages,
+  # chmod storage
+  # migrate and seed db
+
   - mv .env.example .env
   - mysql -e 'create database travis;'
   - composer self-update
   - composer install --prefer-dist
   - chmod -R 777 storage
+  - touch storage/acceptance.sqlite
   - php artisan migrate --seed
 
 script:
