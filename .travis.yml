@@ -23,3 +23,6 @@ before_script:
 script:
     # Run them tests, y'all
   - gulp
+  - phpunit tests/
+  - vendor/bin/phpspec run -v
+  - vendor/bin/behat --config behat.yml
