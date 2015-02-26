@@ -36,7 +36,7 @@ class LookupTableSeeder extends DatabaseSeeder
         foreach (range(1, 30) as $index) {
             DB::table('fishery_comment')->insert([
                 'fishery_id' => $faker->randomElement($fisheryIds),
-                'comment_id' => $faker->randomElement($userIds)
+                'comment_id' => $faker->randomElement($commentIds)
             ]);
 
             DB::table('fishery_fish_species')->insert([
@@ -111,7 +111,7 @@ class LookupTableSeeder extends DatabaseSeeder
 
             DB::table('user_buddy')->insert([
                 'user_id' => $faker->randomElement($userIds),
-                'user_id' => $faker->randomElement($userIds)
+                'buddy_id' => $faker->randomElement($userIds)
             ]);
 
             DB::table('role_user')->insert([

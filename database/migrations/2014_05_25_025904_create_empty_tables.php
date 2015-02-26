@@ -37,6 +37,9 @@ class CreateEmptyTables extends Migration
      */
     public function up()
     {
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        }
         Schema::create('roles', function ($table) {
             // In descending order of permissions
             $roles = array(
@@ -528,9 +531,11 @@ class CreateEmptyTables extends Migration
             $table->foreign('tag_id')
                 ->references('id')
                 ->on('tags');
-        }
+            }
         );
-
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=1');
+        }
     }
 
 
@@ -541,14 +546,14 @@ class CreateEmptyTables extends Migration
      */
     public function down()
     {
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//        }
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        }
         foreach ($this->tables as $tableName) {
             Schema::drop($tableName);
         }
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=1');
-//        }
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=1');
+        }
     }
 }
