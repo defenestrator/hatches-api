@@ -38,9 +38,9 @@ class CreateEmptyTables extends Migration
     public function up()
     {
         // using sqlite for test env portability
-//        if (app()->environment() !== 'acceptance' || 'testing') {
-//            DB::statement('SET FOREIGN_KEY_CHECKS=0');
-//        }
+        if (app()->environment() !== 'acceptance' || 'testing') {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        }
 
         Schema::create('roles', function ($table) {
             // In descending order of permissions

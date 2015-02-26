@@ -56,6 +56,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         $this->fillField('password_confirmation', 'password');
 
         $this->pressButton('Register');
+        dd(app()->environment());
     }
 
     /**
