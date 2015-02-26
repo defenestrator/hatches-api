@@ -17,7 +17,8 @@ before_script:
   - touch storage/acceptance.sqlite
   - php artisan migrate --seed
   - php artisan key:generate
-  - php -S localhost:8000 public/
+  - npm install
+  - php -S localhost:8000 public/ &
   - sleep 5
 
 script:
