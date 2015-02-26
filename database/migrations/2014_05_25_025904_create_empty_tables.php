@@ -356,7 +356,7 @@ class CreateEmptyTables extends Migration
                 ->references('id')
                 ->on('users');
             $table->integer('buddy_id')->unsigned();
-            $table->foreign('buddy_id')
+            $table->foreign('user_id')
                 ->references('id')
                 ->on('users');
         }
