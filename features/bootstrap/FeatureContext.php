@@ -42,8 +42,8 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     }
 
     /**
-     * @When I register :arg1 :arg2
-     *@arg
+     * @When I register :name :email
+     *
      */
     public function iRegister($name, $email)
     {

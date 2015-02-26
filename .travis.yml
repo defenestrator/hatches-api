@@ -1,8 +1,7 @@
-sudo: false
 language: php
 php:
   - 5.6
-
+sudo: false
 before_script:
   # setup mysql (to test production) , and sqlite (for behat acceptance)
   # update composer,
@@ -10,13 +9,16 @@ before_script:
   # chmod storage
   # migrate and seed db
   - mv .env.travis .env
+  - mv .env.behat.travis .env.behat
   - mysql -e 'create database travis;'
+  - touch storage/acceptance.sqlite
   - composer self-update
   - composer install --prefer-source
   - chmod -R 777 storage
   - php artisan migrate --seed
   - php artisan key:generate
   - npm install
+
 
 script:
     # Run them tests, y'all
