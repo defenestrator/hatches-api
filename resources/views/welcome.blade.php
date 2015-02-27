@@ -18,11 +18,13 @@
 				text-align: center;
 				display: table-cell;
 				vertical-align: middle;
+
 			}
 
 			.content {
 				text-align: center;
 				display: inline-block;
+                width:50%;
 			}
 
 			.title {
@@ -32,7 +34,7 @@
 
 			.quote {
 				font-size: 24px;
-                width:50%
+
 			}
 		</style>
 	</head>
