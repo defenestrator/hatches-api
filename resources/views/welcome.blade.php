@@ -8,7 +8,7 @@
 				padding: 0;
 				width: 100%;
 				height: 100%;
-				color: #B0BEC5;
+				color: #6d7a81;
 				display: table;
 				font-weight: 100;
 				font-family: 'Lato';
@@ -32,6 +32,7 @@
 
 			.quote {
 				font-size: 24px;
+                width:50%
 			}
 		</style>
 	</head>
