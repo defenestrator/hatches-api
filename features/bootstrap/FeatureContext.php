@@ -115,8 +115,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function iShouldNotBeLoggedIn()
     {
         PHPUnit::assertTrue(Auth::guest());
-
-        $this->assertPageAddress('auth/login');
     }
 
     /**
