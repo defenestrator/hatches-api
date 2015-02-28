@@ -17,7 +17,7 @@ Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'WelcomeController@index');
 Route::get('main', 'PagesController@index');
-
+Route::get('docs', 'public/docs');
 /*
  * API routes:
  */
