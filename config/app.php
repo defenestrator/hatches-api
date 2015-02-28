@@ -152,8 +152,10 @@ return [
 		/*
 		 * Dev Service Providers... (which is an improper use of an ellipsis)
 		 */
-		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+
+            'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 	],
+
 
 	/*
 	|--------------------------------------------------------------------------
@@ -206,3 +208,6 @@ return [
 	],
 
 ];
+if( app()->environment() !== 'production') {
+    config()->push('providers', 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider');
+}
