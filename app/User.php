@@ -13,24 +13,24 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 /**
  * Hatches\User
  *
- * @property integer $id 
- * @property string $name 
- * @property string $email 
- * @property string $password 
- * @property string $remember_token 
- * @property string $deleted_at 
- * @property \Carbon\Carbon $created_at 
- * @property \Carbon\Carbon $updated_at 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets 
- * @property-read \Illuminate\Database\Eloquent\Collection|\TripReport[] $tripReports 
- * @property-read \Illuminate\Database\Eloquent\Collection|\HatchReport[] $hatchReports 
- * @property-read \Illuminate\Database\Eloquent\Collection|\FlyPattern[] $flyPatterns 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Flybox[] $flyboxes 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Fishery[] $fisheries 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $comments 
- * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles 
- * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $buddies 
- * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany 
+ * @property integer $id
+ * @property string $name
+ * @property string $email
+ * @property string $password
+ * @property string $remember_token
+ * @property string $deleted_at
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Asset[] $assets
+ * @property-read \Illuminate\Database\Eloquent\Collection|\TripReport[] $tripReports
+ * @property-read \Illuminate\Database\Eloquent\Collection|\HatchReport[] $hatchReports
+ * @property-read \Illuminate\Database\Eloquent\Collection|\FlyPattern[] $flyPatterns
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Flybox[] $flyboxes
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Fishery[] $fisheries
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $comments
+ * @property-read \Illuminate\Database\Eloquent\Collection|\Role[] $roles
+ * @property-read \Illuminate\Database\Eloquent\Collection|\User[] $buddies
+ * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereId($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereName($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereEmail($value)

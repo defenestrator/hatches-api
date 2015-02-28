@@ -11,4 +11,5 @@ class AssetSpec extends ObjectBehavior
     {
         $this->shouldHaveType('Hatches\Asset');
     }
+
 }
