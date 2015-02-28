@@ -61,7 +61,7 @@ Perhaps you've even installed Composer:
 - `npm install`
 - `touch database.sqlite`
 - `php artisan migrate --seed`
-- `php artisan vendor
+- `php artisan vendor`
 - `gulp`
 
 #### Homestead
