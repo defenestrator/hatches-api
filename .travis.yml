@@ -13,6 +13,7 @@ before_script:
   - touch storage/acceptance.sqlite
   - composer self-update
   - composer install --prefer-source
+  - composer update --prefer-source
   - php artisan key:generate
   #- npm install - if you want to use gulp/elixir
 
