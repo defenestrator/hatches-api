@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f0d1fd1cdb0e1071313b2d0568ff5244",
+    "hash": "d10a774f9f60f3fff2cdb92f84efdae9",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -853,12 +853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bba433ac380c47523fab495a1322368381df0996"
+                "reference": "d0e5a69331f176b2ab14e9d584c37d4b780aafec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bba433ac380c47523fab495a1322368381df0996",
-                "reference": "bba433ac380c47523fab495a1322368381df0996",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/d0e5a69331f176b2ab14e9d584c37d4b780aafec",
+                "reference": "d0e5a69331f176b2ab14e9d584c37d4b780aafec",
                 "shasum": ""
             },
             "require": {
@@ -917,7 +917,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-02-25 16:48:53"
+            "time": "2015-02-28 21:41:06"
         },
         {
             "name": "mtdowling/cron-expression",
