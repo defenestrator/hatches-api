@@ -42,7 +42,7 @@ undetermined pittance to keep us from living _in a van down by the river._ Come 
 I'm assuming you have a github account.
 
 Given that, it is safe to assume you know more or less how to configure your local development environment and have php 
-v5.4 or greater installed, and the mcrypt extension. If you're on a Mac, use [Homebrew](http://brew.sh/), 
+v5.4 or greater installed, and the `mcrypt` extension. If you're on a Mac, use [Homebrew](http://brew.sh/), 
 it makes this stuff easy! If not; *Step 0: Go buy a Mac* 
 Perhaps you've even installed Composer:
 - `curl -sS https://getcomposer.org/installer | php`
