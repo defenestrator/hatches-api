@@ -1,0 +1,325 @@
+{
+    "name": "Hatches\\Http\\Controllers\\FisheriesController",
+    "line": 11,
+    "short_desc": "Class FisheriesController",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers",
+    "file": "app\/Http\/Controllers\/FisheriesController.php",
+    "hash": "bb969132d93c85b029263b1fd8305cd0b2d94247",
+    "parent": "Hatches\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Fishery": "Hatches\\Fishery",
+        "Request": "Illuminate\\Http\\Request",
+        "FisheryTransformer": "Hatches\\Transformers\\FisheryTransformer"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 18,
+            "short_desc": "A New instance of this controller\nuses 'auth' middleware",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 34,
+            "short_desc": "Display a listing of the resource.",
+            "long_desc": "GET \/fisheries",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "$"
+                    ],
+                    [
+                        "param",
+                        "$"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Request",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "fisheryTransformer": {
+                    "name": "fisheryTransformer",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Transformers\\FisheryTransformer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "FisheryTransformer",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "create": {
+            "name": "create",
+            "line": 58,
+            "short_desc": "Show the form for creating a new resource.",
+            "long_desc": "GET \/fisheries\/create",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "store": {
+            "name": "store",
+            "line": 69,
+            "short_desc": "Store a newly created resource in storage.",
+            "long_desc": "POST \/fisheries",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "show": {
+            "name": "show",
+            "line": 84,
+            "short_desc": "Display the specified resource.",
+            "long_desc": "GET \/fisheries\/{id}",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "$"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "response": {
+                    "name": "response",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Http\\Controllers\\Response",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Response",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "fisheryTransformer": {
+                    "name": "fisheryTransformer",
+                    "line": 84,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Transformers\\FisheryTransformer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "FisheryTransformer",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "edit": {
+            "name": "edit",
+            "line": 100,
+            "short_desc": "Show the form for editing the specified resource.",
+            "long_desc": "GET \/fisheries\/{id}\/edit",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 100,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "update": {
+            "name": "update",
+            "line": 112,
+            "short_desc": "Update the specified resource in storage.",
+            "long_desc": "PUT \/fisheries\/{id}",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 112,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "destroy": {
+            "name": "destroy",
+            "line": 124,
+            "short_desc": "Remove the specified resource from storage.",
+            "long_desc": "DELETE \/fisheries\/{id}",
+            "hint": [
+                [
+                    "\\Hatches\\Http\\Controllers\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 124,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

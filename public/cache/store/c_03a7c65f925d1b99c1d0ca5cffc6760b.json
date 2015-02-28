@@ -1,0 +1,380 @@
+{
+    "name": "Hatches\\HatchReport",
+    "line": 42,
+    "short_desc": "HatchReport",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "integer",
+                "$user_id"
+            ],
+            [
+                "integer",
+                "$fishery_id"
+            ],
+            [
+                "string",
+                "$start_time"
+            ],
+            [
+                "string",
+                "$end_time"
+            ],
+            [
+                "string",
+                "$title"
+            ],
+            [
+                "string",
+                "$report_body"
+            ],
+            [
+                "integer",
+                "$hatch_intensity"
+            ],
+            [
+                "integer",
+                "$privacy_id"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ],
+            [
+                "integer",
+                "$hatch_id"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\User",
+                "$user"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Tag[]",
+                "$tags"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Comment[]",
+                "$comments"
+            ],
+            [
+                "\\Privacy",
+                "$privacy"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Asset[]",
+                "$assets"
+            ],
+            [
+                "\\Fishery",
+                "$fishery"
+            ],
+            [
+                "\\WaterData",
+                "$waterData"
+            ],
+            [
+                "\\Weather",
+                "$weather"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereUserId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereFisheryId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereStartTime($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereEndTime($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereTitle($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereReportBody($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereHatchIntensity($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "wherePrivacyId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\HatchReport",
+                "whereUpdatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\HatchReport",
+                "whereHatchId($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/HatchReport.php",
+    "hash": "1ae701a78ee169691810a17302f0fa806a5e6b37",
+    "parent": "Hatches\\Report",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 42,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "user_id": {
+            "name": "user_id",
+            "line": 42,
+            "short_desc": "integer$user_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "fishery_id": {
+            "name": "fishery_id",
+            "line": 42,
+            "short_desc": "integer$fishery_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "start_time": {
+            "name": "start_time",
+            "line": 42,
+            "short_desc": "string$start_time",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "end_time": {
+            "name": "end_time",
+            "line": 42,
+            "short_desc": "string$end_time",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "title": {
+            "name": "title",
+            "line": 42,
+            "short_desc": "string$title",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "report_body": {
+            "name": "report_body",
+            "line": 42,
+            "short_desc": "string$report_body",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "hatch_intensity": {
+            "name": "hatch_intensity",
+            "line": 42,
+            "short_desc": "integer$hatch_intensity",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "privacy_id": {
+            "name": "privacy_id",
+            "line": 42,
+            "short_desc": "integer$privacy_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 42,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 42,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "hatch_id": {
+            "name": "hatch_id",
+            "line": 42,
+            "short_desc": "integer$hatch_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

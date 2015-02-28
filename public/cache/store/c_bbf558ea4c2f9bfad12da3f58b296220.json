@@ -1,0 +1,119 @@
+{
+    "name": "Hatches\\Habitat",
+    "line": 15,
+    "short_desc": "Habitat",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "string",
+                "$habitat"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\FishSpecies[]",
+                "$fishSpecies"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Habitat",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Habitat",
+                "whereHabitat($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/Habitat.php",
+    "hash": "4c40c59cfdf476eccb79a8c052f12af602ced639",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "timestamps": {
+            "name": "timestamps",
+            "line": 17,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": 1,
+            "default": [],
+            "errors": []
+        },
+        "id": {
+            "name": "id",
+            "line": 15,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "habitat": {
+            "name": "habitat",
+            "line": 15,
+            "short_desc": "string$habitat",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "fishSpecies": {
+            "name": "fishSpecies",
+            "line": 19,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

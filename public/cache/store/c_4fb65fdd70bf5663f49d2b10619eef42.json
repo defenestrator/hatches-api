@@ -1,0 +1,237 @@
+{
+    "name": "Hatches\\Prey",
+    "line": 25,
+    "short_desc": "Prey",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "string",
+                "$common_name"
+            ],
+            [
+                "string",
+                "$genus"
+            ],
+            [
+                "string",
+                "$species"
+            ],
+            [
+                "integer",
+                "$hatch_type_id"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\HatchType",
+                "$hatchType"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereCommonName($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereGenus($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereSpecies($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereHatchTypeId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Prey",
+                "whereUpdatedAt($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/Prey.php",
+    "hash": "ef894f009551ab31517ad9a6580fcff939b96e91",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 25,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "common_name": {
+            "name": "common_name",
+            "line": 25,
+            "short_desc": "string$common_name",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "genus": {
+            "name": "genus",
+            "line": 25,
+            "short_desc": "string$genus",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "species": {
+            "name": "species",
+            "line": 25,
+            "short_desc": "string$species",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "hatch_type_id": {
+            "name": "hatch_type_id",
+            "line": 25,
+            "short_desc": "integer$hatch_type_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 25,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 25,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "hatchType": {
+            "name": "hatchType",
+            "line": 29,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

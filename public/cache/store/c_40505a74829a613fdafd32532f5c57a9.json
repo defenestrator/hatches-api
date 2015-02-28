@@ -1,0 +1,57 @@
+{
+    "name": "Hatches\\Transformers\\FishSpeciesTransformer",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Transformers",
+    "file": "app\/Http\/Transformers\/FishSpeciesTransformer.php",
+    "hash": "0c929fb1f5002d2e747aa0bfe7a4bae9bd605636",
+    "parent": "League\\Fractal\\TransformerAbstract",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "FishSpecies": "Hatches\\FishSpecies",
+        "TransformerAbstract": "League\\Fractal\\TransformerAbstract"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "transform": {
+            "name": "transform",
+            "line": 8,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "fishSpecies": {
+                    "name": "fishSpecies",
+                    "line": 8,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\FishSpecies",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "FishSpecies",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

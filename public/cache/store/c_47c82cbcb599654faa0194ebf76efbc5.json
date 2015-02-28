@@ -1,0 +1,27 @@
+{
+    "name": "Hatches\\Http\\Controllers\\Auth\\PasswordController",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers\\Auth",
+    "file": "app\/Http\/Controllers\/Auth\/PasswordController.php",
+    "hash": "6ebafac1bd576cb109d822ef8b230a2399e53781",
+    "parent": "Hatches\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "Hatches\\Http\\Controllers\\Controller",
+        "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
+    },
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

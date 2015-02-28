@@ -1,0 +1,44 @@
+{
+    "name": "Hatches\\Commands\\InspireFlyFishers",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Commands",
+    "file": "app\/Commands\/InspireFlyFishers.php",
+    "hash": "acc97220e61a26cb448b42636cb8427658c84dda",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Collection": "Illuminate\\Support\\Collection"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "quote": {
+            "name": "quote",
+            "line": 16,
+            "short_desc": "Get an inspiring quote.",
+            "long_desc": "Taylor & Dayle made this commit from Jungfraujoch. (11,333 ft.)\nJeremy Anderson shamelessly uses it to geek-out fly fishers.\n- Much love, guys.",
+            "hint": [
+                [
+                    "string",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "9",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

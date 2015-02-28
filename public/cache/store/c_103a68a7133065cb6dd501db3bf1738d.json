@@ -1,0 +1,24 @@
+{
+    "name": "Hatches\\Providers\\EventServiceProvider",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Providers",
+    "file": "app\/Providers\/EventServiceProvider.php",
+    "hash": "7317929a0a55e77c8d513dc9818b274e8c3571ad",
+    "parent": "Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

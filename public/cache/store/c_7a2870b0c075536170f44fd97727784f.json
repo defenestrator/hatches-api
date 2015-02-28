@@ -1,0 +1,24 @@
+{
+    "name": "Hatches\\Http\\Kernel",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http",
+    "file": "app\/Http\/Kernel.php",
+    "hash": "406ad0ede41cba4e45b02f3496b1c34feb01a350",
+    "parent": "Illuminate\\Foundation\\Http\\Kernel",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "HttpKernel": "Illuminate\\Foundation\\Http\\Kernel"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

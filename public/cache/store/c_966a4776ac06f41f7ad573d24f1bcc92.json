@@ -1,0 +1,22 @@
+{
+    "name": "Hatches\\Events\\Event",
+    "line": 3,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Events",
+    "file": "app\/Events\/Event.php",
+    "hash": "09183f3e59bcda65f4ad4abd6db21ba88323a070",
+    "parent": null,
+    "modifiers": 16,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

@@ -1,0 +1,257 @@
+{
+    "name": "Hatches\\Comment",
+    "line": 25,
+    "short_desc": "Comment",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "integer",
+                "$user_id"
+            ],
+            [
+                "string",
+                "$comment"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\User",
+                "$user"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ],
+            [
+                "\\TripReport",
+                "$tripReport"
+            ],
+            [
+                "\\HatchReport",
+                "$HatchReport"
+            ],
+            [
+                "\\FlyPattern",
+                "$flyPattern"
+            ],
+            [
+                "\\Fishery",
+                "$fishery"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Comment",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Comment",
+                "whereUserId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Comment",
+                "whereComment($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Comment",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Comment",
+                "whereUpdatedAt($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/Comment.php",
+    "hash": "51433f06ffcc8133f0d999ac3af3fd0b3b193cc0",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 25,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "user_id": {
+            "name": "user_id",
+            "line": 25,
+            "short_desc": "integer$user_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "comment": {
+            "name": "comment",
+            "line": 25,
+            "short_desc": "string$comment",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 25,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 25,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "user": {
+            "name": "user",
+            "line": 28,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "tripReport": {
+            "name": "tripReport",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "HatchReport": {
+            "name": "HatchReport",
+            "line": 38,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "flyPattern": {
+            "name": "flyPattern",
+            "line": 43,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "fishery": {
+            "name": "fishery",
+            "line": 48,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

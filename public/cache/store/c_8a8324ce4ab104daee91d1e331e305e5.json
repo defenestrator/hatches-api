@@ -1,0 +1,317 @@
+{
+    "name": "Hatches\\FlyPattern",
+    "line": 30,
+    "short_desc": "FlyPattern",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "integer",
+                "$user_id"
+            ],
+            [
+                "string",
+                "$name"
+            ],
+            [
+                "string",
+                "$recipe"
+            ],
+            [
+                "string",
+                "$instructions"
+            ],
+            [
+                "integer",
+                "$privacy_id"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Asset[]",
+                "$assets"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Tag[]",
+                "$tags"
+            ],
+            [
+                "\\Privacy",
+                "$privacy"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Comment[]",
+                "$comments"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereUserId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereName($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereRecipe($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereInstructions($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "wherePrivacyId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\FlyPattern",
+                "whereUpdatedAt($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/FlyPattern.php",
+    "hash": "86d1d3505d047ea5394032e7ac785b8393df7d39",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 30,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "user_id": {
+            "name": "user_id",
+            "line": 30,
+            "short_desc": "integer$user_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "name": {
+            "name": "name",
+            "line": 30,
+            "short_desc": "string$name",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "recipe": {
+            "name": "recipe",
+            "line": 30,
+            "short_desc": "string$recipe",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "instructions": {
+            "name": "instructions",
+            "line": 30,
+            "short_desc": "string$instructions",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "privacy_id": {
+            "name": "privacy_id",
+            "line": 30,
+            "short_desc": "integer$privacy_id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 30,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 30,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "assets": {
+            "name": "assets",
+            "line": 33,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "tags": {
+            "name": "tags",
+            "line": 38,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "privacy": {
+            "name": "privacy",
+            "line": 44,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "comments": {
+            "name": "comments",
+            "line": 49,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

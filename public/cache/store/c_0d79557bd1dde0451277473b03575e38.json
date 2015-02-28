@@ -1,0 +1,114 @@
+{
+    "name": "Hatches\\Exceptions\\Handler",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Exceptions",
+    "file": "app\/Exceptions\/Handler.php",
+    "hash": "e30c264ed67afe1393aff2d604b673805796aed2",
+    "parent": "Illuminate\\Foundation\\Exceptions\\Handler",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Exception": "Exception",
+        "ExceptionHandler": "Illuminate\\Foundation\\Exceptions\\Handler"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "report": {
+            "name": "report",
+            "line": 25,
+            "short_desc": "Report or log an exception.",
+            "long_desc": "This is a great spot to send exceptions to Sentry, Bugsnag, etc.",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "e": {
+                    "name": "e",
+                    "line": 25,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Exception",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Exception",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "render": {
+            "name": "render",
+            "line": 37,
+            "short_desc": "Render an exception into an HTTP response.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 37,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "e": {
+                    "name": "e",
+                    "line": 37,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Exception",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Exception",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

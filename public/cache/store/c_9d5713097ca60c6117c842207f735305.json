@@ -1,0 +1,77 @@
+{
+    "name": "Hatches\\Http\\Controllers\\Auth\\AuthController",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers\\Auth",
+    "file": "app\/Http\/Controllers\/Auth\/AuthController.php",
+    "hash": "730284b9e2e3a914bcb40f4d02b649f14b449bf6",
+    "parent": "Hatches\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Controller": "Hatches\\Http\\Controllers\\Controller",
+        "Guard": "Illuminate\\Contracts\\Auth\\Guard",
+        "Registrar": "Illuminate\\Contracts\\Auth\\Registrar",
+        "AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": {
+        "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers"
+    },
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 31,
+            "short_desc": "Create a new authentication controller instance.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "auth": {
+                    "name": "auth",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Contracts\\Auth\\Guard",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Guard",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "registrar": {
+                    "name": "registrar",
+                    "line": 31,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Contracts\\Auth\\Registrar",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Registrar",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

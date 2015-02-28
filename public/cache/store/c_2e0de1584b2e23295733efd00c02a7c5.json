@@ -1,0 +1,244 @@
+{
+    "name": "Hatches\\WaterData",
+    "line": 26,
+    "short_desc": "WaterData",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "string",
+                "$date"
+            ],
+            [
+                "float",
+                "$lat"
+            ],
+            [
+                "float",
+                "$lng"
+            ],
+            [
+                "string",
+                "$water_data"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ],
+            [
+                "string",
+                "$data"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereDate($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereLat($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereLng($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereWaterData($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\WaterData",
+                "whereUpdatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\WaterData",
+                "whereData($value)"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/WaterData.php",
+    "hash": "c2b64c242332f2e2c18770685bee458c48e40a08",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 26,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "date": {
+            "name": "date",
+            "line": 26,
+            "short_desc": "string$date",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "lat": {
+            "name": "lat",
+            "line": 26,
+            "short_desc": "float$lat",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "lng": {
+            "name": "lng",
+            "line": 26,
+            "short_desc": "float$lng",
+            "long_desc": null,
+            "hint": [
+                [
+                    "float",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "water_data": {
+            "name": "water_data",
+            "line": 26,
+            "short_desc": "string$water_data",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 26,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 26,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "data": {
+            "name": "data",
+            "line": 26,
+            "short_desc": "string$data",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": [],
+    "constants": []
+}

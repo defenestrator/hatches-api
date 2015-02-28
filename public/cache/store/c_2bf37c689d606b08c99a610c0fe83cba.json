@@ -1,0 +1,44 @@
+{
+    "name": "Hatches\\Providers\\ConfigServiceProvider",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Providers",
+    "file": "app\/Providers\/ConfigServiceProvider.php",
+    "hash": "063b92c138973f880228da86d675844b34aea0fb",
+    "parent": "Illuminate\\Support\\ServiceProvider",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "ServiceProvider": "Illuminate\\Support\\ServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "register": {
+            "name": "register",
+            "line": 16,
+            "short_desc": "Overwrite any vendor \/ package configuration.",
+            "long_desc": "This service provider is intended to provide a convenient location for you\nto overwrite any \"vendor\" or package configuration that you may want to\nmodify before the application handles the incoming request \/ command.",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

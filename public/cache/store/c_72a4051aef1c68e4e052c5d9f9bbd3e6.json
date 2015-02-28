@@ -1,0 +1,190 @@
+{
+    "name": "Hatches\\Report",
+    "line": 19,
+    "short_desc": "Hatches\\Report",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property-read": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ],
+            [
+                "\\User",
+                "$user"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Asset[]",
+                "$assets"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Tag[]",
+                "$tags"
+            ],
+            [
+                "\\Fishery",
+                "$fishery"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Comment[]",
+                "$comments"
+            ],
+            [
+                "\\WaterData",
+                "$waterData"
+            ],
+            [
+                "\\Weather",
+                "$weather"
+            ],
+            [
+                "\\Privacy",
+                "$privacy"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/Report.php",
+    "hash": "95cd09ceb2967123236797a3d42b8d2206d1007f",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Model": "Illuminate\\Database\\Eloquent\\Model"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "user": {
+            "name": "user",
+            "line": 26,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "assets": {
+            "name": "assets",
+            "line": 31,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "tags": {
+            "name": "tags",
+            "line": 36,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "fishery": {
+            "name": "fishery",
+            "line": 41,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "comments": {
+            "name": "comments",
+            "line": 46,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "waterData": {
+            "name": "waterData",
+            "line": 51,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "weather": {
+            "name": "weather",
+            "line": 56,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "privacy": {
+            "name": "privacy",
+            "line": 61,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "createReport": {
+            "name": "createReport",
+            "line": 65,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

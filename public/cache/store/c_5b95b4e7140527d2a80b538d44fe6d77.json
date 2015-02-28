@@ -1,0 +1,310 @@
+{
+    "name": "Hatches\\Http\\Controllers\\UsersController",
+    "line": 12,
+    "short_desc": "Class UsersController",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "package": [
+            [
+                "Hatches\\Http\\Controllers"
+            ]
+        ]
+    },
+    "namespace": "Hatches\\Http\\Controllers",
+    "file": "app\/Http\/Controllers\/UsersController.php",
+    "hash": "7c384c14465713b1b4c1203fdc07347d6aa34c71",
+    "parent": "Hatches\\Http\\Controllers\\Controller",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "User": "Hatches\\User",
+        "Request": "Illuminate\\Http\\Request",
+        "Response": "Illuminate\\Http\\Response",
+        "UserTransformer": "Hatches\\Transformers\\UserTransformer"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 17,
+            "short_desc": "Create a new controller instance.",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "index": {
+            "name": "index",
+            "line": 34,
+            "short_desc": "Display a listing of the resource.",
+            "long_desc": "GET \/users",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "$Request"
+                    ],
+                    [
+                        "param",
+                        "$UserTransformer"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Request",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "response": {
+                    "name": "response",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Http\\Response",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Response",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "userTransformer": {
+                    "name": "userTransformer",
+                    "line": 34,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Transformers\\UserTransformer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "UserTransformer",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "show": {
+            "name": "show",
+            "line": 64,
+            "short_desc": "Display the specified resource.",
+            "long_desc": "GET \/users\/{id}",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "$"
+                    ]
+                ]
+            },
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 64,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "response": {
+                    "name": "response",
+                    "line": 64,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Http\\Response",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Response",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "userTransformer": {
+                    "name": "userTransformer",
+                    "line": 64,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Transformers\\UserTransformer",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "UserTransformer",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "edit": {
+            "name": "edit",
+            "line": 80,
+            "short_desc": "Show the form for editing the specified resource.",
+            "long_desc": "GET \/users\/{id}\/edit",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 80,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "update": {
+            "name": "update",
+            "line": 92,
+            "short_desc": "Update the specified resource in storage.",
+            "long_desc": "PUT \/users\/{id}",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 92,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "destroy": {
+            "name": "destroy",
+            "line": 104,
+            "short_desc": "Remove the specified resource from storage.",
+            "long_desc": "DELETE \/users\/{id}",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "id": {
+                    "name": "id",
+                    "line": 104,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "int",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

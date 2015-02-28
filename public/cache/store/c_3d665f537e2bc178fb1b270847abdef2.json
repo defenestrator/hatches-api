@@ -1,0 +1,24 @@
+{
+    "name": "Hatches\\Http\\Requests\\Request",
+    "line": 5,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Requests",
+    "file": "app\/Http\/Requests\/Request.php",
+    "hash": "40e99b75311ad6ed7c965bd9c5f2a0b8869cff6d",
+    "parent": "Illuminate\\Foundation\\Http\\FormRequest",
+    "modifiers": 16,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "FormRequest": "Illuminate\\Foundation\\Http\\FormRequest"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": [],
+    "constants": []
+}

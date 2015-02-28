@@ -1,0 +1,101 @@
+{
+    "name": "Hatches\\Services\\Registrar",
+    "line": 7,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Services",
+    "file": "app\/Services\/Registrar.php",
+    "hash": "7cb9158dc7e7bb20615a98dbbf56f0992459d867",
+    "parent": null,
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "User": "Hatches\\User",
+        "Validator": "Validator",
+        "RegistrarContract": "Illuminate\\Contracts\\Auth\\Registrar"
+    },
+    "errors": [],
+    "interfaces": {
+        "Illuminate\\Contracts\\Auth\\Registrar": "Illuminate\\Contracts\\Auth\\Registrar"
+    },
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "validator": {
+            "name": "validator",
+            "line": 15,
+            "short_desc": "Get a validator for an incoming registration request.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Contracts\\Validation\\Validator",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 15,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "create": {
+            "name": "create",
+            "line": 30,
+            "short_desc": "Create a new user instance after a valid registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Hatches\\User",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

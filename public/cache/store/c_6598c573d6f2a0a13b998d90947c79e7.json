@@ -1,0 +1,81 @@
+{
+    "name": "Hatches\\Providers\\RouteServiceProvider",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Providers",
+    "file": "app\/Providers\/RouteServiceProvider.php",
+    "hash": "671f55ce78d57530755bbb522e5542f369c63ea9",
+    "parent": "Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Router": "Illuminate\\Routing\\Router",
+        "ServiceProvider": "Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "boot": {
+            "name": "boot",
+            "line": 23,
+            "short_desc": "Define your route model bindings, pattern filters, etc.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "router": {
+                    "name": "router",
+                    "line": 23,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Illuminate\\Routing\\Router",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Router",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "map": {
+            "name": "map",
+            "line": 35,
+            "short_desc": "Define the routes for the application.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

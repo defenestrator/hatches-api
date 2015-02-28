@@ -1,0 +1,464 @@
+{
+    "name": "Hatches\\User",
+    "line": 43,
+    "short_desc": "Hatches\\User",
+    "long_desc": "",
+    "hint": null,
+    "tags": {
+        "property": [
+            [
+                "integer",
+                "$id"
+            ],
+            [
+                "string",
+                "$name"
+            ],
+            [
+                "string",
+                "$email"
+            ],
+            [
+                "string",
+                "$password"
+            ],
+            [
+                "string",
+                "$remember_token"
+            ],
+            [
+                "string",
+                "$deleted_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$created_at"
+            ],
+            [
+                "\\Carbon\\Carbon",
+                "$updated_at"
+            ]
+        ],
+        "property-read": [
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Asset[]",
+                "$assets"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\TripReport[]",
+                "$tripReports"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\HatchReport[]",
+                "$hatchReports"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\FlyPattern[]",
+                "$flyPatterns"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Flybox[]",
+                "$flyboxes"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Fishery[]",
+                "$fisheries"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Comment[]",
+                "$comments"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\Role[]",
+                "$roles"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\User[]",
+                "$buddies"
+            ],
+            [
+                "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
+                "$morphedByMany"
+            ]
+        ],
+        "method": [
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereId($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereName($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereEmail($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "wherePassword($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereRememberToken($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereDeletedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereCreatedAt($value)"
+            ],
+            [
+                "static",
+                "\\Illuminate\\Database\\Query\\Builder|\\Hatches\\User",
+                "whereUpdatedAt($value)"
+            ]
+        ]
+    },
+    "namespace": "Hatches",
+    "file": "app\/User.php",
+    "hash": "54d8ddcc7e53fef1a79a06bee7903a8ce9c68686",
+    "parent": "Illuminate\\Database\\Eloquent\\Model",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Authenticatable": "Illuminate\\Auth\\Authenticatable",
+        "Model": "Illuminate\\Database\\Eloquent\\Model",
+        "CanResetPassword": "Illuminate\\Auth\\Passwords\\CanResetPassword",
+        "AuthenticatableContract": "Illuminate\\Contracts\\Auth\\Authenticatable",
+        "CanResetPasswordContract": "Illuminate\\Contracts\\Auth\\CanResetPassword",
+        "SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes"
+    },
+    "errors": [],
+    "interfaces": {
+        "Illuminate\\Contracts\\Auth\\Authenticatable": "Illuminate\\Contracts\\Auth\\Authenticatable",
+        "Illuminate\\Contracts\\Auth\\CanResetPassword": "Illuminate\\Contracts\\Auth\\CanResetPassword"
+    },
+    "traits": {
+        "Illuminate\\Auth\\Authenticatable": "Illuminate\\Auth\\Authenticatable",
+        "Illuminate\\Auth\\Passwords\\CanResetPassword": "Illuminate\\Auth\\Passwords\\CanResetPassword",
+        "Illuminate\\Database\\Eloquent\\SoftDeletes": "Illuminate\\Database\\Eloquent\\SoftDeletes"
+    },
+    "properties": {
+        "id": {
+            "name": "id",
+            "line": 43,
+            "short_desc": "integer$id",
+            "long_desc": null,
+            "hint": [
+                [
+                    "integer",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "name": {
+            "name": "name",
+            "line": 43,
+            "short_desc": "string$name",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "email": {
+            "name": "email",
+            "line": 43,
+            "short_desc": "string$email",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "password": {
+            "name": "password",
+            "line": 43,
+            "short_desc": "string$password",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "remember_token": {
+            "name": "remember_token",
+            "line": 43,
+            "short_desc": "string$remember_token",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "deleted_at": {
+            "name": "deleted_at",
+            "line": 43,
+            "short_desc": "string$deleted_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "string",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "created_at": {
+            "name": "created_at",
+            "line": 43,
+            "short_desc": "\\Carbon\\Carbon$created_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        },
+        "updated_at": {
+            "name": "updated_at",
+            "line": 43,
+            "short_desc": "\\Carbon\\Carbon$updated_at",
+            "long_desc": null,
+            "hint": [
+                [
+                    "\\Carbon\\Carbon",
+                    null
+                ]
+            ],
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": null,
+            "default": null,
+            "errors": []
+        }
+    },
+    "methods": {
+        "assets": {
+            "name": "assets",
+            "line": 71,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "tripReports": {
+            "name": "tripReports",
+            "line": 79,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "hatchReports": {
+            "name": "hatchReports",
+            "line": 87,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "flyPatterns": {
+            "name": "flyPatterns",
+            "line": 95,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "flyboxes": {
+            "name": "flyboxes",
+            "line": 103,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "fisheries": {
+            "name": "fisheries",
+            "line": 111,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "comments": {
+            "name": "comments",
+            "line": 119,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\HasMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "roles": {
+            "name": "roles",
+            "line": 127,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "buddies": {
+            "name": "buddies",
+            "line": 135,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Database\\Eloquent\\Relations\\BelongsToMany",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}
