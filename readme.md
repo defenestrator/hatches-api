@@ -72,6 +72,7 @@ Assuming you followed the instructions for configuring Homestead...
 Assuming default `homestead.app` has been added to HOSTS and configured in Homestead.yml, 
 then you can just visit `http://homestead.app` in your local machine's browser.
  - check `homestead.app/docs` for API documentation, thanks!
+ - Cheers!
 
 
 
