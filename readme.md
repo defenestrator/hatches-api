@@ -38,4 +38,32 @@ trout bum to dig even deeper with flexible reporting tools to find new answers t
 API service will benefit science someday. **Did I mention it's free?** The data API is free for everyone, the mobile apps will cost an
 undetermined pittance to keep us from living _in a van down by the river._ Come to think of it, that doesn't sound too bad.
 
+## Installation:
+I'm assuming you have a github account.
+
+Given that, it is safe to assume you know more or less how to configure your local development environment and have php 
+v5.4 or greater installed. 
+Perhaps you've even installed Composer:
+- `curl -sS https://getcomposer.org/installer | php`
+- `mv composer.phar /usr/local/bin/composer`
+- *make sure you have* `/usr/local/bin` added to $PATH so you can just type `composer` in terminal and get some output.
+- **I strongly recommend using [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for your local environment.**
+- install NodeJS, too.
+
+- clone/fork this repository
+- `cd hatches-api`
+- `composer install`
+- `npm install`
+Assuming you followed the instructions for configuring Homestead...
+- `homestead ssh`
+- assuming default homestead mapping: `cd ~/Code/hatches-api` or corresponding directory to your mapping.
+- `php artisan migrate --seed`
+Assuming default `homestead.app` has been added to HOSTS and configured in Homestead.yml, 
+then you can just visit `http://homestead.app` in your local machine's browser.
+ - check `homestead.app/docs` for API documentation, thanks!
+
+
+
+
+
 
