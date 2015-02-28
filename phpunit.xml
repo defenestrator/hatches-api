@@ -8,9 +8,13 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false">
+         syntaxCheck="false"
+         printerFile="vendor/whatthejeff/emoji-phpunit-resultprinter/src/Emoji/PHPUnit/ResultPrinter.php"
+         printerClass="Emoji\PHPUnit\ResultPrinter"
+        >
+
     <testsuites>
-        <testsuite name="Application Test Suite">
+        <testsuite name="Hatches API Test Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>

@@ -4,7 +4,6 @@ use Illuminate\Support\Collection;
 
 class InspireFlyFishers
 {
-
     /**
      * Get an inspiring quote.
      *

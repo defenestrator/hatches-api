@@ -4,6 +4,7 @@ use Illuminate\Console\Command;
 use Illuminate\Foundation\Inspiring;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
+use Fab\SuperFab;
 
 class Inspire extends Command {
 
@@ -26,9 +27,9 @@ class Inspire extends Command {
 	 *
 	 * @return mixed
 	 */
-	public function handle()
+	public function handle(SuperFab $superFab)
 	{
-		$this->comment(PHP_EOL.Inspiring::quote().PHP_EOL);
+       $this->comment(PHP_EOL.$superFab->paint(Inspiring::quote()).PHP_EOL);
 	}
 
 }

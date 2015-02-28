@@ -4,6 +4,7 @@
     "gulp-behat": "^0.4.2",
     "gulp-phpspec": "^0.3.1",
     "gulp-phpunit": "^0.7.0",
+    "gulp-wait": "0.0.2",
     "laravel-elixir": "*",
     "laravel-elixir-behat": "0.0.6"
   }
