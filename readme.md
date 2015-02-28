@@ -53,8 +53,16 @@ Perhaps you've even installed Composer:
 
 - clone/fork this repository
 - `cd hatches-api`
+- `php artisan generate:key`
+- `chmod -R 777 storage`
+- `php artisan flyfish` - because, easter egg.
 - `composer install`
 - `npm install`
+- `touch database.sqlite`
+- `php artisan migrate --seed`
+- `gulp`
+
+#### Homestead
 Assuming you followed the instructions for configuring Homestead...
 - `homestead ssh`
 - assuming default homestead mapping: `cd ~/Code/hatches-api` or corresponding directory to your mapping.
