@@ -4,3 +4,7 @@ suites:
         psr4_prefix: Hatches
         src_path: app
         spec_prefix: spec
+
+extensions:
+    - PhpSpec\NyanFormattersExtension\Extension
+formatter.name: nyan.dino
