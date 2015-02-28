@@ -49,19 +49,19 @@ Perhaps you've even installed Composer:
 - `mv composer.phar /usr/local/bin/composer`
 - *make sure you have* `/usr/local/bin` added to $PATH so you can just type `composer` in terminal and get some output.
 - **I strongly recommend using [Laravel Homestead](http://laravel.com/docs/5.0/homestead) for your local environment.**
-- install NodeJS, too.
 
+- install NodeJS.
 - clone/fork this repository
 - `cd hatches-api`
 - ` mv .env.example .env`
-- `php artisan key:generate`
-- `chmod -R 777 storage`
-- `php artisan flyfish` - because, easter egg.
 - `composer install`
+- `php artisan key:generate`
+- `chmod -R 666 storage`
+- `php artisan flyfish` - because, easter egg.
 - `npm install`
 - `touch storage/database.sqlite`
 - `php artisan migrate --seed`
-- `php artisan vendor`
+- `php artisan vendor:publish`
 - `gulp`
 
 #### Homestead
