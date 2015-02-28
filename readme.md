@@ -53,6 +53,7 @@ Perhaps you've even installed Composer:
 
 - clone/fork this repository
 - `cd hatches-api`
+- ` mv .env.example .env`
 - `php artisan generate:key`
 - `chmod -R 777 storage`
 - `php artisan flyfish` - because, easter egg.
@@ -60,6 +61,7 @@ Perhaps you've even installed Composer:
 - `npm install`
 - `touch database.sqlite`
 - `php artisan migrate --seed`
+- `php artisan vendor
 - `gulp`
 
 #### Homestead
