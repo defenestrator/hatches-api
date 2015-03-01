@@ -1,4 +1,4 @@
 @extends('app')
-@section('partials.nav')
+@section('nav')
 
 @endsection

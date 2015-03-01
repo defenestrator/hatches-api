@@ -4104,7 +4104,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
+  background-color: #eaf0f8;
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
@@ -5205,7 +5205,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-default > .panel-heading {
   color: #333333;
-  background-color: #f5f5f5;
+  background-color: #e9f0df;
   border-color: #dddddd;
 }
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -6230,4 +6230,25 @@ body,
 label,
 .checkbox label {
   font-weight: 300;
+}
+.site-title{
+  margin: 0;
+  padding: 0;
+  margin:0 4em 0 4em;
+
+  height: 100%;
+  display: table;
+}
+.title, .quote{
+  font-family: 'Lato';
+  font-weight: 100;
+  color: #8c99a0;
+  text-align:center;
+}
+.title {
+  font-size: 96px;
+  margin-bottom: 40px;
+}
+.quote {
+  font-size: 24px;
 }
