@@ -57,7 +57,7 @@
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-            "default": {},
+            "default": [],
             "errors": []
         },
         "id": {
