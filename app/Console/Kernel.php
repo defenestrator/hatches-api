@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel {
 	protected $commands = [
 		'Hatches\Console\Commands\Inspire',
         'Hatches\Console\Commands\FlyFish',
+        'Hatches\Console\Commands\Docs',
 	];
 
 	/**
