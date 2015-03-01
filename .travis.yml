@@ -12,16 +12,17 @@ before_script:
   - chmod -R 777 storage
   - touch storage/acceptance/acceptance.sqlite
   - composer self-update
-  - composer install --prefer-source
+  - composer install
   - composer update --prefer-source
   - php artisan flyfish
   - php artisan key:generate
-  #- npm install - if you want to use gulp/elixir
+  - php artisan docs
+  - npm install - if you want to use gulp/elixir
 
 
 script:
   # Run them tests, y'all
-  #- gulp # if you are running 'npm install' in before_script
+  - gulp # if you are running 'npm install' in before_script
   - phpunit tests/
   - vendor/bin/phpspec run -v
   - vendor/bin/behat --config behat.yml
