@@ -58,6 +58,8 @@ Perhaps you've even installed Composer:
 - `php artisan key:generate`
 - `chmod -R 666 storage`
 - `php artisan flyfish` - because, easter egg.
+- `npm install -g n`
+- `n stable`
 - `npm install`
 - `touch storage/database.sqlite`
 - `php artisan migrate --seed`
