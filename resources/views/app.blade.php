@@ -45,7 +45,7 @@
 
 			<ul class="nav navbar-nav navbar-right">
                 <li><a href="/main">Home</a></li>
-				<li><a href="/docs" target="_blank">Docs</a></li>
+				<li><a href="/docs">Docs</a></li>
 				@if (Auth::guest())
 					<li><a href="/auth/login">Login</a></li>
 					<li><a href="/auth/register">Register</a></li>
