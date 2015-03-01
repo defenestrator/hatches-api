@@ -14,6 +14,7 @@ before_script:
   - composer self-update
   - composer install --prefer-source
   - composer update --prefer-source
+  - php artisan flyfish
   - php artisan key:generate
   #- npm install - if you want to use gulp/elixir
 
