@@ -28,7 +28,7 @@
     "behat/mink-extension": "~2.0@dev",
     "laracasts/behat-laravel-extension": "dev-master",
     "laracasts/testdummy": "dev-master",
-    "barryvdh/laravel-ide-helper": "dev-master",
+    "barryvdh/laravel-ide-helper": "dev-master#1f5e436",
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4"
 
@@ -68,7 +68,7 @@
     ]
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "source"
   },
   "minimum-stability": "dev"
 }
