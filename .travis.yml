@@ -17,7 +17,7 @@ before_script:
   - php artisan flyfish
   - php artisan key:generate
   - php artisan docs
-  - npm install - if you want to use gulp/elixir
+  - npm install # If you want to use gulp or elixir
 
 
 script:
