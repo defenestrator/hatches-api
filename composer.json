@@ -13,7 +13,9 @@
     "spatie/laravel-glide": "~2.0.0",
     "league/fractal": "0.12.*@dev",
     "sorskod/larasponse": "dev-L5",
-    "whatthejeff/fab": "~1.0"
+    "whatthejeff/fab": "~1.0",
+    "edos-io/sami": "~3.0.2",
+    "symfony/yaml": "~2.1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.5.0",
@@ -24,13 +26,12 @@
     "behat/behat": "~3.0@dev",
     "behat/mink": "~1.7@dev",
     "behat/mink-extension": "~2.0@dev",
-    "laracasts/behat-laravel-extension": "dev-master#205a3d2",
-    "laracasts/testdummy": "dev-master#44807c5",
-    "barryvdh/laravel-ide-helper": "dev-master#1f5e436",
+    "laracasts/behat-laravel-extension": "dev-master",
+    "laracasts/testdummy": "dev-master",
+    "barryvdh/laravel-ide-helper": "dev-master",
     "doctrine/dbal": "~2.6@dev",
-    "fzaninotto/faker": "~1.4",
-    "edos-io/sami": "~3.0.2",
-    "symfony/yaml": "~2.1.0"
+    "fzaninotto/faker": "~1.4"
+
   },
   "repositories": [
     {
@@ -58,17 +59,17 @@
     ],
     "post-update-cmd": [
       "php artisan clear-compiled",
-      "php artisan optimize",
-      "php artisan docs"
+      "php artisan optimize"
+
     ],
     "post-create-project-cmd": [
-      "php artisan key:generate"
+      "php artisan key:generate",
+      "php artisan docs"
     ]
   },
   "config": {
     "preferred-install": "dist"
   },
-
   "minimum-stability": "dev"
 }
 
