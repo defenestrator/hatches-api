@@ -28,19 +28,18 @@ var wait = require('gulp-wait');
 
 gulp.task('behat', function() {
     var options = {debug: false};
-    gulp.src('./features/**/*.php').pipe(behat('./vendor/bin/behat',options)).pipe();
+    gulp.src('./features/**/*.php').pipe(behat('./vendor/bin/behat',options));
 });
 
 gulp.task('phpspec', function() {
     var opt = {runTests: 'run'};
-    gulp.src('./tests/**/*.php').pipe(phpSpec('./vendor/bin/phpspec run -v',opt)).pipe();
+    gulp.src('./tests/**/*.php').pipe(phpSpec('./vendor/bin/phpspec run -v',opt));
 });
 
 gulp.task('phpunit', function() {
     var opt = null;
     gulp.src('./spec/**/*.php')
-        .pipe(phpUnit('./vendor/bin/phpunit',opt))
-        .pipe();
+        .pipe(phpUnit('./vendor/bin/phpunit',opt));
 });
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);
 gulp.task('default', ['phpunit', 'phpspec', 'behat']);
