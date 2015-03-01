@@ -43,4 +43,4 @@ gulp.task('phpunit', function() {
         .pipe();
 });
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);
-gulp.task('default', ['phpUnit', 'phpSpec', 'behat']);
+gulp.task('default', ['phpunit', 'phpspec', 'behat']);
