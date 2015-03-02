@@ -1,21 +1,21 @@
 <?php namespace Hatches\Http\Controllers;
 
-use Hatches\FishSpecies;
+use Hatches\Flybox;
 use Hatches\Http\Requests;
-use Hatches\Transformers\FishSpeciesTransformer;
+use Hatches\Transformers\FlyboxTransformer;
 use Illuminate\Http\Request;
 use Sorskod\Larasponse\Larasponse;
 
 /**
- * Class FishSpeciesController
+ * Class FlyboxesController
  *
  * @package Hatches\Http\Controllers
  */
-class FishSpeciesController extends Controller {
+class FlyboxesController extends Controller {
 
     protected $fractal;
 
-    protected $resourceKey = 'fish-species';
+    protected $resourceKey = 'flybox';
 
     public function __construct(Larasponse $fractal)
     {
@@ -32,38 +32,36 @@ class FishSpeciesController extends Controller {
      */
 	public function index(Request $request)
     {
-        $countFishSpecies = FishSpecies::count();
+        $countFlyboxes = Flybox::count();
         $limit = $request->input('limit', 25);
 
         if ($limit > 100) {
             return $this->respondBadRequest('Bad Request, Naughty Request! Limit maximum is 100 per page.');
-        } elseif ($countFishSpecies < 1) {
+        } elseif ($countFlyboxes < 1) {
             return $this->respondNotFound('There are no Users!?');
         } else {
-            $fishSpecies = FishSpecies::paginate($limit);
-            return $this->fractal->paginatedCollection($fishSpecies, new FishSpeciesTransformer, $this->resourceKey);
+            $flyboxes = Flybox::paginate($limit);
+            return $this->fractal->paginatedCollection($flyboxes, new FlyboxTransformer, $this->resourceKey);
         }
     }
 	/**
 	 * Show the form for creating a new resource.
 	 *
-	 * @param $data
 	 * @return Response
 	 */
-	public function create($data)
+	public function create()
 	{
-		$this->fishSpecies([$data]);
+		//
 	}
 
 	/**
 	 * Store a newly created resource in storage.
 	 *
-	 * @param $data
 	 * @return Response
 	 */
-	public function store($data)
+	public function store()
 	{
-		$this->save([$data]);
+		FishSpecies::save();
 	}
 
 	/**

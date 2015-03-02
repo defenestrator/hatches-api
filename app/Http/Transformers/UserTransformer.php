@@ -1,5 +1,7 @@
 <?php namespace Hatches\Transformers;
 
+
+
  class UserTransformer extends Transformer {
 
      /*

@@ -39,8 +39,8 @@ Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
 
 	Route::resource('fish-species', 'FishSpeciesController');
 
-//	Route::resource('flyboxes', 'FlyboxesController');
-//
+	Route::resource('flyboxes', 'FlyboxesController');
+
 //	Route::resource('habitats', 'HabitatsController');
 //
 //	Route::resource('hatches', 'HatchesController');
@@ -53,10 +53,9 @@ Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
 //
 //	Route::resource('prey', 'PreyController');
 //
-//	Route::resource('waterdata', 'WaterdataController');
+//	Route::resource('water-data', 'WaterDataController');
 //
 //	Route::resource('weather', 'WeatherController');
-
 });
 
 Route::controllers([
