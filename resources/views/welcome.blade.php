@@ -8,14 +8,14 @@
             padding: 0;
             width: 100%;
             height: 100%;
-            color: #aab7be;
+            color: #656d74;
             display: table;
             font-weight: 100;
             font-family: 'Lato';
         }
         a{
             text-decoration:none;
-            color: #aab7be;
+            color: #656d74;
             display:block;
             padding: 1em 2em;
         }

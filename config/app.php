@@ -137,6 +137,8 @@ return [
 		'Illuminate\View\ViewServiceProvider',
         //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
         'Spatie\Glide\GlideServiceProvider',
+        'Collective\Html\HtmlServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 
 
 		/*
@@ -149,11 +151,10 @@ return [
 		'Hatches\Providers\RouteServiceProvider',
         'Hatches\Providers\JsonApiServiceProvider',
 
-		/*
+        /*
 		 * Dev Service Providers... (which is an improper use of an ellipsis)
 		 */
 
-            'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 	],
 
 
@@ -204,10 +205,8 @@ return [
 		'Reminder'   => 'Cartalyst\Sentinel\Laravel\Facades\Reminder',
 		'Sentinel'   => 'Cartalyst\Sentinel\Laravel\Facades\Sentinel',
         'GlideImage' => 'Spatie\Glide\GlideImageFacade',
-
+        'Form'       => 'Collective\Html\FormFacade',
+        'Html'       => 'Collective\Html\HtmlFacade',
 	],
 
 ];
-if( app()->environment() !== 'production') {
-    config()->push('providers', 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider');
-}

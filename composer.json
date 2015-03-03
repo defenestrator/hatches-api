@@ -5,6 +5,12 @@
     "Fly fishing",
     "API"
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/edos-io/sami.git"
+    }
+  ],
   "license": "MIT",
   "type": "project",
   "require": {
@@ -15,6 +21,7 @@
     "sorskod/larasponse": "dev-L5",
     "whatthejeff/fab": "~1.0",
     "edos-io/sami": "~3.0.2",
+    "laravelcollective/html": "~5.0",
     "symfony/yaml": "~2.1.0"
   },
   "require-dev": {
@@ -30,15 +37,9 @@
     "laracasts/testdummy": "dev-master",
     "barryvdh/laravel-ide-helper": "dev-master#1f5e436",
     "doctrine/dbal": "~2.6@dev",
-    "fzaninotto/faker": "~1.4"
-
+    "fzaninotto/faker": "~1.4",
+    "benconstable/phpspec-laravel": "~2.0@dev"
   },
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/edos-io/sami.git"
-    }
-  ],
   "autoload": {
     "classmap": [
       "database"
@@ -72,4 +73,3 @@
   },
   "minimum-stability": "dev"
 }
-
