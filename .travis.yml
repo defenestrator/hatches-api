@@ -3,11 +3,6 @@ php:
   - 5.6
 sudo: false
 before_script:
-  # setup mysql (to test production) , and sqlite (for behat acceptance)
-  # update composer,
-  # then grab the packages,
-  # chmod storage
-  # migrate and seed db
   - mv .env.behat.travis .env.behat
   - chmod -R 777 storage
   - touch storage/acceptance/acceptance.sqlite
