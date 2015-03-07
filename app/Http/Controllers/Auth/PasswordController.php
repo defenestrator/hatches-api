@@ -1,10 +1,11 @@
 <?php namespace Hatches\Http\Controllers\Auth;
 
 use Hatches\Http\Controllers\Controller;
+use Illuminate\Contracts\Auth\Guard;
 use Illuminate\Foundation\Auth\ResetsPasswords;
+use Illuminate\Auth\Passwords\PasswordBroker;
 
 class PasswordController extends Controller {
-
 	/*
 	|--------------------------------------------------------------------------
 	| Password Reset Controller
@@ -17,5 +18,13 @@ class PasswordController extends Controller {
 	*/
 
 	use ResetsPasswords;
+    protected $redirectTo = '/main';
 
+    public function __construct(Guard $auth, PasswordBroker $passwords)
+    {
+        $this->auth = $auth;
+        $this->passwords = $passwords;
+        $this->subject = 'Your Password Reset Link'; //  < --JUST ADD THIS LINE
+        $this->middleware('guest');
+    }
 }
