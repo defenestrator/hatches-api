@@ -11,7 +11,7 @@ node_modules/
 storage/app
 storage/framework
 storage/logs
-
+production.env
 # Compiled source #
 ###################
 *.com
@@ -42,7 +42,7 @@ storage/logs
 
 # include sqlite db resource  #
 ######################
-#.sqlite
+.sqlite
 
 #     JetBrains' IDEA              #
 ######################
@@ -51,6 +51,7 @@ ideconfig
 _ide_helper*
 atlassian-ide-plugin.xml
 *.token
+
 
 #     OS generated files         #
 ######################

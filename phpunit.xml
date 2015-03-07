@@ -14,7 +14,7 @@
         >
 
     <testsuites>
-        <testsuite name="Hatches API Test Suite">
+        <testsuite name="Hatches API PhpUnit Suite">
             <directory>./tests/</directory>
         </testsuite>
     </testsuites>
