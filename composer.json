@@ -17,7 +17,7 @@
     "laravel/framework": "~5",
     "league/glide": "~0.3.1",
     "spatie/laravel-glide": "~2.0.0",
-    "league/fractal": "0.12.*@dev",
+    "league/fractal": "~0.12",
     "sorskod/larasponse": "dev-L5",
     "whatthejeff/fab": "~1.0",
     "edos-io/sami": "~3.0.2",
