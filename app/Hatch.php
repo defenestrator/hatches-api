@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Hatch extends Model {
-	protected $fillable = [];
+    protected $fillable = ['name', 'description'];
 
     public function tags()
     {

@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class FlyPattern extends Model {
-	protected $fillable = [];
+    protected $fillable = ['name', 'recipe', 'instructions', 'privacy'];
 
     public function assets()
     {

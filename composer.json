@@ -14,10 +14,10 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "laravel/framework": "~5",
-    "league/glide": "~0.3.1",
+    "laravel/framework": "~5.0.22",
+    "league/glide": "~0.3.3",
     "spatie/laravel-glide": "~2.0.0",
-    "league/fractal": "0.12.*@dev",
+    "league/fractal": "~0.13",
     "sorskod/larasponse": "dev-L5",
     "whatthejeff/fab": "~1.0",
     "edos-io/sami": "~3.0.2",
@@ -34,11 +34,12 @@
     "behat/mink": "~1.7@dev",
     "behat/mink-extension": "~2.0@dev",
     "laracasts/behat-laravel-extension": "dev-master",
-    "laracasts/testdummy": "dev-master",
-    "barryvdh/laravel-ide-helper": "dev-master#1f5e436",
+    "laracasts/testdummy": "~2.1",
+    "barryvdh/laravel-ide-helper": "~2.0.3",
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4",
-    "benconstable/phpspec-laravel": "~2.0@dev"
+    "benconstable/phpspec-laravel": "~2.0@dev",
+    "laracasts/integrated": "dev-master"
   },
   "autoload": {
     "classmap": [

@@ -51,6 +51,7 @@ ideconfig
 _ide_helper*
 atlassian-ide-plugin.xml
 *.token
+.phpstorm.meta.php
 
 
 #     OS generated files         #

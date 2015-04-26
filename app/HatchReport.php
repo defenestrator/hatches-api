@@ -42,4 +42,8 @@ use Illuminate\Database\Eloquent\Model;
 class HatchReport extends Report {
 	protected $fillable = ['hatch_type', 'hatch_intensity'];
 
+    public function createReport()
+    {
+        $this->save();
+    }
 }

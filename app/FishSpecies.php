@@ -27,7 +27,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 
 class FishSpecies extends Model {
-	protected $fillable = [];
+    protected $fillable = ['common_name', 'genus', 'species', 'description'];
 
     public function habitat()
     {

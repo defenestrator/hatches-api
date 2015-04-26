@@ -24,6 +24,6 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Hatches\WaterData whereData($value)
  */
 class WaterData extends Model {
-	protected $fillable = [];
+    protected $fillable = ['date', 'lat', 'long', 'water_data'];
     protected $table = 'water_data';
 }

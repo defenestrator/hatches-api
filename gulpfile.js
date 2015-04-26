@@ -1,30 +1,23 @@
 "use strict"
-var gulp = require('gulp');
-var behat = require('gulp-behat');
-var phpUnit = require('gulp-phpunit');
-var phpSpec = require('gulp-phpspec');
-var wait = require('gulp-wait');
-//var elixir = require('laravel-elixir');
-//require('laravel-elixir-behat');
+var // declare ALL THE THINGS
+gulp = require('gulp'),
+behat = require('gulp-behat'),
+phpUnit = require('gulp-phpunit'),
+phpSpec = require('gulp-phpspec'),
+less = require('gulp-less'),
+path = require('path'),
+wait = require('gulp-wait'),
+minifyCSS = require('gulp-minify-css');
 
 
-/*
- |--------------------------------------------------------------------------
- | Elixir Asset Management
- |--------------------------------------------------------------------------
- |
- | Elixir provides a clean, fluent API for defining some basic Gulp tasks
- | for your Laravel application. By default, we are compiling the Sass
- | file for our application, as well as publishing vendor resources.
- |
- */
-
-//elixir(function (mix) {
-//    mix.behat();
-//    mix.phpUnit();
-//    mix.phpSpec();
-//});
-
+gulp.task('css-compile-minify', function () {
+    gulp.src('./resources/assets/less/*.less') // path to your main less file
+        .pipe(less({
+            paths: [ path.join() ] // @import paths
+        }))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('./public/css')); // your output folder
+});
 
 gulp.task('behat', function() {
     var options = {debug: false};
@@ -41,5 +34,12 @@ gulp.task('phpunit', function() {
     gulp.src('./spec/**/*.php')
         .pipe(phpUnit('./vendor/bin/phpunit',opt));
 });
+
+gulp.task('watch', function() {
+    gulp.watch('./resources/assets/less/*.less', ['less']);
+});
+
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);
-gulp.task('default', ['phpunit', 'phpspec', 'behat']);
+
+gulp.task('default', ['css-compile-minify', 'phpunit', 'phpspec', 'behat']);
+

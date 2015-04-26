@@ -41,7 +41,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Fishery extends Model {
-	protected $fillable = [];
+    protected $fillable = [
+        'name', 'regs', 'management',
+        'notes', 'lat', 'long', 'habitat',
+        'stillwater', 'hatches'
+    ];
 
     public function user()
     {

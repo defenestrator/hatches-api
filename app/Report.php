@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Weather $weather
  * @property-read \Privacy $privacy
  */
-class Report extends Model
+abstract class Report extends Model
 {
     protected $fillable = [ 'asset', 'user_id', 'fishery_id', 'start_time',
                             'end_time', 'title', 'report_body', 'privacy_id',

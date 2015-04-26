@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
 class Prey extends Model {
-	protected $fillable = ['common_name', 'genus','species'];
+    protected $fillable = ['common_name', 'genus', 'species'];
     protected $table = 'prey';
 
     public function hatchType()

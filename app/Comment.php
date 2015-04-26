@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Fishery $fishery
  */
 class Comment extends Model {
-    protected $fillable = [];
+    protected $fillable = ['comment'];
 
     public function user()
     {

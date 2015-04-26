@@ -3,10 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Created with pure magic by:
- * jjboise for api.hatch.es
- * Date: 5/25/14
- * Time: 5:00 PM
+ * Hatches\TripReport
  *
  * @property integer $id
  * @property integer $user_id
@@ -43,7 +40,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class TripReport extends Report
 {
-    protected $fillable = ['user_id', 'fishery_id', 'start_time', 'end_time', 'title', 'report_body', 'privacy_id' ];
+    protected $fillable = ['start_time', 'end_time', 'title', 'report_body', 'privacy_id'];
 
 
 

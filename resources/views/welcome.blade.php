@@ -19,7 +19,7 @@
             display:block;
             padding: 1em 2em;
         }
-        a:hover{
+        a:hover, a:active, a:focus{
             color: #9ba8af;
         }
         .container {
@@ -32,30 +32,31 @@
         .content {
             text-align: center;
             display: inline-block;
-            width:50%;
+            margin:8px;
         }
 
         .title {
             font-size: 96px;
+
             margin-bottom: 40px;
         }
 
         .quote {
             font-size: 24px;
+            margin:28px;
         }
         .welcome-login{
             font-size:24px;
-            margin-top:20px;
-            border-radius: 0.2em 2em 1.2em 2em ;
+            border-radius: 1em 1.5em 2em .5em ;
 
         }
         button{
             background-color:white;
-
+            padding:1em 2em;
         }
         button:hover{
-            background-color:#eaf0f8;
-            color:#8c99a0;
+            background-color: #586434;
+            color: #c0d9ff;
         }
     </style>
 </head>
@@ -64,7 +65,7 @@
     <div class="content">
         <div class="title">Hatch.es</div>
         <div class="quote">{{ Inspiring::quote() }}</div>
-        <button class="welcome-login"><a href="auth/login">Fish on!</a></button>
+        <a href="auth/login"><button class="welcome-login">Fish on!</button></a>
     </div>
 </div>
 </body>

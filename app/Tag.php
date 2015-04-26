@@ -23,7 +23,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model {
 
-    protected $fillable = [];
+    protected $fillable = ['tag'];
     public $timestamps = false;
 
     public function assets() {

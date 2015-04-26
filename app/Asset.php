@@ -28,7 +28,7 @@ use Illuminate\Database\Eloquent\Model;
 
 
 Class Asset extends Model {
-    protected $fillable = ['user','privacy', 'tags', 'comments'];
+    protected $fillable = ['type', 'privacy', 'uri'];
 
     public function user()
     {

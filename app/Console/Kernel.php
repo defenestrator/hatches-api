@@ -22,10 +22,13 @@ class Kernel extends ConsoleKernel {
 	 * @param  \Illuminate\Console\Scheduling\Schedule  $schedule
 	 * @return void
 	 */
-	protected function schedule(Schedule $schedule)
-	{
-		$schedule->command('inspire')
-				 ->hourly();
-	}
+//	protected function schedule(Schedule $schedule)
+//	{
+//         exec shell command
+//        $schedule->exec('cp this/file that/file')->monthly()->sendOutputTo('storage/logs/');
+//		 php artisan inspire
+//        $schedule->command('inspire')
+//				 ->hourly();
+//	}
 
 }

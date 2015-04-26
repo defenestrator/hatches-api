@@ -16,7 +16,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class HatchType extends Model {
 
-    protected $fillable = [];
+    protected $fillable = ['type', 'description'];
 
     public $timestamps = false;
 
