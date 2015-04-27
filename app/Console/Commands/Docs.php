@@ -2,7 +2,6 @@
 
 use Hatches\Commands\DocsConfig;
 use Illuminate\Console\Command;
-use Fab\SuperFab;
 
 class Docs extends Command {
 
@@ -25,9 +24,9 @@ class Docs extends Command {
      *
      * @return mixed
      */
-    public function handle(SuperFab $superFab)
+    public function handle()
     {
-        $this->comment(PHP_EOL.$superFab->paint('Generating some totally rad API documentation for you'.PHP_EOL));
+        $this->comment(PHP_EOL . 'Generating some totally rad API documentation for you' . PHP_EOL);
         return exec('php vendor/sami/sami/sami.php update app/Commands/DocsConfig.php');
     }
 

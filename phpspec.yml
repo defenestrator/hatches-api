@@ -5,6 +5,6 @@ suites:
         src_path: app
         spec_prefix: spec
 
-extensions:
-    - PhpSpec\NyanFormattersExtension\Extension
-formatter.name: nyan.dino
+#extensions:
+#    - PhpSpec\NyanFormattersExtension\Extension
+#formatter.name: nyan.dino

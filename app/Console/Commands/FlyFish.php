@@ -4,7 +4,6 @@ use Illuminate\Console\Command;
 use Hatches\Commands\InspireFlyFishers;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Input\InputArgument;
-use Fab\SuperFab;
 
 class FlyFish extends Command {
 
@@ -27,9 +26,9 @@ class FlyFish extends Command {
      *
      * @return mixed
      */
-    public function handle(SuperFab $superFab)
+    public function handle()
     {
-        $this->comment(PHP_EOL.$superFab->paint(InspireFlyFishers::quote()).PHP_EOL);
+        $this->comment(PHP_EOL . InspireFlyFishers::quote() . PHP_EOL);
     }
 
 }
