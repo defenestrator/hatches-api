@@ -1,7 +1,8 @@
 <?php
-use Laracasts\Integrated\Extensions\Laravel as IntegrationTest;
 
-class ExampleIntegrationTest extends IntegrationTest
+use Laracasts\TestDummy\Factory as TestDummy;
+
+class IntegrationTest extends TestCase
 {
 
     /**
@@ -9,13 +10,18 @@ class ExampleIntegrationTest extends IntegrationTest
      *
      * @return void
      */
-    protected $baseUrl = 'http://localhost:8887';
+
 
     public function testBasicExample()
     {
-        $response = $this->call('GET', '/');
+        $this->visit('/');
+    }
 
-        $this->assertEquals(200, $response->getStatusCode());
+    public function test_login()
+    {
+        $this->visit('auth/login');
+        $this->andSee('Login');
+
     }
 
 }
