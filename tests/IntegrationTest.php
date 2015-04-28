@@ -17,10 +17,14 @@ class IntegrationTest extends TestCase
         $this->visit('/');
     }
 
-    public function test_login()
+    public function test_login_page()
     {
         $this->visit('auth/login');
         $this->andSee('Login');
+    }
+
+    public function it_authenticates_registered_users()
+    {
 
     }
 
