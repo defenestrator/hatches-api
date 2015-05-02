@@ -308,7 +308,7 @@
 
         </div>
         <div class="row">
-            <div class="col-sm-2 col-sm-offset-0">
+            <div class="col-sm-2 col-md-offset-0">
                 <div class="panel panel-dark">
 
                     <div class="panel-body">
@@ -328,7 +328,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-7 col-sm-offset-0">
+            <div class="col-md-7 col-md-offset-0">
                 <div class="panel panel-dark">
                     <div class="panel-body">
                         <section class="jumbotron jumbotron-warning">
@@ -338,12 +338,12 @@
 
                 </div>
             </div>
-            <div class="col-sm-3 col-sm-offset-0">
+            <div class="col-smd3 col-sm-offset-0">
                 <h3>Grumpy Wizards Make a Toxic Brew</h3>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-2 col-sm-offset-0">
+            <div class="col-md-2 col-sm-offset-0">
                 <div class="panel panel-dark">
 
                     <div class="panel-body">
@@ -363,7 +363,7 @@
                 </div>
 
             </div>
-            <div class="col-sm-10 col-sm-offset-0">
+            <div class="col-md-10 col-md-offset-0">
                 <section class="jumbotron jumbotron-warning">
                     <h1>Here is Content</h1>
                     <article class="article">
