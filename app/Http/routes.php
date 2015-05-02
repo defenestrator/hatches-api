@@ -15,6 +15,8 @@
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'PagesController@index');
+Route::get('profile', 'ProfilePageController@show');
+Route::post('profile/', 'ProfilePageController@create');
 
 /*
  * API routes:

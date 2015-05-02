@@ -5,6 +5,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 
 class Profile extends Model
 {
+    protected $fillable = ['gender', 'facebook', 'google', 'youtube', 'instagram', 'twitter'];
 
     public function users()
     {

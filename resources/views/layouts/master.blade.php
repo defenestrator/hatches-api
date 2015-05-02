@@ -49,7 +49,9 @@
                                aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/auth/logout">Logout</a></li>
+                                <li><a href="profile">Profile</a></li>
                             </ul>
+
                         </li>
                     @endif
                 </ul>

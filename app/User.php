@@ -137,4 +137,9 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 		return $this->belongsToMany('User');
 	}
 
+    public function profiles()
+    {
+        return $this->hasOne('Profile');
+    }
+
 }

@@ -100,6 +100,7 @@ class DatabaseSeeder extends Seeder
         $this->call('LookupTableSeeder');
         $this->command->info('Lookup tables seeded!');
 
+
     }
 
     private function cleanDatabase()
