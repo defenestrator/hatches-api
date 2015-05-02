@@ -104,6 +104,15 @@
                         </button>
 
                     </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-primary">Profile</button>
+                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                                aria-expanded="false">
+                            <span class="caret"></span>
+                            <span class="sr-only">Toggle Dropdown</span>
+                        </button>
+
+                    </div>
                 </div>
             </div>
 
@@ -111,19 +120,6 @@
         <hr class="top-separator"/>
         <div class="row">
             <div class="col-md-2 col-md-offset-0">
-
-                <div class="panel panel-info">
-                    <div class="panel-heading">Your Stuff</div>
-                    <div class="panel-body">
-                        <h3><em>The</em> premium app for hardcore fly anglers</h3>
-                        <ul>
-                            <li><a href="#menu1">Menu Item</a></li>
-                            <li><a href="#menu2">Menu Item</a></li>
-                            <li><a href="#menu3">Menu Item</a></li>
-                        </ul>
-                        <img src="/img/Large_brown_trout_being_released.jpg"/>
-                    </div>
-                </div>
                 <div class="panel panel-danger">
                     <div class="panel-heading">Your Stuff</div>
                     <div class="panel-body">
