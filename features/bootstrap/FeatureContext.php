@@ -123,7 +123,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     private function assertSignedIn()
     {
         PHPUnit::assertTrue(Auth::check());
-
-        $this->assertPageAddress('main');
+        $this->assertPageAddress('/');
     }
 }
