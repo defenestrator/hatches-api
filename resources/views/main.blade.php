@@ -121,8 +121,9 @@
         <div class="row">
             <div class="col-md-2 col-md-offset-0">
                 <div class="panel panel-danger">
-                    <div class="panel-heading">Your Stuff</div>
+                    <div class="panel-heading">Your Danger Stuff</div>
                     <div class="panel-body">
+                        <h4>Learn the terrain.</h4>
                         <img src="/img/TypicalEastGallatinRiverRainbowTrout.jpg"/>
                         <ul>
                             <li><a href="#menu1">Menu Item</a></li>
@@ -130,6 +131,17 @@
                             <li><a href="#menu3">Menu Item</a></li>
                         </ul>
 
+                    </div>
+                </div>
+                <div class="panel panel-dark">
+                    <div class="panel-heading">Your Dark Stuff</div>
+                    <div class="panel-body">
+
+                        <img src="/img/Large_brown_trout_being_released.jpg"/>
+
+                        <p>Say ALL THE THINGS!</p>
+
+                        <h4>Hi, my name is</h4>
                     </div>
                 </div>
             </div>
@@ -183,7 +195,7 @@
 
                             </div>
                             <div class="tab-pane fade" id="tab3default">
-                                <h2>Learn the terrain.</h2>
+
 
                                 <p>Automatically log geospatial information <strong>while fishing.</strong> When you
                                     land a fish, take a picture and it will be
@@ -298,26 +310,37 @@
         <div class="row">
             <div class="col-sm-2 col-sm-offset-0">
                 <div class="panel panel-dark">
-                    <div class="panel-heading">Your Stuff</div>
+
                     <div class="panel-body">
 
                         <img src="/img/Large_brown_trout_being_released.jpg"/>
 
-                        <p>Say ALL THE THINGS!</p>
-
-                        <h4>Hi, my name is</h4>
+                        <h5>Kill me now</h5>
+                        <strong>reasons:</strong>
+                        <ol>
+                            <li>Vertical alignment</li>
+                            <li>Tweeter Bootsrap</li>
+                            <li>Typography</li>
+                            <li>Entropy</li>
+                            <li>Sophomoric Interpretations of Existentialism</li>
+                        </ol>
                     </div>
                 </div>
 
             </div>
             <div class="col-sm-7 col-sm-offset-0">
-                <div class="jumbotron jumbotron-warning">
-                    <h1>Why U No have CONTENT?!</h1>
+                <div class="panel panel-dark">
+                    <div class="panel-body">
+                        <section class="jumbotron jumbotron-warning">
+                            <h1>Why U No have CONTENT?!</h1>
+                        </section>
+                    </div>
+
+                </div>
             </div>
-        </div>
             <div class="col-sm-3 col-sm-offset-0">
                 <h3>Grumpy Wizards Make a Toxic Brew</h3>
-        </div>
+            </div>
         </div>
         <div class="row">
             <div class="col-sm-2 col-sm-offset-0">
@@ -327,14 +350,22 @@
 
                         <img src="/img/Large_brown_trout_being_released.jpg"/>
 
-                        <h3>Kill me now</h3>
+                        <h5>Kill me now</h5>
+                        <strong>reasons:</strong>
+                        <ol>
+                            <li>Vertical alignment</li>
+                            <li>Tweeter Bootsrap</li>
+                            <li>Typography</li>
+                            <li>Entropy</li>
+                            <li>Sophomoric Interpretations of Existentialism</li>
+                        </ol>
                     </div>
                 </div>
 
             </div>
             <div class="col-sm-10 col-sm-offset-0">
-                <div class="jumbotron jumbotron-warning">
-                    <h3>Here is Content</h3>
+                <section class="jumbotron jumbotron-warning">
+                    <h1>Here is Content</h1>
                     <article class="article">
                         <h2>Mobile Fly Fishing Tools </h2>
 
@@ -351,6 +382,7 @@
                         <h3><em>The</em> premium app for hardcore fly anglers</h3>
 
                     </article>
+                </section>
                 </div>
             </div>
         </div>
