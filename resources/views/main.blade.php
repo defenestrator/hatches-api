@@ -380,8 +380,8 @@
                             with the world. <strong>It is up to you.</strong></p>
 
                         <h3><em>The</em> premium app for hardcore fly anglers</h3>
-
                     </article>
+                    3
                 </section>
                 </div>
             </div>
