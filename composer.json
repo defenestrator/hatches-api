@@ -38,8 +38,9 @@
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
+    "curl/curl": "1.2.1",
     "laracasts/integrated": "0.15.3",
-    "curl/curl": "1.2.1"
+    "instaclick/php-webdriver": "1.4.1"
   },
   "autoload": {
     "classmap": [
