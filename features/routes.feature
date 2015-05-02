@@ -16,12 +16,8 @@ Feature: Test that basic app pages are being served
     Then I should see "Login"
     And I should be on "auth/login"
 
-  Scenario: Login required for "v1" page
+  Scenario: Login required for "v1/" page and all subroutes
     Given I am on "v1"
-    Then I should see "Login"
-    And I should be on "auth/login"
-
-  Scenario: Login required for "main" page
-    Given I am on "main"
+    And I am not authenticated
     Then I should see "Login"
     And I should be on "auth/login"
