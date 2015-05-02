@@ -84,7 +84,6 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     public function iSignIn()
     {
         $this->visit('auth/login');
-
         $this->fillField('email', $this->email);
         $this->fillField('password', 'password');
         $this->pressButton('Login');
