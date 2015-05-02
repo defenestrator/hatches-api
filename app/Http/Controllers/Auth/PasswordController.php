@@ -18,7 +18,6 @@ class PasswordController extends Controller {
 	*/
 
 	use ResetsPasswords;
-    protected $redirectTo = '/main';
 
     public function __construct(Guard $auth, PasswordBroker $passwords)
     {
