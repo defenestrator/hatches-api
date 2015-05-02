@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8 col-md-offset-2">
+            <div class="col-md-5 col-md-offset-3">
                 <div class="panel panel-default">
                     <div class="panel-heading">Login</div>
                     <div class="panel-body">
@@ -57,14 +57,17 @@
                                 </div>
                             </div>
                         </form>
+                            <div class="jumbotron jumbotron-warning quote"><h2>{{ Inspiring::quote() }}</h2></div>
                     </div>
                 </div>
                 <div class="title-container">
                     <div class="content">
-                        <div class="quote">{{ Inspiring::quote() }}</div>
+
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="row">
+
+        </div>
 @endsection
