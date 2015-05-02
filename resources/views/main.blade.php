@@ -1,9 +1,9 @@
 @extends('app')
 
 @section('content')
-    <div class="container-fluid">
+    <section class="content-main">
         <div class="row">
-            <div class="col-lg-12 col-sm-offset-1 action-strip">
+            <div class="col-md-10 col-md-offset-2 action-strip">
                 <div class="btn-block">
                     <div class="btn-group" role="group">
                         <button type="button" class="btn btn-primary">Trip Reports</button>
@@ -102,23 +102,20 @@
                             <span class="caret"></span>
                             <span class="sr-only">Toggle Dropdown</span>
                         </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
+
         </div>
         <hr class="top-separator"/>
         <div class="row">
             <div class="col-md-2 col-md-offset-0">
+
                 <div class="panel panel-info">
                     <div class="panel-heading">Your Stuff</div>
                     <div class="panel-body">
+                        <h3><em>The</em> premium app for hardcore fly anglers</h3>
                         <ul>
                             <li><a href="#menu1">Menu Item</a></li>
                             <li><a href="#menu2">Menu Item</a></li>
@@ -130,65 +127,143 @@
                 <div class="panel panel-danger">
                     <div class="panel-heading">Your Stuff</div>
                     <div class="panel-body">
-                        <p>
-                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows
-                            it killed the world once and got a taste for murder. After the avalanche, it took us a week
-                            to climb out. Now, I don't know exactly when we turned on each other, but I know that seven
-                            of us survived the slide... and only five made it out. Now we took an oath, that I'm
-                            breaking now. We said we'd say it was the snow that killed the other two, but it wasn't.
-                            Nature is lethal but it doesn't hold a candle to man.
-                        </p>
                         <img src="/img/TypicalEastGallatinRiverRainbowTrout.jpg"/>
                         <ul>
                             <li><a href="#menu1">Menu Item</a></li>
                             <li><a href="#menu2">Menu Item</a></li>
                             <li><a href="#menu3">Menu Item</a></li>
                         </ul>
+
                     </div>
                 </div>
             </div>
+
             <div class="col-md-7 col-md-offset-0">
+                <div class="panel with-nav-tabs panel-default">
+                    <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1default" data-toggle="tab">Default 1</a></li>
+                            <li><a href="#tab2default" data-toggle="tab">Default 2</a></li>
+                            <li><a href="#tab3default" data-toggle="tab">Default 3</a></li>
+                            <li class="dropdown">
+                                <a href="#" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="#tab4default" data-toggle="tab">Default 4</a></li>
+                                    <li><a href="#tab5default" data-toggle="tab">Default 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="panel-body">
+                        <div class="tab-content">
+                            <div class="tab-pane fade in active" id="tab1default">
+                                <article class="article">
+                                    <h2>Mobile Fly Fishing Tools </h2>
+
+                                    <p>Track your angling success on-stream with offline fisheries maps and
+                                        automatically correlate GPS information with weather, hydrology, hatch activity,
+                                        and other custom data that you collect
+                                        <em><strong>without interrupting your cast.</strong></em>
+                                    </p>
+
+                                    <p>Shoot a video of your buddy catching a fish deep in the backwoods and we can have
+                                        it posted to your fly fishing journal
+                                        before you get home. Keep it a secret forever, show it to that buddy of yours,
+                                        or share it with the world. <strong>It is up to you.</strong>
+                                    </p>
+                                </article>
+                            </div>
+                            <div class="tab-pane fade" id="tab2default">
+                                <h3><em>The</em> premium app for hardcore fly anglers</h3>
+
+                                <h3>Cultivate fly fishing knowledge using real data.</h3>
+
+                                <p>There is a lot of mythology in the sport of fly fishing, and much of it is accepted
+                                    as sanctified wisdom, but there is precious little
+                                    empirical data available. We are building a data collection and reporting service
+                                    for fly fishers who want facts, not fables. Take
+                                    control of your fly fishing and catch more fish!
+                                </p>
+
+                            </div>
+                            <div class="tab-pane fade" id="tab3default">
+                                <h2>Learn the terrain.</h2>
+
+                                <p>Automatically log geospatial information <strong>while fishing.</strong> When you
+                                    land a fish, take a picture and it will be
+                                    tagged with your location so you can track what really works on the water. Plan your
+                                    fishing trip using informative mobile
+                                    maps and plot your activities on the map as you fish. You will then be able to
+                                    review and analyze all of your journal's
+                                    information to help you catch more fish.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="tab4default">
+                                <h3>Keep it secret, or pay it forward; The choice is yours.</h3>
+
+                                <p>You can keep your favorite spots private to protect sensitive fisheries, you can
+                                    share some reports with your friends, and you
+                                    can post public data
+                                    if you like. Your privacy is important, and the conservation of our most pristine
+                                    waters is more so. We don't, and never
+                                    will, share your posts or personal information with any third party without your
+                                    explicit permission.
+                                </p>
+
+                            </div>
+                            <div class="tab-pane fade" id="tab5default">
+                                <h3>You don't have to be experienced, just enthusiastic.</h3>
+
+                                <p>We want to help the aspiring fly angler who doesn't know a Coachman from a Humpy to
+                                    pick the right fly, and the jaded veteran
+                                    trout bum to dig even deeper, with flexible reporting tools, to find new answers to
+                                    old questions. Maybe our public data
+                                    API service will benefit science someday. <strong>Did I mention it's free?</strong>
+                                    The data API and website are free for everyone, the mobile apps will cost an
+                                    undetermined pittance to keep us from living <em>in a van down by the river.</em>
+                                    Come to think of it, that doesn't sound too bad.
+                                </p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="panel panel-default">
                     <div class="panel-heading">Recent Posts</div>
                     <div class="panel-body">
+                        <article class="article">
+                            <h1><a href="http://api.hatch.es">Check out the API!</a></h1>
 
-                        <h4>Here is a digest of your reports (trip and hatch reports) in descending date order</h4>
+                            <h2>Mobile apps will release in Q3 2015</h2>
+                        </article>
+                        <article class="article">
+                            <h2>Mobile Fly Fishing Tools </h2>
 
-                        <p>
+                            <p>Track your angling success on-stream with offline fisheries maps and
+                                automatically correlate GPS information with weather, hydrology, hatch activity, and
+                                other custom data that you collect
+                                <em><strong>without interrupting your cast.</strong></em></p>
 
-                        <p> Normally, both your asses would be dead as fucking fried chicken, but you happen to pull
-                            this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you.
-                            But I can't give you this case, it don't belong to me. Besides, I've already been through
-                            too much shit this morning over this case to hand it over to your dumb ass.
-                        </p>
+                            <p>Shoot a video of your buddy catching a fish deep in the backwoods and we can have it
+                                posted to your fly fishing journal
+                                before you get home. Keep it a secret forever, show it to that buddy of yours, or share
+                                it with the world. <strong>It is up to you.</strong></p>
 
-                        <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with
-                            my name printed on it? Do you see a little Asian child with a blank expression on his face
-                            sitting outside on a mechanical helicopter that shakes when you put quarters in it? No?
-                            Well, that's what you see at a toy store. And you must think you're in a toy store, because
-                            you're here shopping for an infant named Jeb.
-                        </p>
+                            <h3><em>The</em> premium app for hardcore fly anglers</h3>
 
-                        <p>
-                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows
-                            it killed the world once and got a taste for murder. After the avalanche, it took us a week
-                            to climb out. Now, I don't know exactly when we turned on each other, but I know that seven
-                            of us survived the slide... and only five made it out. Now we took an oath, that I'm
-                            breaking now. We said we'd say it was the snow that killed the other two, but it wasn't.
-                            Nature is lethal but it doesn't hold a candle to man.
-                        </p>
-                        <img src="/img/TypicalEastGallatinRiverRainbowTrout.jpg"/>
+                            <h3>Cultivate fly fishing knowledge using real data.</h3>
 
-                        <p>
-                            My money's in that office, right? If she start giving me some bullshit about it ain't there,
-                            and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
-                            Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She
-                            gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go
-                            in there, and that nigga Winston or anybody else is in there, you the first motherfucker to
-                            get shot. You understand?
-                        </p>
+                            <p>There is a lot of mythology in the sport of fly fishing, and much of it is accepted as
+                                sanctified wisdom, but there is precious little
+                                empirical data available. We are building a data collection and reporting service for
+                                fly fishers who want facts, not fables. Take
+                                control of your fly fishing and catch more fish!</p>
+
+                            <h2>Learn the terrain.</h2>
 
 
+                        </article>
                     </div>
                 </div>
             </div>
@@ -196,24 +271,15 @@
                 <div class="panel panel-warning">
                     <div class="panel-heading">Alerts</div>
                     <div class="panel-body">
-                        <p>
-                            My money's in that office, right? If she start giving me some bullshit about it ain't there,
-                            and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
-                            Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She
-                            gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go
-                            in there, and that nigga Winston or anybody else is in there, you the first motherfucker to
-                            get shot. You understand?
-                        </p>
+                        <article class="article">
+                            <h2>Mobile Fly Fishing Tools </h2>
 
-                        <p>
-                            You think water moves fast? You should see ice. It moves like it has a mind. Like it knows
-                            it killed the world once and got a taste for murder. After the avalanche, it took us a week
-                            to climb out. Now, I don't know exactly when we turned on each other, but I know that seven
-                            of us survived the slide... and only five made it out. Now we took an oath, that I'm
-                            breaking now. We said we'd say it was the snow that killed the other two, but it wasn't.
-                            Nature is lethal but it doesn't hold a candle to man.
-                        </p>
-                        <img src="/img/TypicalEastGallatinRiverRainbowTrout.jpg"/>
+
+                            <h3>Cultivate fly fishing knowledge using real data.</h3>
+
+
+                        </article>
+
                     </div>
                 </div>
                 <div class="panel panel-info">
@@ -273,35 +339,25 @@
             <div class="col-sm-10 col-sm-offset-0">
                 <div class="jumbotron jumbotron-warning">
                     <h3>Here is Content</h3>
+                    <article class="article">
+                        <h2>Mobile Fly Fishing Tools </h2>
 
-                    <p>
-                        My money's in that office, right? If she start giving me some bullshit about it ain't there,
-                        and we got to go someplace else and get it, I'm gonna shoot you in the head then and there.
-                        Then I'm gonna shoot that bitch in the kneecaps, find out where my goddamn money is. She
-                        gonna tell me too. Hey, look at me when I'm talking to you, motherfucker. You listen: we go
-                        in there, and that nigga Winston or anybody else is in there, you the first motherfucker to
-                        get shot. You understand?
-                    </p>
+                        <p>Track your angling success on-stream with offline fisheries maps and
+                            automatically correlate GPS information with weather, hydrology, hatch activity, and other
+                            custom data that you collect
+                            <em><strong>without interrupting your cast.</strong></em></p>
 
-                    <p>
-                        You think water moves fast? You should see ice. It moves like it has a mind. Like it knows
-                        it killed the world once and got a taste for murder. After the avalanche, it took us a week
-                        to climb out. Now, I don't know exactly when we turned on each other, but I know that seven
-                        of us survived the slide... and only five made it out. Now we took an oath, that I'm
-                        breaking now. We said we'd say it was the snow that killed the other two, but it wasn't.
-                        Nature is lethal but it doesn't hold a candle to man.
-                    </p>
+                        <p>Shoot a video of your buddy catching a fish deep in the backwoods and we can have it posted
+                            to your fly fishing journal
+                            before you get home. Keep it a secret forever, show it to that buddy of yours, or share it
+                            with the world. <strong>It is up to you.</strong></p>
 
-                    <p>
+                        <h3><em>The</em> premium app for hardcore fly anglers</h3>
 
-                    <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with
-                        my name printed on it? Do you see a little Asian child with a blank expression on his face
-                        sitting outside on a mechanical helicopter that shakes when you put quarters in it? No?
-                        Well, that's what you see at a toy store. And you must think you're in a toy store, because
-                        you're here shopping for an infant named Jeb.
-                    </p>
+                    </article>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
 @endsection

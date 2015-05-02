@@ -21,7 +21,8 @@
     "sorskod/larasponse": "dev-L5",
     "edos-io/sami": "~3.0.2",
     "laravelcollective/html": "~5.0",
-    "symfony/yaml": "~2.1.0"
+    "symfony/yaml": "~2.1.0",
+    "graham-campbell/markdown": "~3.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.5.0",

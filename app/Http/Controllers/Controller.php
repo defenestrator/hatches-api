@@ -59,7 +59,7 @@ abstract class Controller extends BaseController {
      * @param string $message
      * @return mixed
      */
-    public function respondNotFound($message = 'Not Found!')
+    public function respondNotFound($message = 'There are no fish in this run. That\'s a 404 error, good buddy.')
     {
         return $this->setStatusCode(404)->respondWithError($message);
     }
@@ -68,7 +68,8 @@ abstract class Controller extends BaseController {
      * @param string $message
      * @return mixed
      */
-    public function respondInternalError($message = 'Internal Error!')
+    public function respondInternalError($message = 'Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.')
     {
         return $this->setStatusCode(500)->respondWithError($message);
     }
@@ -77,7 +78,7 @@ abstract class Controller extends BaseController {
      * @param string $message
      * @return mixed
      */
-    public function respondAuthenticationError($message = 'Authentication Error!')
+    public function respondAuthenticationError($message = 'Authentication Error. Please login before continuing.')
     {
         return $this->setStatusCode(422)->respondWithError($message);
     }
@@ -89,6 +90,15 @@ abstract class Controller extends BaseController {
     public function respondBadRequest($message = 'Bad Request! Naughty Request!')
     {
         return $this->setStatusCode(401)->respondWithError($message);
+    }
+
+    /**
+     * @param string $message
+     * @return mixed
+     */
+    public function respondForbiddenRequest($message = 'Sorry, you aren\'t allowed to do that!')
+    {
+        return $this->setStatusCode(403)->respondWithError($message);
     }
 
 }

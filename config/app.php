@@ -135,11 +135,15 @@ return [
 		'Illuminate\Translation\TranslationServiceProvider',
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
-        //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
+
+        /*
+         * Other Third Party Providers
+         */
         'Spatie\Glide\GlideServiceProvider',
         'Collective\Html\HtmlServiceProvider',
         'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
-
+        'GrahamCampbell\Markdown\MarkdownServiceProvider',
+        //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
 
 		/*
 		 * Application Service Providers...
@@ -207,6 +211,7 @@ return [
         'GlideImage' => 'Spatie\Glide\GlideImageFacade',
         'Form'       => 'Collective\Html\FormFacade',
         'Html'       => 'Collective\Html\HtmlFacade',
+        'Markdown' => 'GrahamCampbell\Markdown\Facades\Markdown'
 	],
 
 ];

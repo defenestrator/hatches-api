@@ -2,8 +2,8 @@
 
 use Hatches\User;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
 use Hatches\Transformers\UserTransformer;
+use Illuminate\Auth\Guard;
 
 /**
  * Class UsersController
@@ -25,19 +25,18 @@ class UsersController extends Controller
      *
      *
      * @param Request $request
-     * @param Response $response
      * @param UserTransformer $userTransformer
      * @return Response
      * @internal param $Request
      * @internal param $UserTransformer
      */
-    public function index(Request $request, Response $response, UserTransformer $userTransformer)
+    public function index(Request $request, UserTransformer $userTransformer)
     {
         $countUsers = User::count();
         $limit = $request->input('limit', 25);
 
         if ($limit > 100) {
-            return $this->respondBadRequest('Bad Request, Naughty Request! Limit maximum is 100 per page.');
+            return $this->respondForbiddenRequest();
         }
         elseif ($countUsers < 1) {
             return $this->respondNotFound('There are no Users!?');
@@ -45,10 +44,10 @@ class UsersController extends Controller
         else {
             $users = User::paginate($limit);
         }
-        return $response->setContent([
+        return $this->respond([
             'data' => $userTransformer->transformCollection($users->all())
-        ], 200
-        );
+            ]
+        )->setStatusCode(200);
     }
 
     /**
@@ -56,54 +55,37 @@ class UsersController extends Controller
      * GET /users/{id}
      *
      * @param  int $id
-     * @param Response $response
      * @param UserTransformer $userTransformer
      * @return Response
      * @internal param $
      */
-    public function show($id, Response $response, UserTransformer $userTransformer)
+    public function show($id, UserTransformer $userTransformer)
     {
         $user = User::find($id);
-        if (!$user) {
-            return $this->respondNotFound('This user does not exist');
+//        dd($user);
+        if ($user !== null) {
+            return $this->respond(['data' => $userTransformer->transform($user)])->setStatusCode(200);
         }
-        return $response->setContent(['data' => $userTransformer->transform($user)], 200);
+        return $this->respondNotFound('No user for id ' . $id);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     * GET /users/{id}/edit
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     * PUT /users/{id}
-     *
-     * @param  int $id
-     * @return Response
-     */
-    public function update($id)
-    {
-        //
-    }
 
     /**
      * Remove the specified resource from storage.
      * DELETE /users/{id}
      *
      * @param  int $id
+     * @param Guard $auth
+     * @param User $user
      * @return Response
+     * @internal param $
      */
-    public function destroy($id)
+    public function destroy($id, Guard $auth, User $user)
     {
-        //
+        if ($auth->check() && $id == Guard::user()->getAuthIdentifier()) {
+            return $user->destroy($id);
+        }
+        return $this->respondForbiddenRequest("You can't delete other users, only yourself.");
     }
 
 }

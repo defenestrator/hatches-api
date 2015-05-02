@@ -9,6 +9,14 @@ path = require('path'),
 wait = require('gulp-wait'),
 minifyCSS = require('gulp-minify-css');
 
+gulp.task('less', function () {
+    gulp.src('./resources/assets/less/*.less') // path to your main less file
+        .pipe(less({
+            paths: [path.join()] // @import paths
+        }))
+        .pipe(minifyCSS())
+        .pipe(gulp.dest('./public/css')); // your output folder
+});
 
 gulp.task('css-compile-minify', function () {
     gulp.src('./resources/assets/less/*.less') // path to your main less file
@@ -41,5 +49,5 @@ gulp.task('watch', function() {
 
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);
 
-gulp.task('default', ['css-compile-minify', 'phpunit', 'phpspec', 'behat']);
+gulp.task('default', ['less', 'css-compile-minify', 'phpunit', 'phpspec', 'behat']);
 
