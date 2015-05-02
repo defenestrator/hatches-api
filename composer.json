@@ -23,6 +23,7 @@
     "laravelcollective/html": "~5.0",
     "symfony/yaml": "~2.1.0",
     "graham-campbell/markdown": "~3.0"
+
   },
   "require-dev": {
     "phpunit/phpunit": "~4.5.0",
@@ -37,7 +38,8 @@
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
-    "laracasts/integrated": "dev-master"
+    "laracasts/integrated": "0.15.3",
+    "curl/curl": "1.2.1"
   },
   "autoload": {
     "classmap": [
