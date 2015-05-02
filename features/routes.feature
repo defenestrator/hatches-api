@@ -18,6 +18,6 @@ Feature: Test that basic app pages are being served
 
   Scenario: Login required for "v1/" page and all subroutes
     Given I am on "v1"
-    And I am not authenticated
+#    And I am not authenticated
     Then I should see "Login"
     And I should be on "auth/login"
