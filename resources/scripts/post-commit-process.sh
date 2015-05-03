@@ -22,5 +22,5 @@ php artisan key:generate
 php artisan flyfish
 php artisan migrate --seed --force #will be remved in realsies production env
 php artisan vendor:publish
-./vendor/bin/behat --init
+/var/www/hatches-api/vendor/bin/behat --init
 gulp test
