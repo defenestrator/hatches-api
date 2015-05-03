@@ -19,7 +19,7 @@ chmod -R 0775 /var/www/hatches-api/storage && chmod 0777 storage/database.sqlite
 npm install -g gulp
 php artisan key:generate
 php artisan flyfish
-php artisan migrate --seed --force #will be remved in realsies production env
+php artisan migrate --seed --force #will be removed in realsies production env
 php artisan vendor:publish
 php vendor/bin/behat --init
 gulp test
