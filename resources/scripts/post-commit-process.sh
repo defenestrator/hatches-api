@@ -7,9 +7,8 @@ chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
 composer install --prefer-source --no-dev --no-progress
-# rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites/nginx.conf
-touch /etc/nginx/sites-enabled/default
-cp server.conf /etc/nginx/sites-available/api.hatch.es
+rm /etc/nginx/sites-enabled/default
+cp server.conf /etc/nginx/sites-available/default
 service nginx restart
 mv .env.blank .env
 chmod -R 0777 /var/www/hatches-api/storage
