@@ -8,7 +8,7 @@ cd /var/www/hatches-api/
 composer self-update
 composer install --prefer-source --no-dev
 rm /etc/nginx/sites-available/default
-cp nginx.default /etc/nginx/sites-available/default
+cp nginx.default /etc/nginx/sites-available/default && cp nginx.conf /etc/nginx/nginx.conf
 service nginx restart;
 mv .env.blank .env
 chmod -R 0777 /var/www/hatches-api/storage
