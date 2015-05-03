@@ -1,7 +1,6 @@
-#!/bin/bash
+#! /bin/bash
 
 composer install --prefer-source;
-npm install;
 php artisan key:generate;
 php artisan migrate --seed --force;
 php artisan vendor:publish;
@@ -13,4 +12,5 @@ chgrp -R www-data /var/www/hatches-api;
 chmod -R 0777 /var/www/hatches-api/storage;
 mv .env.example .env && mv .env.behat.travis .env.behat;
 vendor/bin/behat --init;
+npm install;
 gulp test;
