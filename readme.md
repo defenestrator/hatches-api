@@ -1,7 +1,6 @@
 # Hatch.es API
 
 [![Build Status](https://travis-ci.org/defenestrator/hatches-api.svg?branch=master)](https://travis-ci.org/defenestrator/hatches-api)
-[![Coverage Status](https://coveralls.io/repos/defenestrator/hatches-api/badge.svg)](https://coveralls.io/r/defenestrator/hatches-api)
 
 ## Mobile Fly Fishing Tools
 
