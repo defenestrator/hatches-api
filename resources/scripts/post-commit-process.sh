@@ -10,7 +10,6 @@ composer self-update
 composer install --prefer-source
 npm install
 chgrp -R www-data /var/www/hatches-api/hatches-api/
-# I think our fresh server image probably has this config, but we need to update it from the confluence doc date:05/03/2015.
 rm /etc/nginx/sites-available/default
 mv nginx.default /etc/nginx/sites-available/default
 service nginx restart;
