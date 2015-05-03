@@ -1,8 +1,9 @@
 #!/bin/bash
 # word, to your mother, even.
 cd /var/www/hatches-api/
-npm install -g n
-npm n stable
+# probably not needed
+#npm install -g n
+#npm n stable
 composer self-update
 composer install --prefer-source
 npm install
