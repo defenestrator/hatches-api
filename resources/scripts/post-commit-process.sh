@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/defenestrator/hatches-api.git && cd /var/www/hatches-api/
+cd /var/www/hatches-api/
 # probably not needed
 #npm install -g n
 #npm n stable
