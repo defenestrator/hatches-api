@@ -3,6 +3,9 @@ cd /var/www/hatches-api/
 # probably not needed
 #npm install -g n
 #npm n stable
+apt-get update
+apt-get install php5-curl
+apt-get install php5-gd
 composer self-update
 composer install --prefer-source
 npm install
