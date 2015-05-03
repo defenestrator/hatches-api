@@ -1,4 +1,5 @@
 #!/bin/bash
+chgrp
 cd /var/www/hatches-api/
 # probably not needed
 #npm install -g n
@@ -8,7 +9,7 @@ apt-get install php5-curl -y
 apt-get install php5-gd -y
 composer self-update
 composer install --prefer-source --no-dev
-chgrp -R www-data /var/www/hatches-api/hatches-api/
+chgrp -R www-data /var/www/hatches-api/
 rm /etc/nginx/sites-enabled/default
 cp nginx.default /etc/nginx/sites-available/default
 service nginx restart;
