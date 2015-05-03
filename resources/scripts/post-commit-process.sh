@@ -1,8 +1,8 @@
 #!/bin/bash
 
+cd /var/www/hatches-api/
 npm install -g n
 npm n stable
-cd /var/www/hatches-api/
 composer self-update
 composer install --prefer-source
 npm install
@@ -17,5 +17,5 @@ php artisan flyfish
 php artisan key:generate
 php artisan migrate --seed --force #will be remved in realsies production env
 php artisan vendor:publish
-behat --init
+/var/www/hatches-api/vendor/bin/behat --init
 gulp test
