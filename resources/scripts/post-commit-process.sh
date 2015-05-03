@@ -6,10 +6,10 @@ touch hatches-api/storage/database.sqlite
 chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
-composer install --prefer-source --no-dev
-rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites/nginx.conf
+composer install --prefer-source --no-dev --no-progress
+# rm /etc/nginx/sites-enabled/default && rm /etc/nginx/sites/nginx.conf
 touch /etc/nginx/sites-enabled/default
-cp nginx.default /etc/nginx/sites-available/default && cp nginx.conf /etc/nginx/nginx.conf
+cp server.conf /etc/nginx/sites-available/api.hatch.es
 service nginx restart
 mv .env.blank .env
 chmod -R 0777 /var/www/hatches-api/storage
