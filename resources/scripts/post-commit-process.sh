@@ -11,7 +11,7 @@ composer install --prefer-source
 npm install
 chgrp -R www-data /var/www/hatches-api/hatches-api/
 rm /etc/nginx/sites-available/default
-mv nginx.default /etc/nginx/sites-available/default
+cp nginx.default /etc/nginx/sites-available/default
 service nginx restart;
 mv .env.behat.travis .env.behat && mv .env.blank .env
 touch storage/database.sqlite storage/acceptance/acceptance.sqlite
