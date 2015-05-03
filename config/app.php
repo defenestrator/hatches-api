@@ -141,7 +141,6 @@ return [
          */
         'Spatie\Glide\GlideServiceProvider',
         'Collective\Html\HtmlServiceProvider',
-        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
         'GrahamCampbell\Markdown\MarkdownServiceProvider',
         //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
 
