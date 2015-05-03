@@ -46,4 +46,9 @@ class HatchReport extends Report {
     {
         $this->save();
     }
+
+    public function index($id)
+    {
+        $this->whereUserId($id);
+    }
 }

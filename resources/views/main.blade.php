@@ -1,127 +1,9 @@
 @extends('layouts/master')
 
 @section('content')
-    <section class="content-main">
-        <div class="row">
-            <div class="col-md-10 col-md-offset-2 action-strip">
-                <div class="btn-block">
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Trip Reports</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Hatch Reports</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Fisheries</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Fly Patterns</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Fly Boxes</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Fish Species</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#">Action</a></li>
-                            <li><a href="#">Another action</a></li>
-                            <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Uploads</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-
-                    </div>
-                    <div class="btn-group" role="group">
-                        <button type="button" class="btn btn-primary">Profile</button>
-                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
-                                aria-expanded="false">
-                            <span class="caret"></span>
-                            <span class="sr-only">Toggle Dropdown</span>
-                        </button>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <hr class="top-separator"/>
-        <div class="row">
             <div class="col-md-2 col-md-offset-0">
-                <div class="panel panel-danger">
-                    <div class="panel-heading">Your Danger Stuff</div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Your Personal Stuff</div>
                     <div class="panel-body">
                         <h4>Learn the terrain.</h4>
                         <img src="/img/TypicalEastGallatinRiverRainbowTrout.jpg"/>
@@ -382,9 +264,7 @@
                         <h3><em>The</em> premium app for hardcore fly anglers</h3>
                     </article>
                 </section>
-                </div>
             </div>
         </div>
-    </section>
 
 @endsection

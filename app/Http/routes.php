@@ -15,9 +15,12 @@
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'PagesController@index');
-Route::get('profile', 'ProfilePageController@show');
-Route::post('profile/', 'ProfilePageController@create');
-
+Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
+    Route::get('profile/', 'ProfilePageController@show');
+    Route::post('profile/', 'ProfilePageController@create');
+    Route::get('trip-reports', 'TripReportPageController@index');
+    Route::get('hatch-reports', 'HatchReportPageController@index');
+});
 /*
  * API routes:
  */

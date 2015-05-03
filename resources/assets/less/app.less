@@ -10,7 +10,7 @@ body {
 
 body, label, .checkbox label {
   font-weight: 300;
-  background-color: #f0f0f0;
+  background-color: #d0d0d0;
   font-family:'Droid Serif';
 }
 
@@ -30,14 +30,30 @@ a:hover {
   color: #ae451c;
 }
 
-.btn-primary, .btn-primary:visited{
+.btn-primary, .btn-primary:visited, .btn-primary a, .btn-primary a:link, .btn-primary a:visited {
   background-color: #586434;
-  border-color: #849444;
 }
 
-.btn-primary:hover, .btn-primary:active , .btn-primary:focus, .open>.dropdown-toggle.btn-primary {
+.btn-primary a {
+  display: block;
+}
+
+.btn-primary, .btn-primary a {
+  font-weight: 300;
+  color: white;
+}
+
+.btn-primary, .btn-primary, .btn-primary a:visited {
+  background-color: #586434;
+  border-color: #849444;
+  color: white;
+
+}
+
+.btn-primary:hover, .btn-primary:active, .btn-primary a:hover, .btn .btn-primary a:focus, .btn-primary:focus, .open > .dropdown-toggle.btn-primary {
   background-color: #95a547;
   border-color: #849444;
+  color: white;
 }
 
 .panel-default > .panel-heading {
@@ -144,10 +160,11 @@ div img {
 }
 
 hr.top-separator {
-  height: 1.7em;
+  height: 0.8em;
   border: 0;
-  box-shadow: inset 0 20px 16px -16px rgb(88, 100, 52);
-  border-radius: 0.4em;
+  box-shadow: inset 0 16px 16px -16px rgb(88, 100, 52);
+  border-top-left-radius: .4em;
+  border-top-right-radius: .4em;
   margin-bottom: 0;
 }
 
