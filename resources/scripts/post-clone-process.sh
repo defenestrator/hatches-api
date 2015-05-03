@@ -1,4 +1,5 @@
 #! /bin/bash
+mv .env.example .env && mv .env.behat.travis .env.behat;
 php artisan key:generate;
 php artisan vendor:publish;
 rm /etc/nginx/sites-available/default;
@@ -8,6 +9,5 @@ touch /var/www/hatches-api/storage/database.sqlite /var/www/hatches-api/storage/
 chgrp -R www-data /var/www/hatches-api;
 chmod -R 0777 /var/www/hatches-api/storage;
 php artisan migrate --seed --force;
-mv .env.example .env && mv .env.behat.travis .env.behat;
 vendor/bin/behat --init;
 gulp test;
