@@ -2,8 +2,6 @@
 
 use Illuminate\Console\Command;
 use Hatches\Commands\InspireFlyFishers;
-use Symfony\Component\Console\Input\InputOption;
-use Symfony\Component\Console\Input\InputArgument;
 
 class FlyFish extends Command {
 

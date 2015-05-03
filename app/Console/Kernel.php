@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel {
 		'Hatches\Console\Commands\Inspire',
         'Hatches\Console\Commands\FlyFish',
         'Hatches\Console\Commands\Docs',
+        'Hatches\Console\Commands\AfterClone',
 	];
 
 	/**
