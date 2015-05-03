@@ -1,6 +1,6 @@
 server {
     listen 80;
-    server_name api.hatch.es;
+    server_name localhost;
     root /var/www/hatches-api/public/;
 
     index index.html index.htm index.php;
