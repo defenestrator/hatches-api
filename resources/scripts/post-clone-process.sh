@@ -1,7 +1,7 @@
 #!/bin/bash
 
 composer install --prefer-source;
-npm instal;
+npm install;
 php artisan key:generate;
 php artisan migrate --seed --force;
 php artisan vendor:publish;
