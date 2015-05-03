@@ -1,5 +1,5 @@
 #!/bin/bash
-git clone https://github.com/defenestrator/hatches-api.git
+
 npm install -g n
 npm n stable
 cd /var/www/hatches-api/
