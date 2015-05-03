@@ -7,8 +7,6 @@ use Laracasts\TestDummy\Factory as TestDummy;
  */
 class IntegrationTest extends TestCase
 {
-    use DatabaseTransactions;
-
     /**
      * @test
      */
