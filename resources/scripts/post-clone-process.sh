@@ -1,5 +1,6 @@
 #! /bin/bash
-mv .env.example .env && mv .env.behat.travis .env.behat;
+mv .env.example .env;
+mv .env.behat.travis .env.behat;
 php artisan key:generate;
 php artisan vendor:publish;
 rm /etc/nginx/sites-available/default;
