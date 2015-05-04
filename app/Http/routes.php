@@ -15,7 +15,10 @@
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'PagesController@index');
-Route::get('deployment', 'Quigley Cripple');
+Route::get('deployment', function () {
+    return Response::json(['data' => 'Quigley Cripple', 'status' => 200]);
+});
+
 Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
     Route::get('profile', 'ProfilePageController@show');
     Route::post('profile', 'ProfilePageController@create');
