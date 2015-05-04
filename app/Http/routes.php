@@ -16,7 +16,7 @@ Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
 Route::get('/', 'PagesController@index');
 Route::get('deployment', function () {
-    return Response::json(['data' => 'Quigley Cripple', 'status' => 200]);
+    return Response::json(['data' => 'secrets', 'status' => 200]);
 });
 
 Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
