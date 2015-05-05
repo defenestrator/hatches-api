@@ -44,8 +44,8 @@
                         <li><a href="/auth/login">Login</a></li>
                         <li><a href="/auth/register">Register</a></li>
                     @else
-                        <li><a href="/trip-reports/">Trips</a></li>
-                        <li><a href="/hatch-reports/">Hatches</a></li>
+                        <li><a href="{{ URL::to('trip-reports') }}">Trips</a></li>
+                        <li><a href="{{ URL::to('hatch-reports') }}">Hatches</a></li>
                         {{--<li><a href="fisheries/">Fisheries</a></li>--}}
                         {{--<li><a href="flyboxes/">Boxes</a></li>--}}
                         {{--<li><a href="fly-patterns/">Patterns</a></li>--}}
@@ -54,7 +54,7 @@
                                aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li><a href="/auth/logout">Logout</a></li>
-                                <li><a href="profile">Profile</a></li>
+                                <li><a href="{{ URL::to('profile') }}">Profile</a></li>
                             </ul>
 
                         </li>
@@ -64,120 +64,6 @@
         </nav>
     </div>
     <section class="content-main">
-        {{--<div class="row">--}}
-        {{--<div class="col-md-10 col-md-offset-2 action-strip">--}}
-        {{--<div class="btn-block">--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary"><a href="trip-reports">Trips</a></button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li></li>--}}
-        {{--<li><a href="trip-reports/new">New Report</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="Related">Related Reports</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Hatch Reports</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li><a href="#">Action</a></li>--}}
-        {{--<li><a href="#">Another action</a></li>--}}
-        {{--<li><a href="#">Something else here</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="#">Separated link</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Fisheries</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li><a href="#">Action</a></li>--}}
-        {{--<li><a href="#">Another action</a></li>--}}
-        {{--<li><a href="#">Something else here</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="#">Separated link</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Fly Patterns</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li><a href="#">Action</a></li>--}}
-        {{--<li><a href="#">Another action</a></li>--}}
-        {{--<li><a href="#">Something else here</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="#">Separated link</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Fly Boxes</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li><a href="#">Action</a></li>--}}
-        {{--<li><a href="#">Another action</a></li>--}}
-        {{--<li><a href="#">Something else here</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="#">Separated link</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Fish Species</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-        {{--<ul class="dropdown-menu" role="menu">--}}
-        {{--<li><a href="#">Action</a></li>--}}
-        {{--<li><a href="#">Another action</a></li>--}}
-        {{--<li><a href="#">Something else here</a></li>--}}
-        {{--<li class="divider"></li>--}}
-        {{--<li><a href="#">Separated link</a></li>--}}
-        {{--</ul>--}}
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Uploads</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-
-        {{--</div>--}}
-        {{--<div class="btn-group" role="group">--}}
-        {{--<button type="button" class="btn btn-primary">Profile</button>--}}
-        {{--<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"--}}
-        {{--aria-expanded="false">--}}
-        {{--<span class="caret"></span>--}}
-        {{--<span class="sr-only">Toggle Dropdown</span>--}}
-        {{--</button>--}}
-
-        {{--</div>--}}
-        {{--</div>--}}
-        {{--</div>--}}
-
-        {{--</div>--}}
         <hr class="top-separator"/>
         <div class="row">
             @yield('content')

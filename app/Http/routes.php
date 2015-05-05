@@ -20,10 +20,10 @@ Route::get('deployment', function () {
 });
 
 Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
-    Route::get('profile', 'ProfilePageController@show');
+    Route::get('{profile}', ['as' => 'profile', 'uses' => 'ProfilePageController@show']);
     Route::post('profile', 'ProfilePageController@create');
-    Route::get('trip-reports', 'TripReportPageController@index');
-    Route::get('hatch-reports', 'HatchReportPageController@index');
+    Route::get('trip-reports', ['as' => 'trip-reports', 'uses' => 'TripReportPageController@index']);
+    Route::get('hatch-reports', ['as' => 'hatch-reports', 'uses' => 'HatchReportPageController@index']);
 });
 /*
  * API routes:
