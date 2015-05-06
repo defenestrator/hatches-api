@@ -7,7 +7,6 @@ use Request;
 
 class ProfilePageController extends PagesController
 {
-
     public function show()
     {
         return view('user/profile');
@@ -16,7 +15,8 @@ class ProfilePageController extends PagesController
     public function create()
     {
         $data = Request::capture();
-        return Profile::create([
+        Request::flash();
+        Profile::create([
             'gender' => $data['gender'],
             'facebook' => $data['facebook'],
             'google' => $data['google'],
@@ -24,5 +24,6 @@ class ProfilePageController extends PagesController
             'twitter' => $data['twitter'],
             'youtube' => $data['youtube']
         ]);
+        return view('user/profile');
     }
 }

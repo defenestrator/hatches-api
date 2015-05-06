@@ -17,20 +17,8 @@
                                 </ul>
                             </div>
                         @endif
-                        {!! Form::model($data = Input::all(), ['profile/update' => '']) !!}
-                        <div class="form-group">
-                            <div class="col-md-8 col-md-offset-0">
-                                {!! Form::label('gender', 'Gender: ') !!}
-                                {!! Form::label('gender', 'Unspecified ') !!}
-                                {!! Form::radio('gender', 'unspecified', 'true') !!}
-                                {!! Form::label('gender', 'Male ') !!}
-                                {!! Form::radio('gender', 'male') !!}
-                                {!! Form::label('gender', 'Female ') !!}
-                                {!! Form::radio('gender', 'female') !!}
-                                {!! Form::label('gender', 'Other ') !!}
-                                {!! Form::radio('gender', 'other') !!}
-                            </div>
-                        </div>
+
+                            {!! Form::model($data = Input::all(), ['profile' => 'user/profile']) !!}
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-0">
                                 {!! Form::label('facebook', 'Facebook:')!!}
@@ -73,10 +61,10 @@
                     </div>
                     <div class="title-container">
                         <div class="content">
-
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 @endsection
