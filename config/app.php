@@ -142,7 +142,6 @@ return [
         'Spatie\Glide\GlideServiceProvider',
         'Collective\Html\HtmlServiceProvider',
         'GrahamCampbell\Markdown\MarkdownServiceProvider',
-        //'Sorskod\Larasponse\LarasponseServiceProvider', - using Hatches\Providers\JsonApiServiceProvider instead
 
 		/*
 		 * Application Service Providers...
@@ -154,11 +153,8 @@ return [
 		'Hatches\Providers\RouteServiceProvider',
         'Hatches\Providers\JsonApiServiceProvider',
 
-        /*
-		 * Dev Service Providers... (which is an improper use of an ellipsis)
-		 */
 
-	],
+    ],
 
 
 	/*
@@ -214,3 +210,12 @@ return [
 	],
 
 ];
+
+/*
+ * Dev Service Providers... (which is an improper use of an ellipsis)
+ * Append to services if environment is not production.
+ *
+ */
+if (!env('produciton')) {
+    append_config(['providers' => 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider']);
+}
