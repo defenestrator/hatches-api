@@ -7,7 +7,7 @@
     <title>Hatch.es</title>
     <!-- Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
@@ -50,7 +50,6 @@
                         {{--<li><a href="fisheries/">Fisheries</a></li>--}}
                         {{--<li><a href="flyboxes/">Boxes</a></li>--}}
                         {{--<li><a href="fly-patterns/">Patterns</a></li>--}}
-                        <li><a href="{{ URL::to('admin') }}">Admin</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
@@ -64,7 +63,7 @@
                 </ul>
             </div>
         </nav>
-        <h1 class="invisible ache-one">Fly fishing tools for your mobile device</h1>
+        <h1 class="invisible ache-one">Hatches Administration</h1>
     </div>
     <div class="content-main">
         <hr class="top-separator">

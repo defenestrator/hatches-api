@@ -39,6 +39,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereDeletedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereCreatedAt($value)
  * @method static \Illuminate\Database\Query\Builder|\Hatches\User whereUpdatedAt($value)
+ * @property-read \Profile $profiles 
  */
 class User extends Model implements AuthenticatableContract, CanResetPasswordContract {
 
@@ -126,7 +127,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	public function roles()
 	{
-		return $this->belongsToMany('Role');
+        return $this->belongsToMany('User', 'role_user');
 	}
 
 	/**
@@ -134,7 +135,7 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
 	 */
 	public function buddies()
 	{
-		return $this->belongsToMany('User');
+        return $this->belongsToMany('User', 'buddy_user');
 	}
 
     public function profiles()

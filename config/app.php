@@ -1,5 +1,7 @@
 <?php
-
+if (!env('produciton')) {
+    append_config(['providers' => 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider']);
+}
 return [
 
 	/*
@@ -152,6 +154,7 @@ return [
 		'Hatches\Providers\EventServiceProvider',
 		'Hatches\Providers\RouteServiceProvider',
         'Hatches\Providers\JsonApiServiceProvider',
+//        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider'
 
 
     ],
@@ -216,6 +219,3 @@ return [
  * Append to services if environment is not production.
  *
  */
-if (!env('produciton')) {
-    append_config(['providers' => 'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider']);
-}

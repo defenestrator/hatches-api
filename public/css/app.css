@@ -6364,6 +6364,10 @@ button.close {
     padding: 0 1em
 }
 
+h1 .ache-one {
+    line-height: .5em
+}
+
 a {
     font-weight: 700
 }

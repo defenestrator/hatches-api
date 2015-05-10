@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         'roles',
         'tags',
         'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
-        'users', 'user_buddy', 'role_user',
+        'users', 'buddy_user', 'role_user',
         'water_data',
         'weather'
     ];

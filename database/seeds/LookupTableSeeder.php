@@ -109,7 +109,7 @@ class LookupTableSeeder extends DatabaseSeeder
                 'tag_id' => $faker->randomElement($tagIds)
             ]);
 
-            DB::table('user_buddy')->insert([
+            DB::table('buddy_user')->insert([
                 'user_id' => $faker->randomElement($userIds),
                 'buddy_id' => $faker->randomElement($userIds)
             ]);

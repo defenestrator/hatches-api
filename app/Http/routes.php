@@ -24,6 +24,7 @@ Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
     Route::post('profile', 'ProfilePageController@create');
     Route::get('trip-reports', ['as' => 'trip-reports', 'uses' => 'TripReportPageController@index']);
     Route::get('hatch-reports', ['as' => 'hatch-reports', 'uses' => 'HatchReportPageController@index']);
+    Route::get('admin', ['as' => 'admin', 'uses' => 'AdministratorPageController@index']);
 });
 /*
  * API routes:
@@ -63,6 +64,7 @@ Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
 //	Route::resource('water-data', 'WaterDataController');
 //
 //	Route::resource('weather', 'WeatherController');
+
 });
 
 Route::controllers([

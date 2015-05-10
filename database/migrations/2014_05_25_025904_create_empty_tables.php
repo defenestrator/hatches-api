@@ -25,7 +25,7 @@ class CreateEmptyTables extends Migration
         'roles', 'role_user',
         'tags',
         'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
-        'users', 'user_buddy',
+        'users', 'buddy_user',
         'water_data',
         'weather'
     ];
@@ -346,7 +346,7 @@ class CreateEmptyTables extends Migration
         }
         );
 
-        Schema::create('user_buddy', function ($table) {
+        Schema::create('buddy_user', function ($table) {
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
                 ->references('id')

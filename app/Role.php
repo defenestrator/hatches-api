@@ -20,7 +20,7 @@ class Role extends Model {
 
     public function user()
     {
-        return $this->belongsToMany('User');
+        return $this->belongsToMany('User', 'role_user');
     }
 
 }

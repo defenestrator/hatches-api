@@ -3,7 +3,6 @@
 use Hatches\User;
 use Illuminate\Http\Request;
 use Hatches\Transformers\UserTransformer;
-use Illuminate\Auth\Guard;
 
 /**
  * Class UsersController
@@ -75,17 +74,13 @@ class UsersController extends Controller
      * DELETE /users/{id}
      *
      * @param  int $id
-     * @param Guard $auth
      * @param User $user
      * @return Response
      * @internal param $
      */
-    public function destroy($id, Guard $auth, User $user)
+    public function destroy($id, User $user)
     {
-        if ($auth->check() && $id == Guard::user()->getAuthIdentifier()) {
-            return $user->destroy($id);
-        }
-        return $this->respondForbiddenRequest("You can't delete other users, only yourself.");
+        return $user->runSoftDelete($id);
     }
 
 }
