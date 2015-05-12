@@ -151,8 +151,7 @@ return [
 		'Hatches\Providers\ConfigServiceProvider',
 		'Hatches\Providers\EventServiceProvider',
 		'Hatches\Providers\RouteServiceProvider',
-        'Hatches\Providers\JsonApiServiceProvider',
-//        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider'
+        'Hatches\Providers\JsonApiServiceProvider'
     ],
 
 
