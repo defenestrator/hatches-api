@@ -1,4 +1,5 @@
-"use strict"
+"use strict";
+
 var // declare ALL THE THINGS
 gulp = require('gulp'),
 behat = require('gulp-behat'),
