@@ -17,8 +17,6 @@ class TestCase extends IntegrationTest
 
 		$app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
 
-        $app->followRedirects(true);
-
 		return $app;
 	}
 

@@ -11,7 +11,7 @@ before_script:
   - composer install --prefer-source
   - php artisan key:generate
   - php artisan migrate --seed
-
+  -php artisan env
 script:
   - phpunit
   - vendor/bin/phpspec run -v
