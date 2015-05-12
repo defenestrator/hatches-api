@@ -5,6 +5,7 @@ use Laracasts\Integrated\Extensions\Laravel as IntegrationTest;
 use Laracasts\TestDummy\Factory as TestDummy;
 class TestCase extends IntegrationTest
 {
+    protected $followRedirects = true;
 	/**
 	 * Creates the application.
 	 *

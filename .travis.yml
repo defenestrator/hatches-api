@@ -10,6 +10,7 @@ matrix:
     - php: hhvm
     - php: 5.4
 sudo: false
+
 before_script:
   - mv .env.behat.travis .env.behat
   - mv .env.blank .env

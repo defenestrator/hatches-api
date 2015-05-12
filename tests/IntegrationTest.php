@@ -10,6 +10,7 @@ class IntegrationTest extends TestCase
 {
     use DatabaseTransactions;
 
+
     /**
      * @test
      */
