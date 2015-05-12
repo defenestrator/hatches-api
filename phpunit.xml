@@ -24,6 +24,6 @@
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="DB_TYPE" value="sqlite"/>
-        <env name="SQLITE_DB" value="acceptance/acceptance.sqlite"/>
+        <env name="SQLITE_DB" value="storage/acceptance/acceptance.sqlite"/>
     </php>
 </phpunit>
