@@ -46,6 +46,7 @@ gulp.task('phpunit', function() {
 
 gulp.task('watch', function() {
     gulp.watch('./resources/assets/less/*.less', ['less']);
+    gulp.watch('./*.php', ['behat', 'phpspec', 'phpunit']);
 });
 
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);

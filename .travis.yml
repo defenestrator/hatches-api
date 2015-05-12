@@ -17,8 +17,8 @@ before_script:
   - chmod -R 777 storage
   - composer self-update
   - composer install --prefer-source
-  - php artisan flyfish
   - php artisan key:generate
+  - php artisan migrate --seed
 
 script:
   - phpunit
