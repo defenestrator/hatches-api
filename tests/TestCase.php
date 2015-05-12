@@ -1,8 +1,8 @@
 <?php
 
 use Laracasts\Integrated\Extensions\Laravel as IntegrationTest;
-// Why oh why?
 use Laracasts\TestDummy\Factory as TestDummy;
+
 class TestCase extends IntegrationTest
 {
     protected $followRedirects = true;
