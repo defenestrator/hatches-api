@@ -17,7 +17,6 @@ before_script:
   - php artisan key:generate
   #- npm install - if you want to use gulp/elixir
 
-
 script:
   # Run them tests, y'all
   #- gulp # if you are running 'npm install' in before_script
