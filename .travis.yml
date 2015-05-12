@@ -13,11 +13,10 @@ sudo: false
 before_script:
   - mv .env.behat.travis .env.behat
   - mv .env.blank .env
-  - chmod -R 777 storage
   - touch storage/acceptance/acceptance.sqlite
+  - chmod -R 777 storage
   - composer self-update
   - composer install --prefer-source
-  - composer update --prefer-source
   - php artisan flyfish
   - php artisan key:generate
 
