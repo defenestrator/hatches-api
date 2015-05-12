@@ -25,11 +25,13 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Flybox whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
+
 class Flybox extends Model {
 	protected $fillable = ['flybox_name', 'description', 'privacy'];
 
     public function user()
     {
+        // A flybox belongs to a single user.
         return $this->belongsTo('User');
     }
 
@@ -40,12 +42,11 @@ class Flybox extends Model {
 
     public function comments()
     {
-        return $this->hasMany('Comment');
+        return $this->hasMany('Comment', 'comment_user');
     }
 
     public function privacy()
     {
         return $this->hasOne('Privacy');
     }
-
 }

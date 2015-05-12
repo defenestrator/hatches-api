@@ -44,12 +44,11 @@ gulp.task('phpunit', function() {
         .pipe(phpUnit('./vendor/bin/phpunit',opt));
 });
 
-gulp.task('watch', function() {
-    gulp.watch('./resources/assets/less/*.less', ['less']);
-    gulp.watch('./*.php', ['behat', 'phpspec', 'phpunit']);
-});
-
 gulp.task('test', ['phpunit', 'phpspec', 'behat']);
 
 gulp.task('default', ['less', 'css-compile-minify', 'phpunit', 'phpspec', 'behat']);
 
+gulp.task('watch', function () {
+    gulp.watch('./resources/assets/less/*.less', ['less']);
+    gulp.watch('./**/*.php', ['test']);
+});

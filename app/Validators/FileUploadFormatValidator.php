@@ -19,7 +19,6 @@ public function is_image($image_path)
       if (array_pop($unpacked) == 'ffd8') return "jpg";
       $unpacked = unpack("H16", $data);
       if (array_pop($unpacked) == '89504e470d0a1a0a') return "png";
-
       return false;
   }
 }

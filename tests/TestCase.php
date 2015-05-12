@@ -1,11 +1,10 @@
 <?php
 
 use Laracasts\Integrated\Extensions\Laravel as IntegrationTest;
-
+// Why oh why?
 use Laracasts\TestDummy\Factory as TestDummy;
 class TestCase extends IntegrationTest
 {
-
 	/**
 	 * Creates the application.
 	 *
@@ -20,11 +19,11 @@ class TestCase extends IntegrationTest
 		return $app;
 	}
 
+    // Create a standard user account via Hatches\User
     protected function createUser(array $overrides = [])
     {
         return TestDummy::create('Hatches\User', $overrides);
     }
-
 
     protected function register(array $overrides)
     {
@@ -33,7 +32,6 @@ class TestCase extends IntegrationTest
             ->andsubmitForm('Register', $fields);
 
     }
-
 
     protected function getRegisterFields(array $overrides)
     {
