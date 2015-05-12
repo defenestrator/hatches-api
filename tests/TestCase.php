@@ -5,7 +5,6 @@ use Laracasts\TestDummy\Factory as TestDummy;
 
 class TestCase extends IntegrationTest
 {
-
 	/**
 	 * Creates the application.
 	 *
