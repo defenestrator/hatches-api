@@ -7,9 +7,8 @@
   ],
   "repositories": [
     {
-      "type": "vcs",
-      "url": "https://github.com/edos-io/Sami.git",
-      "url": "https://github.com/defenestrator/Sploosh.git"
+      "type": "git",
+      "url": "https://github.com/edos-io/Sami.git"
     }
   ],
   "license": "MIT",
@@ -38,9 +37,8 @@
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
-    "laracasts/integrated": "0.15.3",
-    "barryvdh/laravel-ide-helper": "~2.0.3",
-    "instaclick/php-webdriver": "1.4.1"
+    "laracasts/integrated": "~0.15.3",
+    "barryvdh/laravel-ide-helper": "~2.0.3"
   },
   "autoload": {
     "classmap": [
