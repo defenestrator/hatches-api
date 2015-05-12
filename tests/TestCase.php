@@ -5,7 +5,7 @@ use Laracasts\TestDummy\Factory as TestDummy;
 
 class TestCase extends IntegrationTest
 {
-    protected $followRedirects = true;
+
 	/**
 	 * Creates the application.
 	 *
@@ -16,6 +16,8 @@ class TestCase extends IntegrationTest
 		$app = require __DIR__.'/../bootstrap/app.php';
 
 		$app->make('Illuminate\Contracts\Console\Kernel')->bootstrap();
+
+        $app->followRedirects(true);
 
 		return $app;
 	}
