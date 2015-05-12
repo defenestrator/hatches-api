@@ -1,11 +1,6 @@
 language: php
 php:
   - 5.6
-  - hhvm
-matrix:
-  fast_finish: true
-  allow_failures:
-    - php: hhvm
 sudo: false
 before_script:
   - mv .env.behat.travis .env.behat
