@@ -2,7 +2,7 @@
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
          bootstrap="bootstrap/autoload.php"
-         colors="false"
+         colors="true"
          convertErrorsToExceptions="true"
          convertNoticesToExceptions="true"
          convertWarningsToExceptions="true"
@@ -23,5 +23,7 @@
         <env name="APP_ENV" value="local"/>
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
+        <env name="DB_TYPE" value="sqlite"/>
+        <env name="SQLITE_DB" value="acceptance/acceptance.sqlite"/>
     </php>
 </phpunit>
