@@ -17,7 +17,9 @@ Feature: Test that basic app pages are being served
     And I should be on "auth/login"
 
   Scenario: Login required for "v1/" page and all subroutes
-    Given I am on "v1"
-#    And I am not authenticated
+    Given I am on "/"
+    When I sign out
+    And I go to "v1"
     Then I should see "Login"
     And I should be on "auth/login"
+

@@ -1,7 +1,7 @@
 Feature: Membership
   In order to provide access to member content
-  As an Administrator
-  Authentication and Registration for Users
+  As the application owner
+  I want to allow Authentication and Registration for Users
 
   Scenario: Registration
     When I register "JohnDoe" "john@example.com"

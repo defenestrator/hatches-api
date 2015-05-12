@@ -40,6 +40,7 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
     {
     }
 
+
     /**
      * @When I register :name :email
      *
@@ -123,4 +124,15 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         PHPUnit::assertTrue(Auth::check());
         $this->assertPageAddress('/');
     }
+
+    /**
+     * @Then I sign out
+     */
+    public function iSignOut()
+    {
+        $this->visit('auth/logout');
+        $this->assertPageAddress('/');
+        PHPUnit::assertTrue(Auth::guest());
+    }
+
 }

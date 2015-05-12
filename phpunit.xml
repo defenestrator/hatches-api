@@ -20,10 +20,10 @@
         </testsuite>
     </testsuites>
     <php>
-        <env name="APP_ENV" value="local"/>
+        <env name="APP_ENV" value="integration"/>
         <env name="CACHE_DRIVER" value="array"/>
         <env name="SESSION_DRIVER" value="array"/>
         <env name="DB_TYPE" value="sqlite"/>
-        <env name="SQLITE_DB" value="acceptance/acceptance.sqlite"/>
+        <env name="SQLITE_DB" value="integration/integration.sqlite"/>
     </php>
 </phpunit>
