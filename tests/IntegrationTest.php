@@ -22,7 +22,7 @@ class IntegrationTest extends TestCase
     /**
      * @test
      */
-    function it_registers_a_user()
+    public function it_registers_a_user()
     {
         $credentials = ['name' => 'RegisterDummy', 'email' => 'register@example.com', 'password' => Hash::make('GoodPassword')];
         $this->register($credentials)
@@ -33,7 +33,7 @@ class IntegrationTest extends TestCase
     /*
      * @test
      */
-    function test_it_gives_feedback_about_invalid_registration_input()
+    public function test_it_gives_feedback_about_invalid_registration_input()
     {
         $this->createUser($overrides = ['name' => 'F', 'email' => 'fail_register@d', 'password' => '1']);
         $this->register($overrides);
@@ -46,7 +46,7 @@ class IntegrationTest extends TestCase
     /*
      * @test
      */
-    function test_it_requires_unique_email_to_register()
+    public function test_it_requires_unique_email_to_register()
     {
         $this->createUser($overrides = ['email' => 'dummy@example.com']);
         $this->register($overrides)->andSee('The email has already been taken.');
@@ -56,7 +56,7 @@ class IntegrationTest extends TestCase
     /**
      * @test
      */
-    function test_login_and_logout_with_valid_credentials()
+    public function test_login_and_logout_with_valid_credentials()
     {
         $this->createUser();
         $this->visit('auth/login')
