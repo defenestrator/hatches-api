@@ -1,14 +1,13 @@
 <?php
 
 use Laracasts\Integrated\Services\Laravel\DatabaseTransactions;
-use Laracasts\TestDummy\Factory as TestDummy;
 
 /**
  * Class IntegrationTest
  */
 class IntegrationTest extends TestCase
 {
-    use DatabaseTransactions, RegistersUsers;
+    use DatabaseTransactions, RegistersUsers, LoginLogout;
 
     /**
      * @test
@@ -50,7 +49,6 @@ class IntegrationTest extends TestCase
     {
         $this->createUser($overrides = ['email' => 'dummy@example.com']);
         $this->register($overrides)->andSee('The email has already been taken.');
-
     }
 
     /**

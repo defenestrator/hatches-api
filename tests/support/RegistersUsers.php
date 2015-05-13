@@ -3,12 +3,6 @@ use Laracasts\TestDummy\Factory as TestDummy;
 
 trait RegistersUsers
 {
-    // Create a standard user account via Hatches\User
-    protected function createUser(array $overrides = [])
-    {
-        return TestDummy::create('Hatches\User', $overrides);
-    }
-
     protected function register(array $overrides)
     {
         $fields = $this->getRegisterFields($overrides);
