@@ -23,6 +23,9 @@ config.js
 dump.rdb
 npm-debug.log
 
+# OTHER
+selenium-server-standalone-*
+
 ###############################################################
 # This is not a complete .gitignore,                          #
 # see this gist for some suggestions                          #
