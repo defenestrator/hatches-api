@@ -1,5 +1,7 @@
-# Laravel 5 #
-#############
+
+###############
+## Laravel 5 ##
+###############
 vendor/
 .env
 .env.behat
@@ -7,59 +9,22 @@ vendor/
 config/ide-helper.php
 _ide_helper.php
 composer.lock
-node_modules/
 storage/app
 storage/framework
-storage/logs
-production.env
-# Compiled source #
-###################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+storage/logs/
+tests/logs/
 
-
-# Packages #
 ############
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-.7z
-.dmg
-.gz
-.iso
-.jar
-.rar
-.tar
-.zip
+## NodeJS ##
+############
+node_modules/
+phantomjsdriver.log
+config.js
+dump.rdb
+npm-debug.log
 
-#     Logs and databases      #
-######################
-*.log
-*.sql
-
-# include sqlite db resource  #
-######################
-.sqlite
-
-#     JetBrains' IDEA              #
-######################
-/.idea
-ideconfig
-_ide_helper*
-atlassian-ide-plugin.xml
-*.token
-.phpstorm.meta.php
-
-
-#     OS generated files         #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+###############################################################
+# This is not a complete .gitignore,                          #
+# see this gist for some suggestions                          #
+# https://gist.github.com/defenestrator/5ad679db122177888da5  #
+###############################################################

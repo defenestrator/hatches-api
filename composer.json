@@ -21,7 +21,6 @@
     "sorskod/larasponse": "dev-L5",
     "edos-io/sami": "~3.0.2",
     "laravelcollective/html": "~5.0",
-    "symfony/yaml": "~2.1.0",
     "graham-campbell/markdown": "~3.0"
   },
   "require-dev": {
@@ -37,8 +36,7 @@
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
-    "laracasts/integrated": "0.15.3",
-    "barryvdh/laravel-ide-helper": "~2.0.3"
+    "laracasts/integrated": "0.15.3"
   },
   "autoload": {
     "classmap": [
@@ -50,7 +48,9 @@
   },
   "autoload-dev": {
     "classmap": [
-      "tests/TestCase.php"
+      "tests/TestCase.php",
+      "tests/support",
+      "tests/acceptance"
     ]
   },
   "scripts": {
