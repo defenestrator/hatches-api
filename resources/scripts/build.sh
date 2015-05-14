@@ -6,7 +6,7 @@ chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
 composer install --prefer-source --no-dev --no-progress
-mv ../hatches.production.env ./.env
+mv /var/hatches.production.env ./.env
 service nginx restart
 chmod -R 0777 /var/www/hatches-api/storage
 php artisan key:generate
