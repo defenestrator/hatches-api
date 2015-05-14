@@ -7,9 +7,9 @@ apt-get install php5-curl -y
 apt-get install php5-gd -y
 apt-get install php5-mysql
 git clone https://github.com/defenestrator/hatches-api.git
-mv hatches.prod.env /var/www/hatches-api/.env
+mv hatches.prod.env hatches-api/.env
 chgrp -R www-data hatches-api/
-cd /var/www/hatches-api/
+cd hatches-api/
 chmod -R 0777 storage/
 composer self-update
 composer install --prefer-source --no-dev --no-progress
