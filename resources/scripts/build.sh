@@ -11,4 +11,4 @@ chmod -R 0777 /var/www/hatches-api/storage
 php artisan key:generate
 php artisan flyfish
 php artisan vendor:publish
-php artisan migrate  #will be removed in realsies production env
+php artisan migrate  --force #will be removed in realsies production env
