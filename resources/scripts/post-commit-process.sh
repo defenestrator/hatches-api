@@ -7,12 +7,10 @@ chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
 composer install --prefer-source --no-dev --no-progress
-rm /etc/nginx/sites-enabled/default
-cp server.conf /etc/nginx/sites-enabled/default
+mv ../hatches.production.env ./.env
 service nginx restart
-mv .env.blank .env
 chmod -R 0777 /var/www/hatches-api/storage
 php artisan key:generate
 php artisan flyfish
-php artisan migrate --seed --force #will be removed in realsies production env
+php artisan migrate  #will be removed in realsies production env
 php artisan vendor:publish

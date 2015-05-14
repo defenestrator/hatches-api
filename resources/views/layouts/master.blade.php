@@ -7,11 +7,14 @@
     <title>Hatch.es</title>
     <!-- Bootstrap -->
     <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Primary site CSS -->
     <link href="/css/app.css" rel="stylesheet">
+    @if(isset($thisRoute) && $thisRoute == 'administration')
+        <link href="/css/admin.css" rel="stylesheet">
+        @endif
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -32,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/"><img alt="Brand" src="/img/fly.png"/></a>
+                <a class="navbar-brand" href="/"><img alt="Hatch.es Mobile Fly Fishing Toolset" src="/img/fly.png"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,7 +53,7 @@
                         {{--<li><a href="fisheries/">Fisheries</a></li>--}}
                         {{--<li><a href="flyboxes/">Boxes</a></li>--}}
                         {{--<li><a href="fly-patterns/">Patterns</a></li>--}}
-                        <li><a href="{{ URL::to('admin') }}">Admin</a></li>
+                        <li><a href="{{ URL::to('administration') }}">Admin</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>

@@ -11,7 +11,7 @@ class HatchReportPageController extends PagesController
         if (Auth::check()) {
             $user = Auth::getUser()->id;
             $hatchReports = HatchReport::all(['user_id', 'title']);
-            return view('pages.hatch-reports')->with('hatchReports', $hatchReports->where('user_id', $user));
+            return $this->htmlPageReponse()->with('hatchReports', $hatchReports->where('user_id', $user));
         }
     }
 

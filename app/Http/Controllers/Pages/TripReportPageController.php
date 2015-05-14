@@ -11,7 +11,7 @@ class TripReportPageController extends PagesController
         if (Auth::check()) {
             $user = Auth::getUser()->id;
             $tripReports = TripReport::all(['id', 'user_id', 'title']);
-            return view('pages.trip-reports')->with('tripReports', $tripReports->where('user_id', $user));
+            return $this->htmlPageReponse()->with('tripReports', $tripReports->where('user_id', $user));
         }
 
     }

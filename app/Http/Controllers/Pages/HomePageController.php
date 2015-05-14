@@ -1,6 +1,6 @@
 <?php namespace Hatches\Http\Controllers;
 
-class AdministratorPageController extends PagesController
+class HomePageController extends PagesController
 {
     public function index()
     {

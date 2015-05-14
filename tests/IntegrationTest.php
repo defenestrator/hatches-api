@@ -15,7 +15,7 @@ class IntegrationTest extends TestCase
     public function test_root_route()
     {
         $this->visit('/');
-        $this->andSee('Brand');
+        $this->andSee('Hatch.es Mobile Fly Fishing Toolset');
     }
 
     /**

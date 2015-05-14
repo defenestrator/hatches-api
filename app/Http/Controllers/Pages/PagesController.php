@@ -1,5 +1,11 @@
 <?php namespace Hatches\Http\Controllers;
 
+use Route;
+
+/**
+ * Class PagesController
+ * @package Hatches\Http\Controllers
+ */
 class PagesController extends Controller {
 
 	/*
@@ -13,23 +19,32 @@ class PagesController extends Controller {
 	|
 	*/
 
+    /**
+     * @var null
+     */
+    protected $thisRoute;
+    /**
+     * @var null
+     */
+    protected $thisView;
+    /**
+     * @var null
+     */
+    protected $htmlPage;
+
 	/**
 	 * Create a new controller instance.
-	 *
-	 * @return void
 	 */
 	public function __construct()
+
 	{
+        $this->thisRoute = Route::current()->uri();
 	}
 
-	/**
-	 * Show the application dashboard to the user.
-	 *
-	 * @return Response
-	 */
-	public function index()
-	{
-		return view('main');
-	}
-
+    protected function htmlPageReponse()
+    {
+        $this->thisView = Route::current()->getName();
+        $this->htmlPage = view('pages.' . $this->thisView)->with(['thisRoute' => $this->thisRoute]);
+        return $this->htmlPage;
+    }
 }

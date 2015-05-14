@@ -4,30 +4,34 @@
 |--------------------------------------------------------------------------
 | Application Routes
 |--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
 */
 
 //Protect data injection changes from csrf
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
-Route::get('/', 'PagesController@index');
+
 Route::get('deployment', function () {
     return Response::json(['data' => 'secrets', 'status' => 200]);
 });
 
+/** HTML View Routes **
+ *  These routes require a name in addtion to the Controller and action
+ *  These routes should extend PageController and
+ *  the best way to return the view is by using:
+ *  return $this->htmlPageResponse
+ */
+Route::get('/', ['as' => 'main', 'uses' => 'HomePageController@index']);
+
 Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
     Route::get('profile', ['as' => 'profile', 'uses' => 'ProfilePageController@show']);
-    Route::post('profile', 'ProfilePageController@create');
+    Route::post('profile', ['as' => 'profile', 'uses' => 'ProfilePageController@create']);
     Route::get('trip-reports', ['as' => 'trip-reports', 'uses' => 'TripReportPageController@index']);
     Route::get('hatch-reports', ['as' => 'hatch-reports', 'uses' => 'HatchReportPageController@index']);
-    Route::get('admin', ['as' => 'admin', 'uses' => 'AdministratorPageController@index']);
+    Route::get('administration', ['as' => 'administration', 'uses' => 'AdministratorPageController@index']);
 });
+
 /*
- * API routes:
+ * API routes /v1/ :
  */
 
 Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
