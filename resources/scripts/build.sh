@@ -1,4 +1,5 @@
 #!/bin/bash
+sudo -i
 cd /var/www
 rm -rf hatches-api/
 apt-get update
@@ -16,3 +17,4 @@ php artisan key:generate
 php artisan flyfish
 php artisan vendor:publish
 php artisan migrate  --force
+exit
