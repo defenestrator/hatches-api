@@ -5,9 +5,8 @@ apt-get install php5-gd -y
 chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
+mv /var/hatches.prod.env /var/www/hatches-api/.env
 composer install --prefer-source --no-dev --no-progress
-mv /var/hatches.production.env /var/www/hatches-api/.env
-service nginx restart
 chmod -R 0777 /var/www/hatches-api/storage
 php artisan key:generate
 php artisan flyfish
