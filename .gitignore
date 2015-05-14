@@ -5,7 +5,7 @@
 vendor/
 .env
 .env.behat
-.idea
+hatches.prod.env
 config/ide-helper.php
 _ide_helper.php
 composer.lock
