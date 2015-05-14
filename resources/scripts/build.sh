@@ -2,6 +2,7 @@
 apt-get update
 apt-get install php5-curl -y
 apt-get install php5-gd -y
+apt-get install php5-mysql
 chgrp -R www-data hatches-api/
 cd /var/www/hatches-api/
 composer self-update
