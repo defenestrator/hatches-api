@@ -1,9 +1,4 @@
 #!/bin/bash
-#!/bin/bash
-cd /var/www
-if hatches-api; then
-    rm -rf hatches-api/
-fi
 apt-get update
 apt-get install php5-curl -y
 apt-get install php5-gd -y
