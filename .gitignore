@@ -13,6 +13,7 @@ storage/app
 storage/framework
 storage/logs/
 tests/logs/
+build.sh
 
 ############
 ## NodeJS ##
