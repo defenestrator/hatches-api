@@ -37,7 +37,7 @@
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
     "symfony/yaml": "~2.1.0",
-    "laracasts/integrated": "0.15.3"
+    "laracasts/integrated": "~0.15.3"
   },
   "autoload": {
     "classmap": [
