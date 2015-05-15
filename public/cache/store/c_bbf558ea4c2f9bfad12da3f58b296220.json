@@ -61,7 +61,13 @@
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-            "default": [],
+          "default": {
+            "name": {
+              "parts": [
+                "false"
+              ]
+            }
+          },
             "errors": []
         },
         "id": {

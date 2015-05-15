@@ -85,7 +85,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Prey.php",
-    "hash": "ef894f009551ab31517ad9a6580fcff939b96e91",
+  "hash": "01d880b59cfb25d8cc036cf707a41955127a74cc",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

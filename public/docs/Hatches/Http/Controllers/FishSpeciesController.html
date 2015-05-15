@@ -46,7 +46,6 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
-                    <li><a href="../main">Home</a></li>
                     <li><a href="../../../classes.html">Classes</a></li>
                                             <li><a href="../../../namespaces.html">Namespaces</a></li>
                                         <li><a href="../../../interfaces.html">Interfaces</a></li>
@@ -153,7 +152,7 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_respondNotFound">respondNotFound</a>(string $message = &#039;Not Found!&#039;)
+                    <a href="#method_respondNotFound">respondNotFound</a>(string $message = &#039;There are no fish in this run. That\&#039;s a 404 error, good buddy.&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondNotFound"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
@@ -163,7 +162,8 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_respondInternalError">respondInternalError</a>(string $message = &#039;Internal Error!&#039;)
+                    <a href="#method_respondInternalError">respondInternalError</a>(string $message = &#039;Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondInternalError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
@@ -173,7 +173,7 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_respondAuthenticationError">respondAuthenticationError</a>(string $message = &#039;Authentication Error!&#039;)
+                    <a href="#method_respondAuthenticationError">respondAuthenticationError</a>(string $message = &#039;Authentication Error. Please login before continuing.&#039;)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondAuthenticationError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
@@ -190,10 +190,20 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondForbiddenRequest">respondForbiddenRequest</a>(string $message = &#039;Sorry, you aren\&#039;t allowed to do that!&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondForbiddenRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<abbr title="Sorskod\Larasponse\Larasponse">Larasponse</abbr> $fractal)
+                    <a href="#method___construct">__construct</a>(<abbr title="Hatches\Http\Controllers\Sorskod\Larasponse\Larasponse">Larasponse</abbr> $fractal)
                                             <p class="no-description">No description</p>
                                     </div>
                 <div class="col-md-2"></div>
@@ -203,7 +213,7 @@
                     <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_index">index</a>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)
+                    <a href="#method_index">index</a>(<abbr title="Hatches\Http\Controllers\Illuminate\Http\Request">Request</abbr> $request)
                                             <p>Display a listing of the resource.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -212,7 +222,7 @@
                     <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_create">create</a>()
+                    <a href="#method_create">create</a>($data)
                                             <p>Show the form for creating a new resource.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -221,7 +231,7 @@
                     <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_store">store</a>()
+                    <a href="#method_store">store</a>($data)
                                             <p>Store a newly created resource in storage.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
@@ -269,7 +279,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_setStatusCode">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_setStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 20</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_setStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 22</div>
         <code>                    <abbr title="Hatches\Http\Controllers\$this">$this</abbr>
     <strong>setStatusCode</strong>(mixed $statusCode)</code>
     </h3>
@@ -305,7 +315,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getStatusCode">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_getStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 29</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_getStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 31</div>
         <code>                    mixed
     <strong>getStatusCode</strong>()</code>
     </h3>
@@ -330,7 +340,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respond">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respond"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 39</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respond"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 41</div>
         <code>                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
     <strong>respond</strong>($data, array $headers = array())</code>
     </h3>
@@ -372,7 +382,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respondWithError">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondWithError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 48</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondWithError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 50</div>
         <code>                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
     <strong>respondWithError</strong>($message)</code>
     </h3>
@@ -408,9 +418,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respondNotFound">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondNotFound"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 62</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondNotFound"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 64</div>
         <code>                    mixed
-    <strong>respondNotFound</strong>(string $message = &#039;Not Found!&#039;)</code>
+    <strong>respondNotFound</strong>(string $message = &#039;There are no fish in this run. That\&#039;s a 404 error, good buddy.&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -444,9 +454,10 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respondInternalError">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondInternalError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 71</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondInternalError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 73</div>
         <code>                    mixed
-    <strong>respondInternalError</strong>(string $message = &#039;Internal Error!&#039;)</code>
+    <strong>respondInternalError</strong>(string $message = &#039;Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -480,9 +491,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respondAuthenticationError">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondAuthenticationError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 80</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondAuthenticationError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 83</div>
         <code>                    mixed
-    <strong>respondAuthenticationError</strong>(string $message = &#039;Authentication Error!&#039;)</code>
+    <strong>respondAuthenticationError</strong>(string $message = &#039;Authentication Error. Please login before continuing.&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -516,9 +527,45 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_respondBadRequest">
-        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondBadRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 89</div>
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondBadRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 92</div>
         <code>                    mixed
     <strong>respondBadRequest</strong>(string $message = &#039;Bad Request! Naughty Request!&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondForbiddenRequest">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondForbiddenRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 101</div>
+        <code>                    mixed
+    <strong>respondForbiddenRequest</strong>(string $message = &#039;Sorry, you aren\&#039;t allowed to do that!&#039;)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -554,7 +601,7 @@
                     <h3 id="method___construct">
         <div class="location">at line 20</div>
         <code>                    
-    <strong>__construct</strong>(<abbr title="Sorskod\Larasponse\Larasponse">Larasponse</abbr> $fractal)</code>
+    <strong>__construct</strong>(<abbr title="Hatches\Http\Controllers\Sorskod\Larasponse\Larasponse">Larasponse</abbr> $fractal)</code>
     </h3>
     <div class="details">
                 <div class="tags">
@@ -562,7 +609,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Sorskod\Larasponse\Larasponse">Larasponse</abbr></td>
+                <td><abbr title="Hatches\Http\Controllers\Sorskod\Larasponse\Larasponse">Larasponse</abbr></td>
                 <td>$fractal</td>
                 <td>
 </td>
@@ -580,7 +627,7 @@
                     <h3 id="method_index">
         <div class="location">at line 33</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
-    <strong>index</strong>(<abbr title="Illuminate\Http\Request">Request</abbr> $request)</code>
+    <strong>index</strong>(<abbr title="Hatches\Http\Controllers\Illuminate\Http\Request">Request</abbr> $request)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
@@ -590,7 +637,7 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="Illuminate\Http\Request">Request</abbr></td>
+                <td><abbr title="Hatches\Http\Controllers\Illuminate\Http\Request">Request</abbr></td>
                 <td>$request</td>
                 <td>
 </td>
@@ -616,14 +663,25 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at line 52</div>
+        <div class="location">at line 53</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
-    <strong>create</strong>()</code>
+    <strong>create</strong>($data)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
                                     <p>Show the form for creating a new resource.</p>                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -643,14 +701,25 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_store">
-        <div class="location">at line 62</div>
+        <div class="location">at line 64</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
-    <strong>store</strong>()</code>
+    <strong>store</strong>($data)</code>
     </h3>
     <div class="details">
                     <div class="method-description">
                                     <p>Store a newly created resource in storage.</p>                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -670,7 +739,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_show">
-        <div class="location">at line 73</div>
+        <div class="location">at line 75</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
     <strong>show</strong>(int $id)</code>
     </h3>
@@ -708,7 +777,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_edit">
-        <div class="location">at line 84</div>
+        <div class="location">at line 86</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
     <strong>edit</strong>(int $id)</code>
     </h3>
@@ -746,7 +815,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_update">
-        <div class="location">at line 95</div>
+        <div class="location">at line 97</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
     <strong>update</strong>(int $id)</code>
     </h3>
@@ -784,7 +853,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_destroy">
-        <div class="location">at line 106</div>
+        <div class="location">at line 108</div>
         <code>                    <abbr title="Hatches\Http\Controllers\Response">Response</abbr>
     <strong>destroy</strong>(int $id)</code>
     </h3>

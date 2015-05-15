@@ -97,7 +97,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Asset.php",
-    "hash": "9bee68d1dc2a1925564770e7b00c674abd8a3a91",
+  "hash": "effe3d7c8e6b644252e5ad5c1eff75d545c8255e",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

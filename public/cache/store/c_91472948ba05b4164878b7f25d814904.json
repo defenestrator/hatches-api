@@ -49,7 +49,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Role.php",
-    "hash": "469181b9d83f0797714c2bedee7da84a25c365b4",
+  "hash": "727d7ea9359d4f15551b1b2418f87558c6f25f02",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -70,7 +70,13 @@
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-            "default": [],
+          "default": {
+            "name": {
+              "parts": [
+                "false"
+              ]
+            }
+          },
             "errors": []
         },
         "id": {

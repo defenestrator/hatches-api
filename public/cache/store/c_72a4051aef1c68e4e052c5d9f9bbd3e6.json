@@ -46,9 +46,9 @@
     },
     "namespace": "Hatches",
     "file": "app\/Report.php",
-    "hash": "95cd09ceb2967123236797a3d42b8d2206d1007f",
+  "hash": "71b5c55cf3edf26afffc39c36c9b11725c136234",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
-    "modifiers": 0,
+  "modifiers": 16,
     "is_trait": false,
     "is_interface": false,
     "aliases": {

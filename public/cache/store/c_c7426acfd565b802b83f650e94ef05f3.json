@@ -1,13 +1,13 @@
 {
     "name": "Hatches\\TripReport",
-    "line": 44,
+  "line": 41,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches",
     "file": "app\/TripReport.php",
-    "hash": "eb3f73dd99a31c85fcb0a3d139fa197f0a229398",
+  "hash": "d150afc94e1ed17cefd379035c01669412ed1f65",
     "parent": "Hatches\\Report",
     "modifiers": 0,
     "is_trait": false,
@@ -22,7 +22,7 @@
     "methods": {
         "createReport": {
             "name": "createReport",
-            "line": 52,
+          "line": 49,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

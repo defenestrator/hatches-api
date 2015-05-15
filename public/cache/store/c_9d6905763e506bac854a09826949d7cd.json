@@ -83,7 +83,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Comment.php",
-    "hash": "51433f06ffcc8133f0d999ac3af3fd0b3b193cc0",
+  "hash": "3c4316b8b1b47b6b481d219a3d5b4a15d0bff628",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

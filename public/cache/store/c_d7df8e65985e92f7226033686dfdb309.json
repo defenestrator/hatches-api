@@ -1,18 +1,26 @@
 {
     "name": "Hatches\\Http\\Controllers\\PagesController",
-    "line": 3,
-    "short_desc": "",
+  "line": 9,
+  "short_desc": "Class PagesController",
     "long_desc": "",
     "hint": null,
-    "tags": [],
+  "tags": {
+    "package": [
+      [
+        "Hatches\\Http\\Controllers"
+      ]
+    ]
+  },
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/Pages\/PagesController.php",
-    "hash": "50c8ccfde23c7ca3f6e9f32c57940a5d5d3f8c07",
+  "hash": "18864dda61614e097abab431bd58bf45b40f7ac4",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
     "is_interface": false,
-    "aliases": [],
+  "aliases": {
+    "Route": "Route"
+  },
     "errors": [],
     "interfaces": [],
     "traits": [],
@@ -20,35 +28,11 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 21,
+          "line": 38,
             "short_desc": "Create a new controller instance.",
             "long_desc": "",
-            "hint": [
-                [
-                    "void",
-                    false
-                ]
-            ],
-            "hint_desc": "",
-            "tags": [],
-            "modifiers": "1",
-            "is_by_ref": "",
-            "exceptions": [],
-            "errors": [],
-            "parameters": []
-        },
-        "index": {
-            "name": "index",
-            "line": 31,
-            "short_desc": "Show the application dashboard to the user.",
-            "long_desc": "",
-            "hint": [
-                [
-                    "\\Hatches\\Http\\Controllers\\Response",
-                    false
-                ]
-            ],
-            "hint_desc": "",
+          "hint": null,
+          "hint_desc": null,
             "tags": [],
             "modifiers": "1",
             "is_by_ref": "",

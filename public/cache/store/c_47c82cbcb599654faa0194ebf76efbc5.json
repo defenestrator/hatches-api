@@ -1,20 +1,22 @@
 {
     "name": "Hatches\\Http\\Controllers\\Auth\\PasswordController",
-    "line": 6,
+  "line": 8,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers\\Auth",
     "file": "app\/Http\/Controllers\/Auth\/PasswordController.php",
-    "hash": "6ebafac1bd576cb109d822ef8b230a2399e53781",
+  "hash": "9925ddc85613018ea265785a260eb24acccc6c85",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
     "is_interface": false,
     "aliases": {
         "Controller": "Hatches\\Http\\Controllers\\Controller",
-        "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
+      "Guard": "Illuminate\\Contracts\\Auth\\Guard",
+      "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords",
+      "PasswordBroker": "Illuminate\\Auth\\Passwords\\PasswordBroker"
     },
     "errors": [],
     "interfaces": [],
@@ -22,6 +24,54 @@
         "Illuminate\\Foundation\\Auth\\ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
     },
     "properties": [],
-    "methods": [],
+  "methods": {
+    "__construct": {
+      "name": "__construct",
+      "line": 22,
+      "short_desc": "",
+      "long_desc": "",
+      "hint": null,
+      "hint_desc": null,
+      "tags": [],
+      "modifiers": "1",
+      "is_by_ref": "",
+      "exceptions": [],
+      "errors": [],
+      "parameters": {
+        "auth": {
+          "name": "auth",
+          "line": 22,
+          "short_desc": null,
+          "long_desc": null,
+          "hint": [
+            [
+              "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Guard",
+              false
+            ]
+          ],
+          "tags": [],
+          "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
+          "default": null,
+          "is_by_ref": false
+        },
+        "passwords": {
+          "name": "passwords",
+          "line": 22,
+          "short_desc": null,
+          "long_desc": null,
+          "hint": [
+            [
+              "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Auth\\Passwords\\PasswordBroker",
+              false
+            ]
+          ],
+          "tags": [],
+          "modifiers": "Illuminate\\Auth\\Passwords\\PasswordBroker",
+          "default": null,
+          "is_by_ref": false
+        }
+      }
+    }
+  },
     "constants": []
 }

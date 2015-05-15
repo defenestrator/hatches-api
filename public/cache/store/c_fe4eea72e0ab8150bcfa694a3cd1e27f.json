@@ -1,13 +1,13 @@
 {
     "name": "Hatches\\Transformers\\UserTransformer",
-    "line": 3,
+  "line": 5,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/UserTransformer.php",
-    "hash": "7bad7ecc53a6b5ee2b7e59644bed37383d93983a",
+  "hash": "e66868a04c930cd01bcf1a1c937457e892381544",
     "parent": "Hatches\\Transformers\\Transformer",
     "modifiers": 0,
     "is_trait": false,
@@ -20,7 +20,7 @@
     "methods": {
         "transform": {
             "name": "transform",
-            "line": 9,
+          "line": 11,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -33,7 +33,7 @@
             "parameters": {
                 "user": {
                     "name": "user",
-                    "line": 9,
+                  "line": 11,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": null,

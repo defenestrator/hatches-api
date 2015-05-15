@@ -11,7 +11,7 @@ use Symfony\Component\Finder\Finder;
             ->exclude('Console')
             ->in('app');
         return new Sami($iterator, array(
-            'theme'                => 'hatches-api',
+            'theme' => 'default',
             'title'                => 'Hatch.es API',
             'build_dir'            => 'public/docs',
             'cache_dir'            => 'public/cache',

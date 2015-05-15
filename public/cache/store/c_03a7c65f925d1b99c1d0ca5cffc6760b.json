@@ -158,7 +158,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/HatchReport.php",
-    "hash": "1ae701a78ee169691810a17302f0fa806a5e6b37",
+  "hash": "924e8525e9d69e71497b7b6159f07b72a2c40f97",
     "parent": "Hatches\\Report",
     "modifiers": 0,
     "is_trait": false,
@@ -375,6 +375,47 @@
             "errors": []
         }
     },
-    "methods": [],
+  "methods": {
+    "createReport": {
+      "name": "createReport",
+      "line": 45,
+      "short_desc": "",
+      "long_desc": "",
+      "hint": null,
+      "hint_desc": null,
+      "tags": [],
+      "modifiers": "1",
+      "is_by_ref": "",
+      "exceptions": [],
+      "errors": [],
+      "parameters": []
+    },
+    "index": {
+      "name": "index",
+      "line": 50,
+      "short_desc": "",
+      "long_desc": "",
+      "hint": null,
+      "hint_desc": null,
+      "tags": [],
+      "modifiers": "1",
+      "is_by_ref": "",
+      "exceptions": [],
+      "errors": [],
+      "parameters": {
+        "id": {
+          "name": "id",
+          "line": 50,
+          "short_desc": null,
+          "long_desc": null,
+          "hint": null,
+          "tags": [],
+          "modifiers": "",
+          "default": null,
+          "is_by_ref": false
+        }
+      }
+    }
+  },
     "constants": []
 }

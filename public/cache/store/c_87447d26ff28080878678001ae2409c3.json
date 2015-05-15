@@ -167,7 +167,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Fishery.php",
-    "hash": "089d0fde52ffef65ff2799adaa659b918e112afd",
+  "hash": "dce87e5d679386faadf67ac0c643c90eb10a31e0",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -404,7 +404,7 @@
     "methods": {
         "user": {
             "name": "user",
-            "line": 46,
+          "line": 50,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -418,7 +418,7 @@
         },
         "fishSpecies": {
             "name": "fishSpecies",
-            "line": 51,
+          "line": 55,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -432,7 +432,7 @@
         },
         "hatches": {
             "name": "hatches",
-            "line": 56,
+          "line": 60,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -446,7 +446,7 @@
         },
         "comments": {
             "name": "comments",
-            "line": 61,
+          "line": 65,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -460,7 +460,7 @@
         },
         "tags": {
             "name": "tags",
-            "line": 66,
+          "line": 70,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -474,7 +474,7 @@
         },
         "tripReports": {
             "name": "tripReports",
-            "line": 71,
+          "line": 75,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -488,7 +488,7 @@
         },
         "hatchReports": {
             "name": "hatchReports",
-            "line": 76,
+          "line": 80,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -502,7 +502,7 @@
         },
         "privacy": {
             "name": "privacy",
-            "line": 81,
+          "line": 85,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

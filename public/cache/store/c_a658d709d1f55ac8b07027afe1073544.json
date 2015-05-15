@@ -69,12 +69,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Http\\Request",
+                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Request",
+                  "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -85,12 +85,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Http\\Response",
+                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Response",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Response",
+                  "modifiers": "Illuminate\\Http\\Response",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -101,12 +101,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Hatches\\Transformers\\TripReportTransformer",
+                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\TripReportTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "TripReportTransformer",
+                  "modifiers": "Hatches\\Transformers\\TripReportTransformer",
                     "default": null,
                     "is_by_ref": false
                 }

@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers\\Auth",
     "file": "app\/Http\/Controllers\/Auth\/AuthController.php",
-    "hash": "730284b9e2e3a914bcb40f4d02b649f14b449bf6",
+  "hash": "e1bdd46f1b0b9230926773e50e8fe72c3dae6be8",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -45,12 +45,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Contracts\\Auth\\Guard",
+                          "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Guard",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Guard",
+                  "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -61,12 +61,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Contracts\\Auth\\Registrar",
+                          "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Registrar",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Registrar",
+                  "modifiers": "Illuminate\\Contracts\\Auth\\Registrar",
                     "default": null,
                     "is_by_ref": false
                 }

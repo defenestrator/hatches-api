@@ -106,7 +106,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/FlyPattern.php",
-    "hash": "86d1d3505d047ea5394032e7ac785b8393df7d39",
+  "hash": "ef35d84193300a6e2d0966956e6ac09e68470444",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

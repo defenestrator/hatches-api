@@ -46,12 +46,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Bus\\Dispatcher",
+                          "Hatches\\Providers\\Illuminate\\Bus\\Dispatcher",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Dispatcher",
+                  "modifiers": "Illuminate\\Bus\\Dispatcher",
                     "default": null,
                     "is_by_ref": false
                 }

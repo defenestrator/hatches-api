@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\User",
-    "line": 43,
+  "line": 44,
     "short_desc": "Hatches\\User",
     "long_desc": "",
     "hint": null,
@@ -79,6 +79,10 @@
             [
                 "\\Illuminate\\Database\\Eloquent\\Collection|\\$related[]",
                 "$morphedByMany"
+            ],
+          [
+            "\\Profile",
+            "$profiles"
             ]
         ],
         "method": [
@@ -126,7 +130,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/User.php",
-    "hash": "54d8ddcc7e53fef1a79a06bee7903a8ce9c68686",
+  "hash": "ecf30efc72b7b1dc8e4114a4d864f6c2938dc421",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -152,7 +156,7 @@
     "properties": {
         "id": {
             "name": "id",
-            "line": 43,
+          "line": 44,
             "short_desc": "integer$id",
             "long_desc": null,
             "hint": [
@@ -169,7 +173,7 @@
         },
         "name": {
             "name": "name",
-            "line": 43,
+          "line": 44,
             "short_desc": "string$name",
             "long_desc": null,
             "hint": [
@@ -186,7 +190,7 @@
         },
         "email": {
             "name": "email",
-            "line": 43,
+          "line": 44,
             "short_desc": "string$email",
             "long_desc": null,
             "hint": [
@@ -203,7 +207,7 @@
         },
         "password": {
             "name": "password",
-            "line": 43,
+          "line": 44,
             "short_desc": "string$password",
             "long_desc": null,
             "hint": [
@@ -220,7 +224,7 @@
         },
         "remember_token": {
             "name": "remember_token",
-            "line": 43,
+          "line": 44,
             "short_desc": "string$remember_token",
             "long_desc": null,
             "hint": [
@@ -237,7 +241,7 @@
         },
         "deleted_at": {
             "name": "deleted_at",
-            "line": 43,
+          "line": 44,
             "short_desc": "string$deleted_at",
             "long_desc": null,
             "hint": [
@@ -254,7 +258,7 @@
         },
         "created_at": {
             "name": "created_at",
-            "line": 43,
+          "line": 44,
             "short_desc": "\\Carbon\\Carbon$created_at",
             "long_desc": null,
             "hint": [
@@ -271,7 +275,7 @@
         },
         "updated_at": {
             "name": "updated_at",
-            "line": 43,
+          "line": 44,
             "short_desc": "\\Carbon\\Carbon$updated_at",
             "long_desc": null,
             "hint": [
@@ -290,7 +294,7 @@
     "methods": {
         "assets": {
             "name": "assets",
-            "line": 71,
+          "line": 72,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -309,7 +313,7 @@
         },
         "tripReports": {
             "name": "tripReports",
-            "line": 79,
+          "line": 80,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -328,7 +332,7 @@
         },
         "hatchReports": {
             "name": "hatchReports",
-            "line": 87,
+          "line": 88,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -347,7 +351,7 @@
         },
         "flyPatterns": {
             "name": "flyPatterns",
-            "line": 95,
+          "line": 96,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -366,7 +370,7 @@
         },
         "flyboxes": {
             "name": "flyboxes",
-            "line": 103,
+          "line": 104,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -385,7 +389,7 @@
         },
         "fisheries": {
             "name": "fisheries",
-            "line": 111,
+          "line": 112,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -404,7 +408,7 @@
         },
         "comments": {
             "name": "comments",
-            "line": 119,
+          "line": 120,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -423,7 +427,7 @@
         },
         "roles": {
             "name": "roles",
-            "line": 127,
+          "line": 128,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -442,7 +446,7 @@
         },
         "buddies": {
             "name": "buddies",
-            "line": 135,
+          "line": 136,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -452,6 +456,20 @@
                 ]
             ],
             "hint_desc": "",
+          "tags": [],
+          "modifiers": "1",
+          "is_by_ref": "",
+          "exceptions": [],
+          "errors": [],
+          "parameters": []
+        },
+      "profiles": {
+        "name": "profiles",
+        "line": 141,
+        "short_desc": "",
+        "long_desc": "",
+        "hint": null,
+        "hint_desc": null,
             "tags": [],
             "modifiers": "1",
             "is_by_ref": "",

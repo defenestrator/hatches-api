@@ -41,12 +41,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Hatches\\FishSpecies",
+                          "Hatches\\Transformers\\Hatches\\FishSpecies",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "FishSpecies",
+                  "modifiers": "Hatches\\FishSpecies",
                     "default": null,
                     "is_by_ref": false
                 }

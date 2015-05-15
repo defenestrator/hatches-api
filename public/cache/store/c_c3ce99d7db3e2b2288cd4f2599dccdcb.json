@@ -72,12 +72,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Http\\Request",
+                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Request",
+                  "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -88,12 +88,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Hatches\\Transformers\\FisheryTransformer",
+                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "FisheryTransformer",
+                  "modifiers": "Hatches\\Transformers\\FisheryTransformer",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -185,12 +185,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Hatches\\Http\\Controllers\\Response",
+                          "Hatches\\Http\\Controllers\\Hatches\\Http\\Controllers\\Response",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Response",
+                  "modifiers": "Hatches\\Http\\Controllers\\Response",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -201,12 +201,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Hatches\\Transformers\\FisheryTransformer",
+                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "FisheryTransformer",
+                  "modifiers": "Hatches\\Transformers\\FisheryTransformer",
                     "default": null,
                     "is_by_ref": false
                 }

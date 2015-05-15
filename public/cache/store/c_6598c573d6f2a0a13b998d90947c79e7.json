@@ -46,12 +46,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                            "Illuminate\\Routing\\Router",
+                          "Hatches\\Providers\\Illuminate\\Routing\\Router",
                             false
                         ]
                     ],
                     "tags": [],
-                    "modifiers": "Router",
+                  "modifiers": "Illuminate\\Routing\\Router",
                     "default": null,
                     "is_by_ref": false
                 }

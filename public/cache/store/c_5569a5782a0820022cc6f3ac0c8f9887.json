@@ -84,7 +84,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Hatch.php",
-    "hash": "d96c92eac595ae422a5f73dce4d15f16f42c761e",
+  "hash": "38aba3ecd94f7d5622954b948344b556e7db703b",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

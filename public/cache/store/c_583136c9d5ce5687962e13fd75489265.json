@@ -1,13 +1,13 @@
 {
     "name": "Hatches\\Http\\Controllers\\Controller",
-    "line": 7,
+  "line": 8,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/Controller.php",
-    "hash": "6bb173d1b2b0dcf71e38d8e7c461a1782e353b57",
+  "hash": "269324745a8cdf7c6350207c2be0094b7d2c7e81",
     "parent": "Illuminate\\Routing\\Controller",
     "modifiers": 16,
     "is_trait": false,
@@ -27,7 +27,7 @@
     "methods": {
         "setStatusCode": {
             "name": "setStatusCode",
-            "line": 20,
+          "line": 22,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -45,7 +45,7 @@
             "parameters": {
                 "statusCode": {
                     "name": "statusCode",
-                    "line": 20,
+                  "line": 22,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -63,7 +63,7 @@
         },
         "getStatusCode": {
             "name": "getStatusCode",
-            "line": 29,
+          "line": 31,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -82,7 +82,7 @@
         },
         "respond": {
             "name": "respond",
-            "line": 39,
+          "line": 41,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -100,7 +100,7 @@
             "parameters": {
                 "data": {
                     "name": "data",
-                    "line": 39,
+                  "line": 41,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [],
@@ -111,7 +111,7 @@
                 },
                 "headers": {
                     "name": "headers",
-                    "line": 39,
+                  "line": 41,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -129,7 +129,7 @@
         },
         "respondWithError": {
             "name": "respondWithError",
-            "line": 48,
+          "line": 50,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -147,7 +147,7 @@
             "parameters": {
                 "message": {
                     "name": "message",
-                    "line": 48,
+                  "line": 50,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [],
@@ -160,7 +160,7 @@
         },
         "respondNotFound": {
             "name": "respondNotFound",
-            "line": 62,
+          "line": 64,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -178,7 +178,7 @@
             "parameters": {
                 "message": {
                     "name": "message",
-                    "line": 62,
+                  "line": 64,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -189,14 +189,14 @@
                     ],
                     "tags": [],
                     "modifiers": "",
-                    "default": "'Not Found!'",
+                  "default": "'There are no fish in this run. That\\'s a 404 error, good buddy.'",
                     "is_by_ref": false
                 }
             }
         },
         "respondInternalError": {
             "name": "respondInternalError",
-            "line": 71,
+          "line": 73,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -214,7 +214,7 @@
             "parameters": {
                 "message": {
                     "name": "message",
-                    "line": 71,
+                  "line": 73,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -225,14 +225,14 @@
                     ],
                     "tags": [],
                     "modifiers": "",
-                    "default": "'Internal Error!'",
+                  "default": "'Internal Error, something is temporarily busted,\n                                                    our regularly scheduled program will resume shortly.'",
                     "is_by_ref": false
                 }
             }
         },
         "respondAuthenticationError": {
             "name": "respondAuthenticationError",
-            "line": 80,
+          "line": 83,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -250,7 +250,7 @@
             "parameters": {
                 "message": {
                     "name": "message",
-                    "line": 80,
+                  "line": 83,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -261,14 +261,14 @@
                     ],
                     "tags": [],
                     "modifiers": "",
-                    "default": "'Authentication Error!'",
+                  "default": "'Authentication Error. Please login before continuing.'",
                     "is_by_ref": false
                 }
             }
         },
         "respondBadRequest": {
             "name": "respondBadRequest",
-            "line": 89,
+          "line": 92,
             "short_desc": "",
             "long_desc": "",
             "hint": [
@@ -286,7 +286,7 @@
             "parameters": {
                 "message": {
                     "name": "message",
-                    "line": 89,
+                  "line": 92,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -298,6 +298,42 @@
                     "tags": [],
                     "modifiers": "",
                     "default": "'Bad Request! Naughty Request!'",
+                  "is_by_ref": false
+                }
+            }
+        },
+      "respondForbiddenRequest": {
+        "name": "respondForbiddenRequest",
+        "line": 101,
+        "short_desc": "",
+        "long_desc": "",
+        "hint": [
+          [
+            "mixed",
+            false
+          ]
+        ],
+        "hint_desc": "",
+        "tags": [],
+        "modifiers": "1",
+        "is_by_ref": "",
+        "exceptions": [],
+        "errors": [],
+        "parameters": {
+          "message": {
+            "name": "message",
+            "line": 101,
+            "short_desc": "",
+            "long_desc": null,
+            "hint": [
+              [
+                "string",
+                false
+              ]
+            ],
+            "tags": [],
+            "modifiers": "",
+            "default": "'Sorry, you aren\\'t allowed to do that!'",
                     "is_by_ref": false
                 }
             }

@@ -98,7 +98,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/FishSpecies.php",
-    "hash": "d3c8cef664520aa90ada33115ad06511e6c8a3d4",
+  "hash": "2b7c09beab15c9d7c58e22f88ec2a397f2f726a8",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
