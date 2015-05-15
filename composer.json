@@ -8,7 +8,6 @@
   "repositories": [
     {
       "type": "vcs",
-      "url": "https://github.com/edos-io/Sami.git",
       "url": "https://github.com/defenestrator/Integrated.git"
     }
   ],
@@ -37,7 +36,7 @@
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
     "symfony/yaml": "~2.1.0",
-    "edos-io/sami": "~3.0.2",
+    "edos-io/sami": "~3.0.2@dev",
     "defenestrator/integrated": "~0.15.5@dev"
   },
   "autoload": {
