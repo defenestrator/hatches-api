@@ -28,7 +28,6 @@ npm-debug.log
 selenium-server-standalone-*
 
 ###############################################################
-# This is not a complete .gitignore,                          #
-# see this gist for some suggestions                          #
+# see this gist for some more suggestions                     #
 # https://gist.github.com/defenestrator/5ad679db122177888da5  #
 ###############################################################
