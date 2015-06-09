@@ -13,9 +13,9 @@ class AssetSpec extends ObjectBehavior
         $this->shouldHaveType('Hatches\Asset');
     }
 
-    function it_stores_a_path_to_a_media_asset()
-    {
-        
-    }
+//    function it_stores_a_path_to_a_media_asset()
+//    {
+//
+//    }
 
 }
