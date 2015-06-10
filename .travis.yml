@@ -11,6 +11,7 @@ before_script:
   - mv .env.behat.travis .env.behat && cp .env.behat .env
   - touch storage/acceptance/acceptance.sqlite
   - chmod -R 777 storage
+  - chmod -R 777 bootstrap/cache
   - composer self-update
   - composer install --prefer-source
   - php artisan key:generate
