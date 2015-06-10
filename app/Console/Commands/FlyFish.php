@@ -1,9 +1,10 @@
 <?php namespace Hatches\Console\Commands;
 
 use Illuminate\Console\Command;
-use Hatches\Commands\InspireFlyFishers;
+use Hatches\Jobs\InspireFlyFishers;
 
-class FlyFish extends Command {
+class FlyFish extends Command
+{
 
     /**
      * The console command name.

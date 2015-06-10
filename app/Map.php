@@ -23,6 +23,7 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Map whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class Map extends Model {
-	protected $fillable = ['title', 'description','lat','lng'];
+class Map extends Model
+{
+    protected $fillable = ['title', 'description', 'lat', 'lng'];
 }

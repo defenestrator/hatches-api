@@ -22,7 +22,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Hatch whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class Hatch extends Model {
+class Hatch extends Model
+{
     protected $fillable = ['name', 'description'];
 
     public function tags()

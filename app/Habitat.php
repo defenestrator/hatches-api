@@ -12,8 +12,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Habitat whereHabitat($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class Habitat extends Model {
-	protected $fillable = [];
+class Habitat extends Model
+{
+    protected $fillable = [];
     public $timestamps = false;
 
     public function fishSpecies()

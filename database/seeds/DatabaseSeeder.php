@@ -9,13 +9,24 @@ class DatabaseSeeder extends Seeder
     private $tables = [
         'assets',
         'comments',
-        'fisheries', 'fishery_comment', 'fishery_fish_species', 'fishery_hatch', 'fishery_tag',
+        'fisheries',
+        'fishery_comment',
+        'fishery_fish_species',
+        'fishery_hatch',
+        'fishery_tag',
         'fish_species',
-        'flyboxes', 'flybox_tag',
-        'fly_patterns', 'fly_pattern_asset', 'fly_pattern_comment', 'fly_pattern_tag',
+        'flyboxes',
+        'flybox_tag',
+        'fly_patterns',
+        'fly_pattern_asset',
+        'fly_pattern_comment',
+        'fly_pattern_tag',
         'habitats',
         'hatches',
-        'hatch_reports', 'hatch_report_asset', 'hatch_report_comment', 'hatch_report_tag',
+        'hatch_reports',
+        'hatch_report_asset',
+        'hatch_report_comment',
+        'hatch_report_tag',
         'hatch_tag',
         'hatch_types',
         'maps',
@@ -23,8 +34,13 @@ class DatabaseSeeder extends Seeder
         'privacy',
         'roles',
         'tags',
-        'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
-        'users', 'buddy_user', 'role_user',
+        'trip_reports',
+        'trip_report_asset',
+        'trip_report_comment',
+        'trip_report_tag',
+        'users',
+        'buddy_user',
+        'role_user',
         'water_data',
         'weather'
     ];
@@ -105,9 +121,9 @@ class DatabaseSeeder extends Seeder
 
     private function cleanDatabase()
     {
-            foreach ($this->tables as $tableName) {
-                DB::table($tableName)->delete();
-            }
+        foreach ($this->tables as $tableName) {
+            DB::table($tableName)->delete();
+        }
     }
 
 }

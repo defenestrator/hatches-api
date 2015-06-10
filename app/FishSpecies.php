@@ -25,8 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\FishSpecies whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-
-class FishSpecies extends Model {
+class FishSpecies extends Model
+{
     protected $fillable = ['common_name', 'genus', 'species', 'description'];
 
     public function habitat()

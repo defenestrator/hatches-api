@@ -5,9 +5,10 @@ use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 
 
-abstract class Controller extends BaseController {
+abstract class Controller extends BaseController
+{
 
-	use DispatchesCommands, ValidatesRequests;
+    use DispatchesCommands, ValidatesRequests;
 
     /**
      * @var int
@@ -22,6 +23,7 @@ abstract class Controller extends BaseController {
     public function setStatusCode($statusCode)
     {
         $this->statusCode = $statusCode;
+
         return $this;
     }
 
@@ -70,9 +72,10 @@ abstract class Controller extends BaseController {
      * @param string $message
      * @return mixed
      */
-    public function respondInternalError($message = 'Internal Error, something is temporarily busted,
-                                                    our regularly scheduled program will resume shortly.')
-    {
+    public function respondInternalError(
+        $message = 'Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.'
+    ) {
         return $this->setStatusCode(500)->respondWithError($message);
     }
 

@@ -23,7 +23,11 @@ class IntegrationTest extends TestCase
      */
     public function it_registers_a_user()
     {
-        $credentials = ['name' => 'RegisterDummy', 'email' => 'register@example.com', 'password' => Hash::make('GoodPassword')];
+        $credentials = [
+            'name' => 'RegisterDummy',
+            'email' => 'register@example.com',
+            'password' => Hash::make('GoodPassword')
+        ];
         $this->register($credentials)
             ->verifyInDatabase('users', ['email' => 'register@example.com'])
             ->andSee($credentials['name']);

@@ -9,6 +9,7 @@ trait LoginLogout
             ->type('dummy@example.com', 'email')
             ->type('password', 'password')
             ->press('Login');
+
         return $this;
     }
 

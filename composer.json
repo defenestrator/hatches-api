@@ -14,7 +14,7 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "laravel/framework": "~5.0.22",
+    "laravel/framework": "~5.1.0",
     "league/glide": "~0.3.3",
     "spatie/laravel-glide": "~2.0.0",
     "league/fractal": "~0.13",

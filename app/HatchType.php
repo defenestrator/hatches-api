@@ -14,7 +14,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\HatchType whereDescription($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class HatchType extends Model {
+class HatchType extends Model
+{
 
     protected $fillable = ['type', 'description'];
 

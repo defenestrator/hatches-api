@@ -1,6 +1,7 @@
 <?php namespace Hatches;
 
 use Illuminate\Database\Eloquent\Model;
+
 /**
  * Privacy
  *
@@ -10,8 +11,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Privacy wherePrivacy($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-
-class Privacy extends Model {
+class Privacy extends Model
+{
 //    @TODO: In production, guard this vs injection.
 //    protected $guarded = ['*'];
     public $timestamps = false;

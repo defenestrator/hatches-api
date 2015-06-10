@@ -18,10 +18,18 @@ use Illuminate\Database\Eloquent\Model;
  */
 abstract class Report extends Model
 {
-    protected $fillable = [ 'asset', 'user_id', 'fishery_id', 'start_time',
-                            'end_time', 'title', 'report_body', 'privacy_id',
-                            'weather', 'water_data'
-                            ];
+    protected $fillable = [
+        'asset',
+        'user_id',
+        'fishery_id',
+        'start_time',
+        'end_time',
+        'title',
+        'report_body',
+        'privacy_id',
+        'weather',
+        'water_data'
+    ];
 
     public function user()
     {
@@ -62,6 +70,7 @@ abstract class Report extends Model
     {
         return $this->hasOne('Privacy');
     }
+
     public function createReport()
     {
         $this->save();

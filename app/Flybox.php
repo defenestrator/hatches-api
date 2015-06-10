@@ -25,9 +25,9 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Flybox whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-
-class Flybox extends Model {
-	protected $fillable = ['flybox_name', 'description', 'privacy'];
+class Flybox extends Model
+{
+    protected $fillable = ['flybox_name', 'description', 'privacy'];
 
     public function user()
     {

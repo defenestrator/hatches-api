@@ -27,7 +27,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\FlyPattern whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class FlyPattern extends Model {
+class FlyPattern extends Model
+{
     protected $fillable = ['name', 'recipe', 'instructions', 'privacy'];
 
     public function assets()

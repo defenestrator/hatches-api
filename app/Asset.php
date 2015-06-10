@@ -25,9 +25,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Asset whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-
-
-Class Asset extends Model {
+Class Asset extends Model
+{
     protected $fillable = ['type', 'privacy', 'uri'];
 
     public function user()

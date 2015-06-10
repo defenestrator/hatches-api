@@ -39,8 +39,9 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \WaterData $waterData
  * @property-read \Weather $weather
  */
-class HatchReport extends Report {
-	protected $fillable = ['hatch_type', 'hatch_intensity'];
+class HatchReport extends Report
+{
+    protected $fillable = ['hatch_type', 'hatch_intensity'];
 
     public function createReport()
     {

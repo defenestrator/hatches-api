@@ -35,15 +35,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \Illuminate\Database\Eloquent\Collection|\Comment[] $weather
  * @property-read \WaterData $privacy
  */
-
 //use Eloquent;
 
 class TripReport extends Report
 {
     protected $fillable = ['start_time', 'end_time', 'title', 'report_body', 'privacy_id'];
-
-
-
 
 
     public function createReport()

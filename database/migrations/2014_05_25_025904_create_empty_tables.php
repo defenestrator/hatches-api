@@ -9,23 +9,39 @@ class CreateEmptyTables extends Migration
     private $tables = [
         'assets',
         'comments',
-        'fisheries', 'fishery_comment', 'fishery_fish_species', 'fishery_hatch', 'fishery_tag',
+        'fisheries',
+        'fishery_comment',
+        'fishery_fish_species',
+        'fishery_hatch',
+        'fishery_tag',
         'fish_species',
-        'flyboxes', 'flybox_tag',
-        'fly_patterns', 'fly_pattern_asset', 'fly_pattern_comment', 'fly_pattern_tag',
+        'flyboxes',
+        'flybox_tag',
+        'fly_patterns',
+        'fly_pattern_asset',
+        'fly_pattern_comment',
+        'fly_pattern_tag',
         'habitats',
         'hatches',
-        'hatch_reports', 'hatch_report_asset', 'hatch_report_comment', 'hatch_report_tag',
+        'hatch_reports',
+        'hatch_report_asset',
+        'hatch_report_comment',
+        'hatch_report_tag',
         'hatch_tag',
         'hatch_types',
         'maps',
         'password_reminders',
         'prey',
         'privacy',
-        'roles', 'role_user',
+        'roles',
+        'role_user',
         'tags',
-        'trip_reports', 'trip_report_asset', 'trip_report_comment', 'trip_report_tag',
-        'users', 'buddy_user',
+        'trip_reports',
+        'trip_report_asset',
+        'trip_report_comment',
+        'trip_report_tag',
+        'users',
+        'buddy_user',
         'water_data',
         'weather'
     ];
@@ -270,7 +286,6 @@ class CreateEmptyTables extends Migration
             $table->timestamps();
         }
         );
-
 
 
         Schema::create('prey', function ($table) {
@@ -529,9 +544,10 @@ class CreateEmptyTables extends Migration
             $table->foreign('tag_id')
                 ->references('id')
                 ->on('tags');
-            }
+        }
         );
     }
+
     /**
      * Reverse the migrations.
      *
@@ -540,7 +556,7 @@ class CreateEmptyTables extends Migration
     public function down()
     {
         if (app()->environment() !== 'acceptance' || 'testing') {
-        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+            DB::statement('SET FOREIGN_KEY_CHECKS=0');
         }
         foreach ($this->tables as $tableName) {
             Schema::drop($tableName);

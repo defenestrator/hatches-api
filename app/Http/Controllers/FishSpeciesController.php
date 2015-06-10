@@ -11,7 +11,8 @@ use Sorskod\Larasponse\Larasponse;
  *
  * @package Hatches\Http\Controllers
  */
-class FishSpeciesController extends Controller {
+class FishSpeciesController extends Controller
+{
 
     protected $fractal;
 
@@ -30,7 +31,7 @@ class FishSpeciesController extends Controller {
      * @return \Hatches\Http\Controllers\Response
      * @internal param $
      */
-	public function index(Request $request)
+    public function index(Request $request)
     {
         $countFishSpecies = FishSpecies::count();
         $limit = $request->input('limit', 25);
@@ -41,73 +42,75 @@ class FishSpeciesController extends Controller {
             return $this->respondNotFound('There are no Users!?');
         } else {
             $fishSpecies = FishSpecies::paginate($limit);
+
             return $this->fractal->paginatedCollection($fishSpecies, new FishSpeciesTransformer, $this->resourceKey);
         }
     }
-	/**
-	 * Show the form for creating a new resource.
-	 *
-	 * @param $data
-	 * @return Response
-	 */
-	public function create($data)
-	{
-		$this->fishSpecies([$data]);
-	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @param $data
-	 * @return Response
-	 */
-	public function store($data)
-	{
-		$this->save([$data]);
-	}
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @param $data
+     * @return Response
+     */
+    public function create($data)
+    {
+        $this->fishSpecies([$data]);
+    }
 
-	/**
-	 * Display the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function show($id)
-	{
-		//
-	}
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param $data
+     * @return Response
+     */
+    public function store($data)
+    {
+        $this->save([$data]);
+    }
 
-	/**
-	 * Show the form for editing the specified resource.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function edit($id)
-	{
-		//
-	}
+    /**
+     * Display the specified resource.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function show($id)
+    {
+        //
+    }
 
-	/**
-	 * Update the specified resource in storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function update($id)
-	{
-		//
-	}
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function edit($id)
+    {
+        //
+    }
 
-	/**
-	 * Remove the specified resource from storage.
-	 *
-	 * @param  int  $id
-	 * @return Response
-	 */
-	public function destroy($id)
-	{
-		//
-	}
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function update($id)
+    {
+        //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int $id
+     * @return Response
+     */
+    public function destroy($id)
+    {
+        //
+    }
 
 }

@@ -1,6 +1,7 @@
 <?php namespace Hatches;
 
 use Illuminate\Database\Eloquent\Model;
+
 /**
  * Fishery
  *
@@ -40,11 +41,18 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Fishery whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class Fishery extends Model {
+class Fishery extends Model
+{
     protected $fillable = [
-        'name', 'regs', 'management',
-        'notes', 'lat', 'long', 'habitat',
-        'stillwater', 'hatches'
+        'name',
+        'regs',
+        'management',
+        'notes',
+        'lat',
+        'long',
+        'habitat',
+        'stillwater',
+        'hatches'
     ];
 
     public function user()

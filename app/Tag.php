@@ -18,38 +18,46 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Tag whereTag($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-
 //use Eloquent;
 
-class Tag extends Model {
+class Tag extends Model
+{
 
     protected $fillable = ['tag'];
     public $timestamps = false;
 
-    public function assets() {
+    public function assets()
+    {
         return $this->belongsToMany('Asset');
     }
 
-    public function flyboxes() {
+    public function flyboxes()
+    {
         return $this->belongsToMany('Flybox');
     }
 
-    public function flyPatterns() {
+    public function flyPatterns()
+    {
         return $this->belongsToMany('FlyPattern');
     }
 
-    public function fisheries() {
+    public function fisheries()
+    {
         return $this->belongsToMany('Fishery');
     }
 
-    public function hatches() {
+    public function hatches()
+    {
         return $this->belongsToMany('Hatch');
     }
-    public function hatchReport() {
+
+    public function hatchReport()
+    {
         return $this->belongsToMany('HatchReport');
     }
 
-    public function TripReport() {
+    public function TripReport()
+    {
         return $this->belongsToMany('HatchReport');
     }
 

@@ -34,24 +34,22 @@ Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
  * API routes /v1/ :
  */
 
-Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
-{
-	Route::get('/', function()
-	{
-		return 'hey fishies!';
-	});
+Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function () {
+    Route::get('/', function () {
+        return 'hey fishies!';
+    });
 
-	Route::get('users', 'UsersController@index');
+    Route::get('users', 'UsersController@index');
 
     Route::get('users/{id}', 'UsersController@show');
 
-	Route::resource('fisheries', 'FisheriesController');
+    Route::resource('fisheries', 'FisheriesController');
 
-	Route::resource('trip-reports', 'TripReportsController');
+    Route::resource('trip-reports', 'TripReportsController');
 
-	Route::resource('fish-species', 'FishSpeciesController');
+    Route::resource('fish-species', 'FishSpeciesController');
 
-	Route::resource('flyboxes', 'FlyboxesController');
+    Route::resource('flyboxes', 'FlyboxesController');
 
 //	Route::resource('habitats', 'HabitatsController');
 //
@@ -72,7 +70,7 @@ Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function ()
 });
 
 Route::controllers([
-	'auth' => 'Auth\AuthController',
-	'password' => 'Auth\PasswordController',
+    'auth' => 'Auth\AuthController',
+    'password' => 'Auth\PasswordController',
 ]);
 

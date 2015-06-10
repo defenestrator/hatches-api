@@ -3,7 +3,8 @@
 use Hatches\FishSpecies;
 use League\Fractal\TransformerAbstract;
 
-class FishSpeciesTransformer extends TransformerAbstract {
+class FishSpeciesTransformer extends TransformerAbstract
+{
 
     public function transform(FishSpecies $fishSpecies)
     {

@@ -8,7 +8,6 @@ return [
     'source' => [
         'path' => storage_path('images'),
     ],
-
     /*
      * The directory Glide will use to store it's cache
      * A .gitignore file will be automatically placed in this directory
@@ -18,13 +17,11 @@ return [
     'cache' => [
         'path' => storage_path('glide/cache'),
     ],
-
     /*
      * URLs to generated images will start with this string
      *
      */
     'baseURL' => 'img',
-
     /*
      * The maximum allowed total image size in pixels
      */

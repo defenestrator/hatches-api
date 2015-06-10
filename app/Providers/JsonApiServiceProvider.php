@@ -3,7 +3,8 @@
 use Illuminate\Support\ServiceProvider;
 use Sorskod\Larasponse\Providers\Fractal;
 
-class JsonApiServiceProvider extends ServiceProvider {
+class JsonApiServiceProvider extends ServiceProvider
+{
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -20,8 +21,7 @@ class JsonApiServiceProvider extends ServiceProvider {
     {
         $this->app->bind('League\Fractal\Serializer\SerializerAbstract', 'League\Fractal\Serializer\JsonApiSerializer');
 
-        $this->app->bind('Sorskod\Larasponse\Larasponse', function($app)
-        {
+        $this->app->bind('Sorskod\Larasponse\Larasponse', function ($app) {
             return new Fractal(
                 $app['League\Fractal\Serializer\SerializerAbstract'],
                 $app['Illuminate\Http\Request']

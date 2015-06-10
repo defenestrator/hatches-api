@@ -14,7 +14,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $role
  * @method static \Illuminate\Database\Query\Builder|\Hatches\Role whereRole($value)
  */
-class Role extends Model {
+class Role extends Model
+{
     public $timestamps = false;
     protected $fillable = [];
 

@@ -1,7 +1,8 @@
 <?php namespace Hatches\Events;
 
-abstract class Event {
+abstract class Event
+{
 
-	//
+    //
 
 }

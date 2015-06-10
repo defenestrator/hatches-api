@@ -36,15 +36,14 @@ class UsersController extends Controller
 
         if ($limit > 100) {
             return $this->respondForbiddenRequest();
-        }
-        elseif ($countUsers < 1) {
+        } elseif ($countUsers < 1) {
             return $this->respondNotFound('There are no Users!?');
-        }
-        else {
+        } else {
             $users = User::paginate($limit);
         }
+
         return $this->respond([
-            'data' => $userTransformer->transformCollection($users->all())
+                'data' => $userTransformer->transformCollection($users->all())
             ]
         )->setStatusCode(200);
     }
@@ -65,6 +64,7 @@ class UsersController extends Controller
         if ($user !== null) {
             return $this->respond(['data' => $userTransformer->transform($user)])->setStatusCode(200);
         }
+
         return $this->respondNotFound('No user for id ' . $id);
     }
 

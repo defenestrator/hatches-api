@@ -25,7 +25,7 @@ class FisheriesController extends Controller
      * GET /fisheries
      *
      *
-     * @param Request                                  $request
+     * @param Request $request
      * @param \Hatches\Transformers\FisheryTransformer $fisheryTransformer
      * @return \Illuminate\Http\Response
      * @internal param $
@@ -42,8 +42,10 @@ class FisheriesController extends Controller
             return $this->respondNotFound('There are no Fisheries!?');
         } else {
             $fishery = Fishery::paginate($limit);
+
             return response()->json([
-                'data' => $fisheryTransformer->transformCollection($fishery->all())],
+                'data' => $fisheryTransformer->transformCollection($fishery->all())
+            ],
                 200
             );
         }
@@ -87,6 +89,7 @@ class FisheriesController extends Controller
         if (!$fishery) {
             return $this->respondNotFound('This fishery does not exist');
         }
+
         return $response->setContent(['data' => $fisheryTransformer->transform($fishery)], 200);
     }
 

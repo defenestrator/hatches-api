@@ -1,9 +1,10 @@
 <?php namespace Hatches\Console\Commands;
 
-use Hatches\Commands\DocsConfig;
+use Hatches\Jobs\DocsConfig;
 use Illuminate\Console\Command;
 
-class Docs extends Command {
+class Docs extends Command
+{
 
     /**
      * The console command name.
@@ -27,6 +28,7 @@ class Docs extends Command {
     public function handle()
     {
         $this->comment(PHP_EOL . 'Generating some totally rad API documentation for you' . PHP_EOL);
+
         return exec('php vendor/edos-io/sami/sami.php update app/Commands/DocsConfig.php');
     }
 

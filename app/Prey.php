@@ -22,7 +22,8 @@ use Illuminate\Database\Eloquent\Model;
  * @method static \Illuminate\Database\Query\Builder|\Prey whereUpdatedAt($value)
  * @property-read \Illuminate\Database\Eloquent\Collection|\$related[] $morphedByMany
  */
-class Prey extends Model {
+class Prey extends Model
+{
     protected $fillable = ['common_name', 'genus', 'species'];
     protected $table = 'prey';
 

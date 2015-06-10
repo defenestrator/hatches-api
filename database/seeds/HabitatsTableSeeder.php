@@ -8,7 +8,10 @@ class HabitatsTableSeeder extends DatabaseSeeder
     public function run()
     {
         $habitats = [
-            'Saltwater', 'Freshwater', 'Anadromous', 'Brackish'
+            'Saltwater',
+            'Freshwater',
+            'Anadromous',
+            'Brackish'
         ];
         foreach ($habitats as $habitat) {
             Habitat::create([

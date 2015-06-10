@@ -22,7 +22,8 @@ use Illuminate\Database\Eloquent\Model;
  * @property-read \FlyPattern $flyPattern
  * @property-read \Fishery $fishery
  */
-class Comment extends Model {
+class Comment extends Model
+{
     protected $fillable = ['comment'];
 
     public function user()

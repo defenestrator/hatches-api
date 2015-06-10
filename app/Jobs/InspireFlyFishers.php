@@ -1,4 +1,4 @@
-<?php namespace Hatches\Commands;
+<?php namespace Hatches\Jobs;
 
 use Illuminate\Support\Collection;
 

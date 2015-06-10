@@ -3,7 +3,8 @@
 namespace Hatches\Transformers;
 
 
-abstract class Transformer {
+abstract class Transformer
+{
     /*
      * @param items
      * @return array
