@@ -18,13 +18,13 @@ class TripReportsTableSeeder extends DatabaseSeeder
 
         foreach (range(1, 30) as $index) {
             TripReport::create([
-                'user_id' => $faker->randomElement(compact($userIds)),
-                'fishery_id' => $faker->randomElement(compact($fisheryIds)),
+                'user_id' => $faker->randomElement([$userIds]),
+                'fishery_id' => $faker->randomElement([$fisheryIds]),
                 'start_time' => $faker->dateTimeThisYear(),
                 'end_time' => $faker->dateTimeThisYear(),
                 'title' => $faker->sentence(),
                 'report_body' => $faker->paragraph(),
-                'privacy_id' => $faker->randomElement(compact($privacyIds))
+                'privacy_id' => $faker->randomElement([$privacyIds])
             ]);
         }
     }
