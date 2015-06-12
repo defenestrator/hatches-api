@@ -1,10 +1,11 @@
 <?php
 
-use Laracasts\Integrated\Services\Laravel\DatabaseTransactions;
+
+use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 class AuthAcceptanceTest extends TestCase
 {
-    use RegistersUsers, DatabaseTransactions, LoginLogout;
+    use DatabaseTransactions, LoginLogout;
 
     /**
      * the call get() means we are testing an API,

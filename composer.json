@@ -37,8 +37,7 @@
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
-    "symfony/yaml": "~2.1.0",
-    "laracasts/integrated": "~0.15.5@dev"
+    "symfony/yaml": "~2.1.0"
   },
   "autoload": {
     "classmap": [
