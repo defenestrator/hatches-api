@@ -26,18 +26,5 @@ class TestCase extends Illuminate\Foundation\Testing\TestCase
         return $this;
     }
 
-    protected function register(array $overrides)
-    {
-        $fields = $this->getRegisterFields($overrides);
-
-        return $this->visit('auth/register')->press('Register', $fields);
-    }
-
-    protected function getRegisterFields(array $overrides)
-    {
-        $user = TestDummy::attributesFor('Hatches\User', $overrides);
-
-        return $user + ['password_confirmation' => $user['password']];
-    }
 
 }

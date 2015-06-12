@@ -8,7 +8,7 @@ use Laracasts\TestDummy as TestDummy;
  */
 class IntegrationTest extends TestCase
 {
-    use DatabaseTransactions, LoginLogout;
+    use DatabaseTransactions, RegistersUsers, LoginLogout;
 
     /**
      * @test
@@ -30,9 +30,7 @@ class IntegrationTest extends TestCase
             'email' => 'register@example.com',
             'password' => Hash::make('GoodPassword')
         ];
-        $this->register($credentials);
-//        $this->seeInDatabase('users', ['name' => 'RegisterDummy']);
-
+        $this->register($credentials)->seeInDatabase('users', ['email' => 'register@example.com']);
     }
 
     /*
@@ -41,11 +39,9 @@ class IntegrationTest extends TestCase
     public function test_it_gives_feedback_about_invalid_registration_input()
     {
         $this->createUser($overrides = ['name' => 'F', 'email' => 'fail_register@d', 'password' => '1']);
-        $this->register($overrides);
-        $this->seePageIs('auth/register');
-//            ->see('The password must be at least 6 characters.')
-//            ->see('The email must be a valid email address.');
-        // @TODO Improve this, this is hacked together after Laravel 5.1 release.
+        $this->register($overrides)->seePageIs('auth/register')
+            ->see('The password must be at least 6 characters.')
+            ->see('The email must be a valid email address.');
     }
 
     /*
@@ -56,7 +52,6 @@ class IntegrationTest extends TestCase
         $this->createUser($overrides = ['email' => 'dummy@example.com']);
         $this->register($overrides);
         $this->seePageIs('auth/register');
-        // @TODO Improve this, this is hacked together after Laravel 5.1 release.
     }
 
     /**
@@ -70,8 +65,7 @@ class IntegrationTest extends TestCase
             ->type('GoodPassword', 'password')
             ->press('Login')->see('TestDummy');
         $this->seePageIs('/');
-        $this->visit('auth/logout');
-        $this->seePageIs('/');
+        $this->visit('auth/logout')->seePageIs('/');
     }
 
 
