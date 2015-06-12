@@ -12,19 +12,19 @@ class TripReportsTableSeeder extends DatabaseSeeder
     public function run()
     {
         $faker = Faker::create();
-        $privacyIds = Privacy::lists('id');
-        $userIds = User::lists('id');
-        $fisheryIds = Fishery::lists('id');
+        $privacyIds = Privacy::lists('id')->all();
+        $userIds = User::lists('id')->all();
+        $fisheryIds = Fishery::lists('id')->all();
 
         foreach (range(1, 30) as $index) {
             TripReport::create([
-                'user_id' => $faker->randomElement([$userIds]),
-                'fishery_id' => $faker->randomElement([$fisheryIds]),
+                'user_id' => $faker->randomElement($userIds),
+                'fishery_id' => $faker->randomElement($fisheryIds),
                 'start_time' => $faker->dateTimeThisYear(),
                 'end_time' => $faker->dateTimeThisYear(),
                 'title' => $faker->sentence(),
                 'report_body' => $faker->paragraph(),
-                'privacy_id' => $faker->randomElement([$privacyIds])
+                'privacy_id' => $faker->randomElement($privacyIds)
             ]);
         }
     }

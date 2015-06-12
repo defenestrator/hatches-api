@@ -13,7 +13,7 @@ class HatchesTableSeeder extends DatabaseSeeder
 
         $faker = Faker::create();
 
-        $hatchTypeIds = HatchType::lists('id');
+        $hatchTypeIds = HatchType::lists('id')->all();
 
         foreach (range(1, 30) as $index) {
             Hatch::create([

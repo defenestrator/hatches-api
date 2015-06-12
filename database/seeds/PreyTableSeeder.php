@@ -10,7 +10,7 @@ class PreyTableSeeder extends DatabaseSeeder
     public function run()
     {
         $faker = Faker::create();
-        $hatchTypeIds = HatchType::lists('id');
+        $hatchTypeIds = HatchType::lists('id')->all();
 
         foreach (range(1, 10) as $index) {
             Prey::create([

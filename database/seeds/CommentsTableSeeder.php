@@ -16,7 +16,7 @@ class CommentsTableSeeder extends DatabaseSeeder
 
         $faker = Faker::create('en-US');
 
-        $userIds = User::lists('id');
+        $userIds = User::lists('id')->all();
 
         foreach (range(1, 30) as $index) {
 

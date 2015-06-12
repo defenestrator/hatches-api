@@ -13,10 +13,10 @@ class HatchReportsTableSeeder extends DatabaseSeeder
     public function run()
     {
         $faker = Faker::create('en-US');
-        $privacyIds = Privacy::lists('id');
-        $userIds = User::lists('id');
-        $fisheryIds = Fishery::lists('id');
-        $hatchIds = Hatch::lists('id');
+        $privacyIds = Privacy::lists('id')->all();
+        $userIds = User::lists('id')->all();
+        $fisheryIds = Fishery::lists('id')->all();
+        $hatchIds = Hatch::lists('id')->all();
         foreach (range(1, 30) as $index) {
             HatchReport::create([
                 'user_id' => $faker->randomElement($userIds),

@@ -12,8 +12,8 @@ class AssetsTableSeeder extends DatabaseSeeder
     {
         $faker = Faker::create();
 
-        $privacyIds = Privacy::lists('id');
-        $userIds = User::lists('id');
+        $privacyIds = Privacy::lists('id')->all();
+        $userIds = User::lists('id')->all();
 
         foreach (range(1, 30) as $index) {
             Asset::create([

@@ -20,17 +20,17 @@ class LookupTableSeeder extends DatabaseSeeder
     {
         $faker = Faker::create();
 
-        $userIds = User::lists('id');
-        $tagIds = Tag::lists('id');
-        $commentIds = Comment::lists('id');
-        $assetIds = Asset::lists('id');
-        $tripReportIds = TripReport::lists('id');
-        $hatchIds = Hatch::lists('id');
-        $hatchReportIds = Hatch::lists('id');
-        $fisheryIds = Fishery::lists('id');
-        $fishSpeciesIds = FishSpecies::lists('id');
-        $flyPatternIds = FishSpecies::lists('id');
-        $flyboxIds = Flybox::lists('id');
+        $userIds = User::lists('id')->all();
+        $tagIds = Tag::lists('id')->all();
+        $commentIds = Comment::lists('id')->all();
+        $assetIds = Asset::lists('id')->all();
+        $tripReportIds = TripReport::lists('id')->all();
+        $hatchIds = Hatch::lists('id')->all();
+        $hatchReportIds = Hatch::lists('id')->all();
+        $fisheryIds = Fishery::lists('id')->all();
+        $fishSpeciesIds = FishSpecies::lists('id')->all();
+        $flyPatternIds = FishSpecies::lists('id')->all();
+        $flyboxIds = Flybox::lists('id')->all();
         $roleIds = ['2', '3', '4', '5', '6', '7', '8', '9'];
 
         foreach (range(1, 30) as $index) {

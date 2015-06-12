@@ -18,9 +18,9 @@ class FisheriesTableSeeder extends DatabaseSeeder
 
         $faker = Faker::create('en-US');
 
-        $privacyIds = Privacy::lists('id');
-        $userIds = User::lists('id');
-        $habitatIds = Habitat::lists('id');
+        $privacyIds = Privacy::lists('id')->all();
+        $userIds = User::lists('id')->all();
+        $habitatIds = Habitat::lists('id')->all();
 
         foreach (range(1, 30) as $index) {
 
