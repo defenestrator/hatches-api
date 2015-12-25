@@ -1,0 +1,37 @@
+{
+    "name": "Hatches\\Http\\Controllers\\AdministratorPageController",
+    "line": 3,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers",
+    "file": "app\/Http\/Controllers\/Pages\/AdministratorPageController.php",
+    "hash": "6fdca564e84b1fc0875197436d31f68cc10042c8",
+    "parent": "Hatches\\Http\\Controllers\\PagesController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "index": {
+            "name": "index",
+            "line": 5,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

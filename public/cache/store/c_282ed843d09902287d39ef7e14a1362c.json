@@ -1,0 +1,37 @@
+{
+    "name": "Hatches\\Http\\Controllers\\HomePageController",
+    "line": 3,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers",
+    "file": "app\/Http\/Controllers\/Pages\/HomePageController.php",
+    "hash": "90f5d72b626a23103f4b9aa1130fbf554b3e52ac",
+    "parent": "Hatches\\Http\\Controllers\\PagesController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": [],
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "index": {
+            "name": "index",
+            "line": 5,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

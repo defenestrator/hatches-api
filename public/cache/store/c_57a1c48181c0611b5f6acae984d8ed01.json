@@ -1,0 +1,57 @@
+{
+    "name": "Hatches\\Transformers\\FlyboxTransformer",
+    "line": 6,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Transformers",
+    "file": "app\/Http\/Transformers\/FlyboxTransformer.php",
+    "hash": "44e0468fb96a4814ed788aa5c490274b7f236243",
+    "parent": "League\\Fractal\\TransformerAbstract",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Flybox": "hatches\\Flybox",
+        "TransformerAbstract": "League\\Fractal\\TransformerAbstract"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "transform": {
+            "name": "transform",
+            "line": 8,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "flybox": {
+                    "name": "flybox",
+                    "line": 8,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Transformers\\hatches\\Flybox",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "hatches\\Flybox",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        }
+    },
+    "constants": []
+}

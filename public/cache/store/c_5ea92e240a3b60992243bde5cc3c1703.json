@@ -1,0 +1,56 @@
+{
+    "name": "Hatches\\Http\\Controllers\\ProfilePageController",
+    "line": 8,
+    "short_desc": "",
+    "long_desc": "",
+    "hint": null,
+    "tags": [],
+    "namespace": "Hatches\\Http\\Controllers",
+    "file": "app\/Http\/Controllers\/Pages\/ProfilePageController.php",
+    "hash": "e3c1116330cdb869d2cf8322ad9db101261dbcf4",
+    "parent": "Hatches\\Http\\Controllers\\PagesController",
+    "modifiers": 0,
+    "is_trait": false,
+    "is_interface": false,
+    "aliases": {
+        "Profile": "Hatches\\Profile",
+        "User": "Hatches\\User",
+        "Auth": "Illuminate\\Support\\Facades\\Auth",
+        "Request": "Request"
+    },
+    "errors": [],
+    "interfaces": [],
+    "traits": [],
+    "properties": [],
+    "methods": {
+        "show": {
+            "name": "show",
+            "line": 10,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "create": {
+            "name": "create",
+            "line": 15,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        }
+    },
+    "constants": []
+}

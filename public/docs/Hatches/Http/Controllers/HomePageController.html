@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Hatches\Http\Controllers\HomePageController | Hatch.es API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Hatches_Http_Controllers_HomePageController" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Hatch.es API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                                                            <li><a href="../../../Hatches.html">Hatches</a></li>
+                                        <li><a href="../../../Hatches/Http.html">Http</a></li>
+                                        <li><a href="../../../Hatches/Http/Controllers.html">Controllers</a></li>
+    
+                <li>HomePageController</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>HomePageController</h1>
+    </div>
+
+    <p>    class
+    <strong>HomePageController</strong>        extends <a href="../../../Hatches/Http/Controllers/PagesController.html"><abbr title="Hatches\Http\Controllers\PagesController">PagesController</abbr></a></p>
+
+    
+            <h2>Traits</h2>
+
+        <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Bus\DispatchesCommands">Illuminate\Foundation\Bus\DispatchesCommands</abbr>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <abbr title="Illuminate\Foundation\Validation\ValidatesRequests">Illuminate\Foundation\Validation\ValidatesRequests</abbr>
+                                    </div>
+                <div class="col-md-6">
+                    
+
+                </div>
+            </div>
+            </div>
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Hatches\Http\Controllers\$this">$this</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setStatusCode">setStatusCode</a>(mixed $statusCode)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_setStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getStatusCode">getStatusCode</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_getStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respond">respond</a>($data, array $headers = array())
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respond"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondWithError">respondWithError</a>($message)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondWithError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondNotFound">respondNotFound</a>(string $message = &#039;There are no fish in this run. That\&#039;s a 404 error, good buddy.&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondNotFound"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondInternalError">respondInternalError</a>(string $message = &#039;Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondInternalError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondAuthenticationError">respondAuthenticationError</a>(string $message = &#039;Authentication Error. Please login before continuing.&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondAuthenticationError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondBadRequest">respondBadRequest</a>(string $message = &#039;Bad Request! Naughty Request!&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondBadRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_respondForbiddenRequest">respondForbiddenRequest</a>(string $message = &#039;Sorry, you aren\&#039;t allowed to do that!&#039;)
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/Controller.html#method_respondForbiddenRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+                                            <p>Create a new controller instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../Hatches/Http/Controllers/PagesController.html#method___construct"><abbr title="Hatches\Http\Controllers\PagesController">PagesController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_index">index</a>()
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_setStatusCode">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_setStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 22</div>
+        <code>                    <abbr title="Hatches\Http\Controllers\$this">$this</abbr>
+    <strong>setStatusCode</strong>(mixed $statusCode)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$statusCode</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Hatches\Http\Controllers\$this">$this</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getStatusCode">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_getStatusCode"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 31</div>
+        <code>                    mixed
+    <strong>getStatusCode</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respond">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respond"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 41</div>
+        <code>                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+    <strong>respond</strong>($data, array $headers = array())</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$data</td>
+                <td>
+</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondWithError">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondWithError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 50</div>
+        <code>                    <abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr>
+    <strong>respondWithError</strong>($message)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Illuminate\Http\JsonResponse">JsonResponse</abbr></td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondNotFound">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondNotFound"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 64</div>
+        <code>                    mixed
+    <strong>respondNotFound</strong>(string $message = &#039;There are no fish in this run. That\&#039;s a 404 error, good buddy.&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondInternalError">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondInternalError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 73</div>
+        <code>                    mixed
+    <strong>respondInternalError</strong>(string $message = &#039;Internal Error, something is temporarily busted,
+                                                    our regularly scheduled program will resume shortly.&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondAuthenticationError">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondAuthenticationError"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 83</div>
+        <code>                    mixed
+    <strong>respondAuthenticationError</strong>(string $message = &#039;Authentication Error. Please login before continuing.&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondBadRequest">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondBadRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 92</div>
+        <code>                    mixed
+    <strong>respondBadRequest</strong>(string $message = &#039;Bad Request! Naughty Request!&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_respondForbiddenRequest">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/Controller.html#method_respondForbiddenRequest"><abbr title="Hatches\Http\Controllers\Controller">Controller</abbr></a> at line 101</div>
+        <code>                    mixed
+    <strong>respondForbiddenRequest</strong>(string $message = &#039;Sorry, you aren\&#039;t allowed to do that!&#039;)</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>
+</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>
+</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../Hatches/Http/Controllers/PagesController.html#method___construct"><abbr title="Hatches\Http\Controllers\PagesController">PagesController</abbr></a> at line 38</div>
+        <code>                    
+    <strong>__construct</strong>()</code>
+    </h3>
+    <div class="details">
+                    <div class="method-description">
+                                    <p>Create a new controller instance.</p>                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_index">
+        <div class="location">at line 5</div>
+        <code>                    
+    <strong>index</strong>()</code>
+    </h3>
+    <div class="details">
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
