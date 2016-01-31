@@ -6,14 +6,12 @@ vendor/
 .env
 .env.behat
 hatches.prod.env
-config/ide-helper.php
 _ide_helper.php
 composer.lock
 storage/app
 storage/framework
 storage/logs/
 tests/logs/
-build.sh
 
 ############
 ## NodeJS ##
