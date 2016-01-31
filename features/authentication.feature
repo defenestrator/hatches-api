@@ -1,11 +1,7 @@
 Feature: Membership
   In order to provide access to member content
   As the application owner
-  I want to allow Authentication and Registration for Users
-
-  Scenario: Registration
-    When I register "JohnDoe" "john@example.com"
-    Then I should have an account
+  I want to allow Authentication for Users
 
   Scenario: Successful Authentication
     Given I have an account "JohnDoe" "john@example.com"

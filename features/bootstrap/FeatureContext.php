@@ -3,8 +3,6 @@
 use Behat\Behat\Tester\Exception\PendingException;
 use Behat\Behat\Context\Context;
 use Behat\Behat\Context\SnippetAcceptingContext;
-use Behat\Gherkin\Node\PyStringNode;
-use Behat\Gherkin\Node\TableNode;
 use Behat\MinkExtension\Context\MinkContext;
 use Laracasts\Behat\Context\Migrator;
 use \Laracasts\Behat\Context\DatabaseTransactions;
@@ -135,4 +133,59 @@ class FeatureContext extends MinkContext implements Context, SnippetAcceptingCon
         PHPUnit::assertTrue(Auth::guest());
     }
 
+    /**
+     * @Given the registration is valid
+     */
+    public function theRegistrationIsValid()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @When the registration is submitted
+     */
+    public function theRegistrationIsSubmitted()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Then a welcome email is sent to the new user
+     */
+    public function aWelcomeEmailIsSentToTheNewUser()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Given the user has received the verificaiton email
+     */
+    public function theUserHasReceivedTheVerificaitonEmail()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Given one hour has not expired
+     */
+    public function oneHourHasNotExpired()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @When the verification link is opened
+     */
+    public function theVerificationLinkIsOpened()
+    {
+        throw new PendingException();
+    }
+
+    /**
+     * @Then the user email is validated
+     */
+    public function theUserEmailIsValidated()
+    {
+        throw new PendingException();
+    }
 }

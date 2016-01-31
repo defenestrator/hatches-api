@@ -1,11 +1,10 @@
-Feature: Verify new user email
+Feature: Registration process with email validation
   In order to confirm user identity
   As the site owner
   I want to verify ownership of email accounts
 
   Scenario: Send verification email
-    Given I register
-      And the registration is valid
+    Given I register "JohnDoe" "john@example.com"
     When the registration is submitted
     Then a welcome email is sent to the new user
 

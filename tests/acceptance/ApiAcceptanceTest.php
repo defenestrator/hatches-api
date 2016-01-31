@@ -21,5 +21,6 @@ class AuthAcceptanceTest extends TestCase
             ->type('GoodPassword', 'password')
             ->press('Login');
         $this->get('v1/fisheries');
+        $this->seeJson();
     }
 }

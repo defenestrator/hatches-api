@@ -143,12 +143,14 @@ class CreateEmptyTables extends Migration
         }
         );
 
-        Schema::create('users', function ($table) {
+        Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name', 64)->unique();
             $table->string('email')->unique();
             $table->string('password', 200);
-            $table->string('remember_token', 100)->nullable();
+            $table->boolean('verified')->default(false);
+            $table->string('email_verification_token')->nullable();
+            $table->rememberToken();
             $table->date('deleted_at')->nullable()->default(null);
             $table->timestamps();
         });
