@@ -5,12 +5,6 @@
     "Fly fishing",
     "API"
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/defenestrator/Integrated.git"
-    }
-  ],
   "license": "MIT",
   "type": "project",
   "require": {
@@ -19,7 +13,7 @@
     "spatie/laravel-glide": "~2.0.0",
     "league/fractal": "~0.13",
     "sorskod/larasponse": "dev-L5",
-    "laravelcollective/html": "~5.0",
+    "laravelcollective/html": "~5.1.0",
     "graham-campbell/markdown": "~3.0"
   },
   "require-dev": {
@@ -32,7 +26,6 @@
     "behat/mink": "~1.7@dev",
     "behat/mink-extension": "~2.0@dev",
     "laracasts/behat-laravel-extension": "dev-master",
-    "laracasts/testdummy": "~2.1",
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
