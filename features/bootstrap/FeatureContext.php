@@ -12,7 +12,7 @@ use PHPUnit_Framework_Assert as PHPUnit;
  * Defines application features from the specific context.
  */
 
-/** @noinspection PhpUndefinedClassInspection */
+/** @test @noinspection PhpUndefinedClassInspection */
 class FeatureContext extends MinkContext implements Context, SnippetAcceptingContext
 {
     use Migrator, DatabaseTransactions;

@@ -9,11 +9,6 @@
 //Protect data injection changes from csrf
 Route::when('*', 'csrf', ['post', 'put', 'patch', 'delete']);
 
-
-Route::get('deployment', function () {
-    return Response::json(['data' => 'secrets', 'status' => 200]);
-});
-
 /** HTML View Routes **
  *  These routes require a name in addtion to the Controller and action
  *  These routes should extend PageController and
@@ -21,6 +16,10 @@ Route::get('deployment', function () {
  *  return $this->htmlPageResponse
  */
 Route::get('/', ['as' => 'main', 'uses' => 'HomePageController@index']);
+
+Route::get('/home', function() {
+    return redirect('/');
+});
 
 Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
     Route::get('profile', ['as' => 'profile', 'uses' => 'ProfilePageController@show']);
@@ -74,3 +73,6 @@ Route::controllers([
     'password' => 'Auth\PasswordController',
 ]);
 
+Route::get('/resendEmail', 'Auth\AuthController@resendEmail');
+
+Route::get('/activate/{code}', 'Auth\AuthController@activateAccount');

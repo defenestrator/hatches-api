@@ -31,6 +31,7 @@ class IntegrationTest extends TestCase
             'password' => Hash::make('GoodPassword')
         ];
         $this->register($credentials);
+//        $this->see('Please confirm your email address.');
         $this->seeInDatabase('users', ['email' => 'register@example.com', 'verified' => false]);
     }
 

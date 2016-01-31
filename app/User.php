@@ -65,6 +65,16 @@ class User extends Model implements AuthenticatableContract, CanResetPasswordCon
      */
     protected $hidden = ['password', 'remember_token'];
 
+    public function accountIsActive($code) {
+        $user = User::where('activation_code', '=', $code)->first();
+        $user->active = 1;
+        $user->activation_code = '';
+        if($user->save()) {
+            \Auth::login($user);
+        }
+        return true;
+    }
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
