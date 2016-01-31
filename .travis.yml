@@ -4,10 +4,11 @@ php:
   - '7.0'
 matrix:
   fast_finish: true
-  allow_failures:
-    - php: '7.0'
+#  allow_failures:
+#    - php: '7.0'
 sudo: false
 before_script:
+  - phpenv config-rm xdebug.ini
   - mv .env.behat.travis .env.behat && cp .env.behat .env
   - touch storage/acceptance/acceptance.sqlite
   - chmod -R 777 storage
@@ -17,12 +18,8 @@ before_script:
   - php artisan key:generate
   - php artisan migrate --seed
   - cp storage/acceptance/acceptance.sqlite storage/integration/integration.sqlite
-#  - npm install
-
 script:
   # Run the tests!
-#  - gulp test
-  # Run them again!
   - phpunit
   - vendor/bin/phpspec run -v
   - vendor/bin/behat --config behat.yml
