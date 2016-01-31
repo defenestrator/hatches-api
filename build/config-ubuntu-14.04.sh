@@ -1,10 +1,22 @@
 #!/usr/bin/env bash
-# To configure *ubuntu 14.04, and variations thereupon do the following:
+# To configure Laravel ~5.1 on *ubuntu 14.04, and variations thereupon do the following:
 # chmod +x config-ubuntu-14.04.sh
 # Run it from var/build, not from inside the project.
 # Just wanted to get this in the repo so I don't lose track.
 # Soemthing like this should work:
 # sudo /var/build/config-ubuntu-14.04.sh
+
+# The colors!
+#red=$'\e[31m'
+#grn=$'\e[32m'
+#red_bold=$'\e[1;31m'
+#yel=$'\e[33m'
+#blu=$'\e[34m'
+#mag=$'\e[35m'
+#cyn=$'\e[36m'
+#end=$'\e[0m'
+
+# Set the directory name of the app, if it matches your github repo name that would be great, 'mkay?
 APP_NAME=hatches-api
 # First we update and clean up a bit,
 apt-get update && apt-get upgrade && apt-get autoclean
@@ -19,17 +31,19 @@ apt-get update
 apt-get install -y git ssh vim php5 sqlite3 php5-sqlite php5-fpm nginx
 # because Nano eats balls
 export EDITOR=vim
-# probably should run check_service.sh instead
-./check_service.sh apache remove
+# To the refuse bin with apache2 because I'm an hipster.
+./check_service.sh apache2 remove
+# If deploying to the same box, just do a sanity check and remove the old deployment,
+# ugly, but not as ugly as half-a-patch deployment.
 cd /var/www
-if [ -a hatches-api ]
+if [ -a ${APP_NAME} ]
     then
-        rm -rf hatches-api/
-        echo "removing old hatches-api/ directory"
+        rm -rf ${APP_NAME}/
+        echo "removing old hatches-api/ directory then cloning ${APP_NAME} repository"
     else
-        echo "cloning repository"
+        echo "cloning ${APP_NAME} repository"
 fi
-git clone https://github.com/defenestrator/hatches-api.git
+git clone https://github.com/defenestrator/${APP_NAME}.git
 if [-a ./hatches.prod.env]
     then
         echo "There is no production .env file, you better double check that"
@@ -40,12 +54,12 @@ fi
 curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 curl -sL https://deb.nodesource.com/setup_5.x | bash -
 apt-get install -y nodejs build-essential
-git clone https://github.com/defenestrator/hatches-api.git /var/www/hatches-api
+git clone https://github.com/defenestrator/hatches-api.git /var/www/${APP_NAME}
 adduser --system --no-create-home --disabled-login --disabled-password --group nginx
 usermod -g www-data nginx
-chown -R www-data:nginx hatches-api/
-chgrp -R www-data hatches-api/
-cd hatches-api/
+chown -R www-data:nginx ${APP_NAME}/
+chgrp -R www-data ${APP_NAME}/
+cd ${APP_NAME}/
 chmod -R 0777 storage/ bootstrap/cache
 composer self-update
 composer install --prefer-source --no-dev &&
