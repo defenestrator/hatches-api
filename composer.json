@@ -26,6 +26,7 @@
     "behat/mink": "~1.7@dev",
     "behat/mink-extension": "~2.0@dev",
     "laracasts/behat-laravel-extension": "dev-master",
+    "laracasts/testdummy": "~2.0",
     "doctrine/dbal": "~2.6@dev",
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
