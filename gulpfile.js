@@ -7,7 +7,6 @@ phpUnit = require('gulp-phpunit'),
 phpSpec = require('gulp-phpspec'),
 less = require('gulp-less'),
 path = require('path'),
-    waitForIt = require('gulp-wait'),
 minifyCSS = require('gulp-minify-css');
 
 // No need to run this task by itself, use css-compile-minify instead!
