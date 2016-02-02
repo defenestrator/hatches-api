@@ -9,17 +9,19 @@ blu=$'\e[34m'
 mag=$'\e[35m'
 cyn=$'\e[36m'
 end=$'\e[0m'
-# The functions
+# The function's usage
+# "check install/remove service"
 function check() {
 ACTION=$1
 SERVICE=$2
-echo "SERVICE is ${SERVICE}"
-echo "${grn}We are going to ${ACTION} ${SERVICE} ${end}"
+echo "${yel}We are going to ${ACTION} ${SERVICE} ${end}"
 if [ "$ACTION" == "remove" ]; then
     if ps ax | grep -v grep | grep "${SERVICE}" > /dev/null
         then
-            echo "${red_bold} You're about to nuke the ${1} service, are you darn sure you
-            want to do that?${end} (yes/no) "
+            echo "${red_bold}You're about to nuke the ${2} service,"
+            echo "are you darn sure you want to do that?$"
+            echo "${end}"
+            echo "Type 'yes' to accept, anything else to abort"
             read CONSENT
             if [ "$CONSENT" == "yes" ]
             then
@@ -33,9 +35,9 @@ if [ "$ACTION" == "remove" ]; then
     fi
 elif [ "$ACTION" == "install" ];
     then
-        if ps ax | grep -v grep | grep ${SERVICE} > /dev/null
+        if  service status true
             then
-                echo "${grn}$SERVICE is already running, w00t${end}"
+                echo "${grn}${SERVICE} is already running, w00t${end}"
             else
                 apt-get ${ACTION} ${SERVICE} -y
                 echo "Installing $SERVICE, because you'll probably want it later."
@@ -45,6 +47,7 @@ else
 fi
 service "$SERVICE" status
 }
-check ${1} ${2}
+# ungh, mic check ${1} ${2} ${1} ${2} mic...
+check ${1} ${2} # ${1} ${2}
 
 exit
