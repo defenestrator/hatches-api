@@ -22,7 +22,7 @@ apt-get install -y git ssh vim php5 sqlite3 php5-sqlite php5-fpm nginx
 # because Nano eats balls
 export EDITOR=vim
 # To the refuse bin with apache2 because I'm an hipster.
-./check_service.sh apache2 remove
+./check_service.sh remove apache2
 # If deploying to the same box, just do a sanity check and remove the old deployment,
 # ugly, but not as ugly as half-a-patch deployment.
 cd /var/www
