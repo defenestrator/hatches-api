@@ -1,22 +1,12 @@
 #!/usr/bin/env bash
-# To configure Laravel ~5.1 on *ubuntu 14.04, and variations thereupon do the following:
-# chmod +x config-ubuntu-14.04.sh
+# To configure Laravel ~5.1 on *ubuntu 14.04, and variations thereupon
+# Make this piece executable: chmod +x config-ubuntu-14.04.sh
 # Run it from var/build, not from inside the project.
-# Just wanted to get this in the repo so I don't lose track.
-# Soemthing like this should work:
+# That which follows should work, do use sudo:
 # sudo /var/build/config-ubuntu-14.04.sh
-
-# The colors!
-#red=$'\e[31m'
-#grn=$'\e[32m'
-#red_bold=$'\e[1;31m'
-#yel=$'\e[33m'
-#blu=$'\e[34m'
-#mag=$'\e[35m'
-#cyn=$'\e[36m'
-#end=$'\e[0m'
-
-# Set the directory name of the app, if it matches your github repo name that would be great, 'mkay?
+# Set the directory name of the app,
+# if it matches your github repo
+# name; that would be great.
 APP_NAME=hatches-api
 # First we update and clean up a bit,
 apt-get update && apt-get upgrade && apt-get autoclean
@@ -40,6 +30,7 @@ if [ -a ${APP_NAME} ]
     then
         rm -rf ${APP_NAME}/
         echo "removing old hatches-api/ directory then cloning ${APP_NAME} repository"
+        exit 1
     else
         echo "cloning ${APP_NAME} repository"
 fi
