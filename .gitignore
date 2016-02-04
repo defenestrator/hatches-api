@@ -22,10 +22,9 @@ config.js
 dump.rdb
 npm-debug.log
 
-# OTHER
-selenium-server-standalone-*
 
 ###############################################################
 # see this gist for some more suggestions                     #
 # https://gist.github.com/defenestrator/5ad679db122177888da5  #
 ###############################################################
+server.conf
