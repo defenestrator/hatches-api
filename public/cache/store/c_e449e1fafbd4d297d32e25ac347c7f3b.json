@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/Transformer.php",
-    "hash": "0bfa9e3d433d2185bef019f30147388c9e7eecbd",
+    "hash": "7d36859d8dc69570fe6f12f74a1a82f2f49c7435",
     "parent": null,
     "modifiers": 16,
     "is_trait": false,
@@ -20,7 +20,7 @@
     "methods": {
         "transformCollection": {
             "name": "transformCollection",
-            "line": 11,
+            "line": 12,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -33,7 +33,7 @@
             "parameters": {
                 "items": {
                     "name": "items",
-                    "line": 11,
+                    "line": 12,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": [
@@ -51,7 +51,7 @@
         },
         "transform": {
             "name": "transform",
-            "line": 16,
+            "line": 17,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -64,7 +64,7 @@
             "parameters": {
                 "item": {
                     "name": "item",
-                    "line": 16,
+                    "line": 17,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": null,

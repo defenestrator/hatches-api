@@ -85,7 +85,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Prey.php",
-  "hash": "01d880b59cfb25d8cc036cf707a41955127a74cc",
+    "hash": "9c94ce9f714504a4a5f91ae7093aa7c161e5e72c",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -220,7 +220,7 @@
     "methods": {
         "hatchType": {
             "name": "hatchType",
-            "line": 29,
+            "line": 30,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

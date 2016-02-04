@@ -49,7 +49,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/HatchType.php",
-  "hash": "47e55f046087760261c34d8d08fa7d59cc2435cd",
+    "hash": "6dbb32c553509464cbee060145bce8676a8d7b94",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -63,20 +63,20 @@
     "properties": {
         "timestamps": {
             "name": "timestamps",
-            "line": 21,
+            "line": 22,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-          "default": {
-            "name": {
-              "parts": [
-                "false"
-              ]
-            }
-          },
+            "default": {
+                "name": {
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
             "errors": []
         },
         "id": {
@@ -134,7 +134,7 @@
     "methods": {
         "prey": {
             "name": "prey",
-            "line": 23,
+            "line": 24,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -148,7 +148,7 @@
         },
         "hatches": {
             "name": "hatches",
-            "line": 28,
+            "line": 29,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

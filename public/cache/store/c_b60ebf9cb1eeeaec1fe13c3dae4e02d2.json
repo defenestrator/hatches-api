@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http\\Middleware",
     "file": "app\/Http\/Middleware\/Authenticate.php",
-  "hash": "b8a245462397f3010cde9ecee17fb0d0d5b261d1",
+    "hash": "ca7bf4d8513a3d49a185508c7ab6966cd7f4f3b0",
     "parent": null,
     "modifiers": 0,
     "is_trait": false,
@@ -23,11 +23,11 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-          "line": 20,
+            "line": 21,
             "short_desc": "Create a new filter instance.",
             "long_desc": "",
-          "hint": null,
-          "hint_desc": null,
+            "hint": null,
+            "hint_desc": null,
             "tags": [],
             "modifiers": "1",
             "is_by_ref": "",
@@ -36,17 +36,17 @@
             "parameters": {
                 "auth": {
                     "name": "auth",
-                  "line": 20,
+                    "line": 21,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Middleware\\Illuminate\\Contracts\\Auth\\Guard",
+                            "Hatches\\Http\\Middleware\\Illuminate\\Contracts\\Auth\\Guard",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
+                    "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -54,7 +54,7 @@
         },
         "handle": {
             "name": "handle",
-          "line": 32,
+            "line": 33,
             "short_desc": "Handle an incoming request.",
             "long_desc": "",
             "hint": [
@@ -72,7 +72,7 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                  "line": 32,
+                    "line": 33,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -88,7 +88,7 @@
                 },
                 "next": {
                     "name": "next",
-                  "line": 32,
+                    "line": 33,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

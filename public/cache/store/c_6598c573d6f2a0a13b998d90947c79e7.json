@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Providers",
     "file": "app\/Providers\/RouteServiceProvider.php",
-    "hash": "671f55ce78d57530755bbb522e5542f369c63ea9",
+    "hash": "a0b9e7cfdc23e02ad12a2296eb1346167dbc4f8b",
     "parent": "Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider",
     "modifiers": 0,
     "is_trait": false,
@@ -23,7 +23,7 @@
     "methods": {
         "boot": {
             "name": "boot",
-            "line": 23,
+            "line": 24,
             "short_desc": "Define your route model bindings, pattern filters, etc.",
             "long_desc": "",
             "hint": [
@@ -41,17 +41,17 @@
             "parameters": {
                 "router": {
                     "name": "router",
-                    "line": 23,
+                    "line": 24,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Providers\\Illuminate\\Routing\\Router",
+                            "Hatches\\Providers\\Illuminate\\Routing\\Router",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Routing\\Router",
+                    "modifiers": "Illuminate\\Routing\\Router",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -59,7 +59,7 @@
         },
         "map": {
             "name": "map",
-            "line": 35,
+            "line": 36,
             "short_desc": "Define the routes for the application.",
             "long_desc": "",
             "hint": [

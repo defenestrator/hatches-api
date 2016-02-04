@@ -5,6 +5,12 @@
     "Fly fishing",
     "API"
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/edos-io/sami.git"
+    }
+  ],
   "license": "MIT",
   "type": "project",
   "require": {
@@ -31,7 +37,8 @@
     "fzaninotto/faker": "~1.4",
     "benconstable/phpspec-laravel": "~2.0@dev",
     "curl/curl": "1.2.1",
-    "symfony/yaml": "~2.1.0"
+    "symfony/yaml": "~2.1.0",
+    "edos-io/sami": "3.0.2"
   },
   "autoload": {
     "classmap": [

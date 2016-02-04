@@ -84,7 +84,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Hatch.php",
-  "hash": "38aba3ecd94f7d5622954b948344b556e7db703b",
+    "hash": "3f0ab178e8519fe6b8ba1cd3b07132058d8d7175",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -202,7 +202,7 @@
     "methods": {
         "tags": {
             "name": "tags",
-            "line": 28,
+            "line": 29,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -216,7 +216,7 @@
         },
         "fisheries": {
             "name": "fisheries",
-            "line": 33,
+            "line": 34,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -230,7 +230,7 @@
         },
         "hatchType": {
             "name": "hatchType",
-            "line": 38,
+            "line": 39,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

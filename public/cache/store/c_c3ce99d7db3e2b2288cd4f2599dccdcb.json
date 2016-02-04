@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/FisheriesController.php",
-    "hash": "bb969132d93c85b029263b1fd8305cd0b2d94247",
+    "hash": "a6e7edf81a27a770ff74cbb7520c8b6bd96e6c27",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -72,12 +72,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
+                            "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Http\\Request",
+                    "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 },
@@ -88,12 +88,12 @@
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
+                            "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Transformers\\FisheryTransformer",
+                    "modifiers": "Hatches\\Transformers\\FisheryTransformer",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -101,7 +101,7 @@
         },
         "create": {
             "name": "create",
-            "line": 58,
+            "line": 60,
             "short_desc": "Show the form for creating a new resource.",
             "long_desc": "GET \/fisheries\/create",
             "hint": [
@@ -120,7 +120,7 @@
         },
         "store": {
             "name": "store",
-            "line": 69,
+            "line": 71,
             "short_desc": "Store a newly created resource in storage.",
             "long_desc": "POST \/fisheries",
             "hint": [
@@ -139,7 +139,7 @@
         },
         "show": {
             "name": "show",
-            "line": 84,
+            "line": 86,
             "short_desc": "Display the specified resource.",
             "long_desc": "GET \/fisheries\/{id}",
             "hint": [
@@ -164,7 +164,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 84,
+                    "line": 86,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -180,33 +180,33 @@
                 },
                 "response": {
                     "name": "response",
-                    "line": 84,
+                    "line": 86,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Http\\Controllers\\Response",
+                            "Hatches\\Http\\Controllers\\Hatches\\Http\\Controllers\\Response",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Http\\Controllers\\Response",
+                    "modifiers": "Hatches\\Http\\Controllers\\Response",
                     "default": null,
                     "is_by_ref": false
                 },
                 "fisheryTransformer": {
                     "name": "fisheryTransformer",
-                    "line": 84,
+                    "line": 86,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
+                            "Hatches\\Http\\Controllers\\Hatches\\Transformers\\FisheryTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Transformers\\FisheryTransformer",
+                    "modifiers": "Hatches\\Transformers\\FisheryTransformer",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -214,7 +214,7 @@
         },
         "edit": {
             "name": "edit",
-            "line": 100,
+            "line": 103,
             "short_desc": "Show the form for editing the specified resource.",
             "long_desc": "GET \/fisheries\/{id}\/edit",
             "hint": [
@@ -232,7 +232,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 100,
+                    "line": 103,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -250,7 +250,7 @@
         },
         "update": {
             "name": "update",
-            "line": 112,
+            "line": 115,
             "short_desc": "Update the specified resource in storage.",
             "long_desc": "PUT \/fisheries\/{id}",
             "hint": [
@@ -268,7 +268,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 112,
+                    "line": 115,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -286,7 +286,7 @@
         },
         "destroy": {
             "name": "destroy",
-            "line": 124,
+            "line": 127,
             "short_desc": "Remove the specified resource from storage.",
             "long_desc": "DELETE \/fisheries\/{id}",
             "hint": [
@@ -304,7 +304,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 124,
+                    "line": 127,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

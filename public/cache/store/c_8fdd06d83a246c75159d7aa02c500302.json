@@ -36,7 +36,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Privacy.php",
-    "hash": "399725f1646bc691f742506a9faa5f7d91f5b296",
+    "hash": "c9e78b1e2881bd3e5435332c9565531684562ab0",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -50,20 +50,20 @@
     "properties": {
         "timestamps": {
             "name": "timestamps",
-            "line": 17,
+            "line": 18,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-          "default": {
-            "name": {
-              "parts": [
-                "false"
-              ]
-            }
-          },
+            "default": {
+                "name": {
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
             "errors": []
         },
         "id": {

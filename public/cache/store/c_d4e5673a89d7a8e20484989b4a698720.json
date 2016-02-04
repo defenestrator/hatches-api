@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/TripReportTransformer.php",
-    "hash": "3a2b84f3c7194ffc2f29d5fb80e54e86639781d1",
+    "hash": "5fdd77d866172f602e09cbca65b5b95587552333",
     "parent": "Hatches\\Transformers\\Transformer",
     "modifiers": 0,
     "is_trait": false,
@@ -20,7 +20,7 @@
     "methods": {
         "transform": {
             "name": "transform",
-            "line": 9,
+            "line": 10,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -33,7 +33,7 @@
             "parameters": {
                 "tripReport": {
                     "name": "tripReport",
-                    "line": 9,
+                    "line": 10,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": null,

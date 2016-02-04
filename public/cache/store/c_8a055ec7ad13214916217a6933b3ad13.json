@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\Asset",
-    "line": 30,
+    "line": 28,
     "short_desc": "Asset",
     "long_desc": "",
     "hint": null,
@@ -97,7 +97,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Asset.php",
-  "hash": "effe3d7c8e6b644252e5ad5c1eff75d545c8255e",
+    "hash": "4bba0d72244bd690f522a38f345e14c462dfe38c",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -111,7 +111,7 @@
     "properties": {
         "id": {
             "name": "id",
-            "line": 30,
+            "line": 28,
             "short_desc": "integer$id",
             "long_desc": null,
             "hint": [
@@ -128,7 +128,7 @@
         },
         "type": {
             "name": "type",
-            "line": 30,
+            "line": 28,
             "short_desc": "string$type",
             "long_desc": null,
             "hint": [
@@ -145,7 +145,7 @@
         },
         "user_id": {
             "name": "user_id",
-            "line": 30,
+            "line": 28,
             "short_desc": "integer$user_id",
             "long_desc": null,
             "hint": [
@@ -162,7 +162,7 @@
         },
         "privacy_id": {
             "name": "privacy_id",
-            "line": 30,
+            "line": 28,
             "short_desc": "integer$privacy_id",
             "long_desc": null,
             "hint": [
@@ -179,7 +179,7 @@
         },
         "uri": {
             "name": "uri",
-            "line": 30,
+            "line": 28,
             "short_desc": "string$uri",
             "long_desc": null,
             "hint": [
@@ -196,7 +196,7 @@
         },
         "created_at": {
             "name": "created_at",
-            "line": 30,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$created_at",
             "long_desc": null,
             "hint": [
@@ -213,7 +213,7 @@
         },
         "updated_at": {
             "name": "updated_at",
-            "line": 30,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$updated_at",
             "long_desc": null,
             "hint": [
@@ -232,7 +232,7 @@
     "methods": {
         "user": {
             "name": "user",
-            "line": 33,
+            "line": 32,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -246,7 +246,7 @@
         },
         "privacy": {
             "name": "privacy",
-            "line": 38,
+            "line": 37,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -260,7 +260,7 @@
         },
         "tags": {
             "name": "tags",
-            "line": 43,
+            "line": 42,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -274,7 +274,7 @@
         },
         "comments": {
             "name": "comments",
-            "line": 49,
+            "line": 48,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

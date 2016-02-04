@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Exceptions",
     "file": "app\/Exceptions\/Handler.php",
-    "hash": "e30c264ed67afe1393aff2d604b673805796aed2",
+    "hash": "cb689b7e7f66f150ebd6858718fd7dba354946de",
     "parent": "Illuminate\\Foundation\\Exceptions\\Handler",
     "modifiers": 0,
     "is_trait": false,
@@ -23,7 +23,7 @@
     "methods": {
         "report": {
             "name": "report",
-            "line": 25,
+            "line": 26,
             "short_desc": "Report or log an exception.",
             "long_desc": "This is a great spot to send exceptions to Sentry, Bugsnag, etc.",
             "hint": [
@@ -41,7 +41,7 @@
             "parameters": {
                 "e": {
                     "name": "e",
-                    "line": 25,
+                    "line": 26,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -59,7 +59,7 @@
         },
         "render": {
             "name": "render",
-            "line": 37,
+            "line": 38,
             "short_desc": "Render an exception into an HTTP response.",
             "long_desc": "",
             "hint": [
@@ -77,7 +77,7 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                    "line": 37,
+                    "line": 38,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -93,7 +93,7 @@
                 },
                 "e": {
                     "name": "e",
-                    "line": 37,
+                    "line": 38,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

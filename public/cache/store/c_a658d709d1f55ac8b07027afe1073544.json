@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/TripReportsController.php",
-    "hash": "72f33379e0dd6c6a6e58206c8187adc12dcf7016",
+    "hash": "1e52948a80b4f7c4e00005e295e1c2a904c5daae",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -25,7 +25,7 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 11,
+            "line": 12,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -39,7 +39,7 @@
         },
         "index": {
             "name": "index",
-            "line": 26,
+            "line": 27,
             "short_desc": "Display a listing of the resource.",
             "long_desc": "",
             "hint": [
@@ -64,49 +64,49 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                    "line": 26,
+                    "line": 27,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
+                            "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Http\\Request",
+                    "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 },
                 "response": {
                     "name": "response",
-                    "line": 26,
+                    "line": 27,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Response",
+                            "Hatches\\Http\\Controllers\\Illuminate\\Http\\Response",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Http\\Response",
+                    "modifiers": "Illuminate\\Http\\Response",
                     "default": null,
                     "is_by_ref": false
                 },
                 "tripReportTransformer": {
                     "name": "tripReportTransformer",
-                    "line": 26,
+                    "line": 27,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\TripReportTransformer",
+                            "Hatches\\Http\\Controllers\\Hatches\\Transformers\\TripReportTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Transformers\\TripReportTransformer",
+                    "modifiers": "Hatches\\Transformers\\TripReportTransformer",
                     "default": null,
                     "is_by_ref": false
                 }

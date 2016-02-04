@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Providers",
     "file": "app\/Providers\/EventServiceProvider.php",
-    "hash": "7317929a0a55e77c8d513dc9818b274e8c3571ad",
+    "hash": "7e0520fa35e33d51c5d41ced9f7ef3363e9cd259",
     "parent": "Illuminate\\Foundation\\Support\\Providers\\EventServiceProvider",
     "modifiers": 0,
     "is_trait": false,

@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Validators",
     "file": "app\/Validators\/FileUploadFormatValidator.php",
-    "hash": "897d31621c2920d7aa8342b92ae7a3816217b8ac",
+    "hash": "b21e77948054adacbe4ce3a6d53061727ff483ca",
     "parent": null,
     "modifiers": 0,
     "is_trait": false,

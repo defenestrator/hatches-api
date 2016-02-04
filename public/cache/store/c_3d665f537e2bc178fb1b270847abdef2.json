@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http\\Requests",
     "file": "app\/Http\/Requests\/Request.php",
-    "hash": "40e99b75311ad6ed7c965bd9c5f2a0b8869cff6d",
+    "hash": "f23a1210363a626a8cb9967c4fbd8f52eddd2a95",
     "parent": "Illuminate\\Foundation\\Http\\FormRequest",
     "modifiers": 16,
     "is_trait": false,

@@ -1,22 +1,22 @@
 {
     "name": "Hatches\\Http\\Controllers\\Auth\\PasswordController",
-  "line": 8,
+    "line": 8,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers\\Auth",
     "file": "app\/Http\/Controllers\/Auth\/PasswordController.php",
-  "hash": "9925ddc85613018ea265785a260eb24acccc6c85",
+    "hash": "b2e211976f9c1c56996cd1f627f3d574f945a145",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
     "is_interface": false,
     "aliases": {
         "Controller": "Hatches\\Http\\Controllers\\Controller",
-      "Guard": "Illuminate\\Contracts\\Auth\\Guard",
-      "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords",
-      "PasswordBroker": "Illuminate\\Auth\\Passwords\\PasswordBroker"
+        "Guard": "Illuminate\\Contracts\\Auth\\Guard",
+        "PasswordBroker": "Illuminate\\Contracts\\Auth\\PasswordBroker",
+        "ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
     },
     "errors": [],
     "interfaces": [],
@@ -24,54 +24,59 @@
         "Illuminate\\Foundation\\Auth\\ResetsPasswords": "Illuminate\\Foundation\\Auth\\ResetsPasswords"
     },
     "properties": [],
-  "methods": {
-    "__construct": {
-      "name": "__construct",
-      "line": 22,
-      "short_desc": "",
-      "long_desc": "",
-      "hint": null,
-      "hint_desc": null,
-      "tags": [],
-      "modifiers": "1",
-      "is_by_ref": "",
-      "exceptions": [],
-      "errors": [],
-      "parameters": {
-        "auth": {
-          "name": "auth",
-          "line": 22,
-          "short_desc": null,
-          "long_desc": null,
-          "hint": [
-            [
-              "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Guard",
-              false
-            ]
-          ],
-          "tags": [],
-          "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
-          "default": null,
-          "is_by_ref": false
-        },
-        "passwords": {
-          "name": "passwords",
-          "line": 22,
-          "short_desc": null,
-          "long_desc": null,
-          "hint": [
-            [
-              "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Auth\\Passwords\\PasswordBroker",
-              false
-            ]
-          ],
-          "tags": [],
-          "modifiers": "Illuminate\\Auth\\Passwords\\PasswordBroker",
-          "default": null,
-          "is_by_ref": false
+    "methods": {
+        "__construct": {
+            "name": "__construct",
+            "line": 30,
+            "short_desc": "Create a new password controller instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "auth": {
+                    "name": "auth",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Guard",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
+                    "default": null,
+                    "is_by_ref": false
+                },
+                "passwords": {
+                    "name": "passwords",
+                    "line": 30,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\PasswordBroker",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Illuminate\\Contracts\\Auth\\PasswordBroker",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
         }
-      }
-    }
-  },
+    },
     "constants": []
 }

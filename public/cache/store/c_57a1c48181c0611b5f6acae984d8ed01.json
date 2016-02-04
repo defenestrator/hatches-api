@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/FlyboxTransformer.php",
-    "hash": "44e0468fb96a4814ed788aa5c490274b7f236243",
+    "hash": "d035ed1d5f97bd130d4ce03312dd14990c2fe8d8",
     "parent": "League\\Fractal\\TransformerAbstract",
     "modifiers": 0,
     "is_trait": false,
@@ -23,7 +23,7 @@
     "methods": {
         "transform": {
             "name": "transform",
-            "line": 8,
+            "line": 9,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -36,7 +36,7 @@
             "parameters": {
                 "flybox": {
                     "name": "flybox",
-                    "line": 8,
+                    "line": 9,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": [

@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\Fishery",
-    "line": 43,
+    "line": 44,
     "short_desc": "Fishery",
     "long_desc": "",
     "hint": null,
@@ -167,7 +167,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Fishery.php",
-  "hash": "dce87e5d679386faadf67ac0c643c90eb10a31e0",
+    "hash": "ba9a0d57cc4099b5a79655876c78750d5d25380c",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -181,7 +181,7 @@
     "properties": {
         "id": {
             "name": "id",
-            "line": 43,
+            "line": 44,
             "short_desc": "integer$id",
             "long_desc": null,
             "hint": [
@@ -198,7 +198,7 @@
         },
         "name": {
             "name": "name",
-            "line": 43,
+            "line": 44,
             "short_desc": "string$name",
             "long_desc": null,
             "hint": [
@@ -215,7 +215,7 @@
         },
         "regs": {
             "name": "regs",
-            "line": 43,
+            "line": 44,
             "short_desc": "string$regs",
             "long_desc": null,
             "hint": [
@@ -232,7 +232,7 @@
         },
         "management": {
             "name": "management",
-            "line": 43,
+            "line": 44,
             "short_desc": "string$management",
             "long_desc": null,
             "hint": [
@@ -249,7 +249,7 @@
         },
         "notes": {
             "name": "notes",
-            "line": 43,
+            "line": 44,
             "short_desc": "string$notes",
             "long_desc": null,
             "hint": [
@@ -266,7 +266,7 @@
         },
         "lat": {
             "name": "lat",
-            "line": 43,
+            "line": 44,
             "short_desc": "float$lat",
             "long_desc": null,
             "hint": [
@@ -283,7 +283,7 @@
         },
         "lng": {
             "name": "lng",
-            "line": 43,
+            "line": 44,
             "short_desc": "float$lng",
             "long_desc": null,
             "hint": [
@@ -300,7 +300,7 @@
         },
         "user_id": {
             "name": "user_id",
-            "line": 43,
+            "line": 44,
             "short_desc": "integer$user_id",
             "long_desc": null,
             "hint": [
@@ -317,7 +317,7 @@
         },
         "privacy_id": {
             "name": "privacy_id",
-            "line": 43,
+            "line": 44,
             "short_desc": "integer$privacy_id",
             "long_desc": null,
             "hint": [
@@ -334,7 +334,7 @@
         },
         "habitat_id": {
             "name": "habitat_id",
-            "line": 43,
+            "line": 44,
             "short_desc": "integer$habitat_id",
             "long_desc": null,
             "hint": [
@@ -351,7 +351,7 @@
         },
         "stillwater": {
             "name": "stillwater",
-            "line": 43,
+            "line": 44,
             "short_desc": "boolean$stillwater",
             "long_desc": null,
             "hint": [
@@ -368,7 +368,7 @@
         },
         "created_at": {
             "name": "created_at",
-            "line": 43,
+            "line": 44,
             "short_desc": "\\Carbon\\Carbon$created_at",
             "long_desc": null,
             "hint": [
@@ -385,7 +385,7 @@
         },
         "updated_at": {
             "name": "updated_at",
-            "line": 43,
+            "line": 44,
             "short_desc": "\\Carbon\\Carbon$updated_at",
             "long_desc": null,
             "hint": [
@@ -404,7 +404,7 @@
     "methods": {
         "user": {
             "name": "user",
-          "line": 50,
+            "line": 58,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -418,7 +418,7 @@
         },
         "fishSpecies": {
             "name": "fishSpecies",
-          "line": 55,
+            "line": 63,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -432,7 +432,7 @@
         },
         "hatches": {
             "name": "hatches",
-          "line": 60,
+            "line": 68,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -446,7 +446,7 @@
         },
         "comments": {
             "name": "comments",
-          "line": 65,
+            "line": 73,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -460,7 +460,7 @@
         },
         "tags": {
             "name": "tags",
-          "line": 70,
+            "line": 78,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -474,7 +474,7 @@
         },
         "tripReports": {
             "name": "tripReports",
-          "line": 75,
+            "line": 83,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -488,7 +488,7 @@
         },
         "hatchReports": {
             "name": "hatchReports",
-          "line": 80,
+            "line": 88,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -502,7 +502,7 @@
         },
         "privacy": {
             "name": "privacy",
-          "line": 85,
+            "line": 93,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

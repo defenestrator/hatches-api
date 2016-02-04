@@ -46,9 +46,9 @@
     },
     "namespace": "Hatches",
     "file": "app\/Report.php",
-  "hash": "71b5c55cf3edf26afffc39c36c9b11725c136234",
+    "hash": "ccf45a5d1ca7638d3f583bb1688fcd32e1f7cc7f",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
-  "modifiers": 16,
+    "modifiers": 16,
     "is_trait": false,
     "is_interface": false,
     "aliases": {
@@ -61,7 +61,7 @@
     "methods": {
         "user": {
             "name": "user",
-            "line": 26,
+            "line": 34,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -75,7 +75,7 @@
         },
         "assets": {
             "name": "assets",
-            "line": 31,
+            "line": 39,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -89,7 +89,7 @@
         },
         "tags": {
             "name": "tags",
-            "line": 36,
+            "line": 44,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -103,7 +103,7 @@
         },
         "fishery": {
             "name": "fishery",
-            "line": 41,
+            "line": 49,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -117,7 +117,7 @@
         },
         "comments": {
             "name": "comments",
-            "line": 46,
+            "line": 54,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -131,7 +131,7 @@
         },
         "waterData": {
             "name": "waterData",
-            "line": 51,
+            "line": 59,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -145,7 +145,7 @@
         },
         "weather": {
             "name": "weather",
-            "line": 56,
+            "line": 64,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -159,7 +159,7 @@
         },
         "privacy": {
             "name": "privacy",
-            "line": 61,
+            "line": 69,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -173,7 +173,7 @@
         },
         "createReport": {
             "name": "createReport",
-            "line": 65,
+            "line": 74,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

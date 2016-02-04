@@ -90,7 +90,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/WaterData.php",
-  "hash": "80b6d91ee383364386f019c83003edc228b64d9e",
+    "hash": "0190ec24604038c3e30f934d1f1efb4038ca7047",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

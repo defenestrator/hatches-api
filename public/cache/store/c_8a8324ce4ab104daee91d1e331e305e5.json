@@ -106,7 +106,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/FlyPattern.php",
-  "hash": "ef35d84193300a6e2d0966956e6ac09e68470444",
+    "hash": "9b03e4ab59699abf761484ecb85450d89e6216cc",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -258,7 +258,7 @@
     "methods": {
         "assets": {
             "name": "assets",
-            "line": 33,
+            "line": 34,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -272,7 +272,7 @@
         },
         "tags": {
             "name": "tags",
-            "line": 38,
+            "line": 39,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -286,7 +286,7 @@
         },
         "privacy": {
             "name": "privacy",
-            "line": 44,
+            "line": 45,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -300,7 +300,7 @@
         },
         "comments": {
             "name": "comments",
-            "line": 49,
+            "line": 50,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

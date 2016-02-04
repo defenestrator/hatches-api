@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Providers",
     "file": "app\/Providers\/BusServiceProvider.php",
-    "hash": "9780dfada3c1b5929d284607fd3536ca286a8e34",
+    "hash": "ff58a1e8771b2f9f3eee2d6cc0ec901d3b047401",
     "parent": "Illuminate\\Support\\ServiceProvider",
     "modifiers": 0,
     "is_trait": false,
@@ -23,7 +23,7 @@
     "methods": {
         "boot": {
             "name": "boot",
-            "line": 14,
+            "line": 15,
             "short_desc": "Bootstrap any application services.",
             "long_desc": "",
             "hint": [
@@ -41,17 +41,17 @@
             "parameters": {
                 "dispatcher": {
                     "name": "dispatcher",
-                    "line": 14,
+                    "line": 15,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Providers\\Illuminate\\Bus\\Dispatcher",
+                            "Hatches\\Providers\\Illuminate\\Bus\\Dispatcher",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Bus\\Dispatcher",
+                    "modifiers": "Illuminate\\Bus\\Dispatcher",
                     "default": null,
                     "is_by_ref": false
                 }

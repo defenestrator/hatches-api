@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\FishSpecies",
-    "line": 29,
+    "line": 28,
     "short_desc": "FishSpecies",
     "long_desc": "",
     "hint": null,
@@ -98,7 +98,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/FishSpecies.php",
-  "hash": "2b7c09beab15c9d7c58e22f88ec2a397f2f726a8",
+    "hash": "e44fceb4e45fa641036df5743c895af5a30ad6f9",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -112,7 +112,7 @@
     "properties": {
         "id": {
             "name": "id",
-            "line": 29,
+            "line": 28,
             "short_desc": "integer$id",
             "long_desc": null,
             "hint": [
@@ -129,7 +129,7 @@
         },
         "common_name": {
             "name": "common_name",
-            "line": 29,
+            "line": 28,
             "short_desc": "string$common_name",
             "long_desc": null,
             "hint": [
@@ -146,7 +146,7 @@
         },
         "genus": {
             "name": "genus",
-            "line": 29,
+            "line": 28,
             "short_desc": "string$genus",
             "long_desc": null,
             "hint": [
@@ -163,7 +163,7 @@
         },
         "species": {
             "name": "species",
-            "line": 29,
+            "line": 28,
             "short_desc": "string$species",
             "long_desc": null,
             "hint": [
@@ -180,7 +180,7 @@
         },
         "description": {
             "name": "description",
-            "line": 29,
+            "line": 28,
             "short_desc": "string$description",
             "long_desc": null,
             "hint": [
@@ -197,7 +197,7 @@
         },
         "habitat_id": {
             "name": "habitat_id",
-            "line": 29,
+            "line": 28,
             "short_desc": "integer$habitat_id",
             "long_desc": null,
             "hint": [
@@ -214,7 +214,7 @@
         },
         "created_at": {
             "name": "created_at",
-            "line": 29,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$created_at",
             "long_desc": null,
             "hint": [
@@ -231,7 +231,7 @@
         },
         "updated_at": {
             "name": "updated_at",
-            "line": 29,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$updated_at",
             "long_desc": null,
             "hint": [

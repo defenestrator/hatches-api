@@ -81,7 +81,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Weather.php",
-    "hash": "9e382319d7569b1cf6764b06fd42c81dbd2851c5",
+    "hash": "7a4371bde8d9352ad9b734b480fd50413604c89b",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,

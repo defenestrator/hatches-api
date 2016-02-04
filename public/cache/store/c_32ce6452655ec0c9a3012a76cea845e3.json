@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\Flybox",
-  "line": 29,
+    "line": 28,
     "short_desc": "Flybox",
     "long_desc": "",
     "hint": null,
@@ -97,7 +97,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Flybox.php",
-  "hash": "8eb2c576ed1178709ea2b1759ba98b5b0ca3ec4e",
+    "hash": "4162a7743cf12014dfabded11ebde0ee769ade0f",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -111,7 +111,7 @@
     "properties": {
         "id": {
             "name": "id",
-          "line": 29,
+            "line": 28,
             "short_desc": "integer$id",
             "long_desc": null,
             "hint": [
@@ -128,7 +128,7 @@
         },
         "flybox_name": {
             "name": "flybox_name",
-          "line": 29,
+            "line": 28,
             "short_desc": "string$flybox_name",
             "long_desc": null,
             "hint": [
@@ -145,7 +145,7 @@
         },
         "description": {
             "name": "description",
-          "line": 29,
+            "line": 28,
             "short_desc": "string$description",
             "long_desc": null,
             "hint": [
@@ -162,7 +162,7 @@
         },
         "user_id": {
             "name": "user_id",
-          "line": 29,
+            "line": 28,
             "short_desc": "integer$user_id",
             "long_desc": null,
             "hint": [
@@ -179,7 +179,7 @@
         },
         "privacy_id": {
             "name": "privacy_id",
-          "line": 29,
+            "line": 28,
             "short_desc": "integer$privacy_id",
             "long_desc": null,
             "hint": [
@@ -196,7 +196,7 @@
         },
         "created_at": {
             "name": "created_at",
-          "line": 29,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$created_at",
             "long_desc": null,
             "hint": [
@@ -213,7 +213,7 @@
         },
         "updated_at": {
             "name": "updated_at",
-          "line": 29,
+            "line": 28,
             "short_desc": "\\Carbon\\Carbon$updated_at",
             "long_desc": null,
             "hint": [
@@ -232,7 +232,7 @@
     "methods": {
         "user": {
             "name": "user",
-          "line": 32,
+            "line": 32,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -246,7 +246,7 @@
         },
         "flyPatterns": {
             "name": "flyPatterns",
-          "line": 38,
+            "line": 38,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -260,7 +260,7 @@
         },
         "comments": {
             "name": "comments",
-          "line": 43,
+            "line": 43,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -274,7 +274,7 @@
         },
         "privacy": {
             "name": "privacy",
-          "line": 48,
+            "line": 48,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

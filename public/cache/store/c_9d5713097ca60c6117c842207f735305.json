@@ -1,22 +1,24 @@
 {
     "name": "Hatches\\Http\\Controllers\\Auth\\AuthController",
-    "line": 8,
+    "line": 10,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Http\\Controllers\\Auth",
     "file": "app\/Http\/Controllers\/Auth\/AuthController.php",
-  "hash": "e1bdd46f1b0b9230926773e50e8fe72c3dae6be8",
+    "hash": "5dc6b6306d5c1fe45c6d4e5c6c1d90450ae55e43",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
     "is_interface": false,
     "aliases": {
+        "User": "Hatches\\User",
         "Controller": "Hatches\\Http\\Controllers\\Controller",
-        "Guard": "Illuminate\\Contracts\\Auth\\Guard",
-        "Registrar": "Illuminate\\Contracts\\Auth\\Registrar",
-        "AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers"
+        "AuthenticatesAndRegistersUsers": "Illuminate\\Foundation\\Auth\\AuthenticatesAndRegistersUsers",
+        "Request": "Illuminate\\Http\\Request",
+        "Facades": "Illuminate\\Support\\Facades",
+        "Validator": "Validator"
     },
     "errors": [],
     "interfaces": [],
@@ -27,8 +29,27 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 31,
+            "line": 32,
             "short_desc": "Create a new authentication controller instance.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "void",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "validator": {
+            "name": "validator",
+            "line": 37,
+            "short_desc": "",
             "long_desc": "",
             "hint": null,
             "hint_desc": null,
@@ -38,35 +59,178 @@
             "exceptions": [],
             "errors": [],
             "parameters": {
-                "auth": {
-                    "name": "auth",
-                    "line": 31,
-                    "short_desc": "",
+                "data": {
+                    "name": "data",
+                    "line": 37,
+                    "short_desc": null,
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Guard",
+                            "array",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Contracts\\Auth\\Guard",
+                    "modifiers": "array",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "postRegister": {
+            "name": "postRegister",
+            "line": 51,
+            "short_desc": "Handle a registration request for the application.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Illuminate\\Http\\Response",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "request": {
+                    "name": "request",
+                    "line": 51,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Http\\Request",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Illuminate\\Http\\Request",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "sendEmail": {
+            "name": "sendEmail",
+            "line": 86,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "user": {
+                    "name": "user",
+                    "line": 86,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "Hatches\\Http\\Controllers\\Auth\\Hatches\\User",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "Hatches\\User",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "resendEmail": {
+            "name": "resendEmail",
+            "line": 100,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": []
+        },
+        "activateAccount": {
+            "name": "activateAccount",
+            "line": 116,
+            "short_desc": "",
+            "long_desc": "",
+            "hint": null,
+            "hint_desc": null,
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "code": {
+                    "name": "code",
+                    "line": 116,
+                    "short_desc": null,
+                    "long_desc": null,
+                    "hint": null,
+                    "tags": [],
+                    "modifiers": "",
                     "default": null,
                     "is_by_ref": false
                 },
-                "registrar": {
-                    "name": "registrar",
-                    "line": 31,
-                    "short_desc": "",
+                "user": {
+                    "name": "user",
+                    "line": 116,
+                    "short_desc": null,
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Auth\\Illuminate\\Contracts\\Auth\\Registrar",
+                            "Hatches\\Http\\Controllers\\Auth\\Hatches\\User",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Contracts\\Auth\\Registrar",
+                    "modifiers": "Hatches\\User",
+                    "default": null,
+                    "is_by_ref": false
+                }
+            }
+        },
+        "create": {
+            "name": "create",
+            "line": 134,
+            "short_desc": "Create a new user instance after a valid registration.",
+            "long_desc": "",
+            "hint": [
+                [
+                    "\\Hatches\\User",
+                    false
+                ]
+            ],
+            "hint_desc": "",
+            "tags": [],
+            "modifiers": "1",
+            "is_by_ref": "",
+            "exceptions": [],
+            "errors": [],
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 134,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [
+                        [
+                            "array",
+                            false
+                        ]
+                    ],
+                    "tags": [],
+                    "modifiers": "array",
                     "default": null,
                     "is_by_ref": false
                 }

@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Http",
     "file": "app\/Http\/Kernel.php",
-    "hash": "406ad0ede41cba4e45b02f3496b1c34feb01a350",
+    "hash": "da2c5e0087db6723c6ad1a615c1aa237598e1eef",
     "parent": "Illuminate\\Foundation\\Http\\Kernel",
     "modifiers": 0,
     "is_trait": false,

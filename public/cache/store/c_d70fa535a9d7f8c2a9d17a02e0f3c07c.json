@@ -1,13 +1,13 @@
 {
     "name": "Hatches\\Transformers\\FisheryTransformer",
-    "line": 12,
+    "line": 13,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/FisheryTransformer.php",
-    "hash": "0f5ca83bf1f2ffa0c0874faf0fac0dade36d9a2a",
+    "hash": "2d5923293f3baf750ed8239e078baad68d4f83c0",
     "parent": "Hatches\\Transformers\\Transformer",
     "modifiers": 0,
     "is_trait": false,
@@ -20,7 +20,7 @@
     "methods": {
         "transform": {
             "name": "transform",
-            "line": 18,
+            "line": 19,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -33,7 +33,7 @@
             "parameters": {
                 "fishery": {
                     "name": "fishery",
-                    "line": 18,
+                    "line": 19,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": null,

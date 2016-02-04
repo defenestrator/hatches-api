@@ -13,7 +13,7 @@
     },
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/FishSpeciesController.php",
-  "hash": "0c4c230833be704ebd1ba3b4375160b8c8362027",
+    "hash": "12b175411dc8d24605b21c9f070230f569d88a4a",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -32,7 +32,7 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 20,
+            "line": 21,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -45,17 +45,17 @@
             "parameters": {
                 "fractal": {
                     "name": "fractal",
-                    "line": 20,
+                    "line": 21,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Sorskod\\Larasponse\\Larasponse",
+                            "Hatches\\Http\\Controllers\\Sorskod\\Larasponse\\Larasponse",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Sorskod\\Larasponse\\Larasponse",
+                    "modifiers": "Sorskod\\Larasponse\\Larasponse",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -63,7 +63,7 @@
         },
         "index": {
             "name": "index",
-            "line": 33,
+            "line": 34,
             "short_desc": "Display a listing of the resource.",
             "long_desc": "",
             "hint": [
@@ -88,17 +88,17 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                    "line": 33,
+                    "line": 34,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
+                            "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Http\\Request",
+                    "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -106,7 +106,7 @@
         },
         "create": {
             "name": "create",
-          "line": 53,
+            "line": 56,
             "short_desc": "Show the form for creating a new resource.",
             "long_desc": "",
             "hint": [
@@ -121,23 +121,23 @@
             "is_by_ref": "",
             "exceptions": [],
             "errors": [],
-          "parameters": {
-            "data": {
-              "name": "data",
-              "line": 53,
-              "short_desc": "",
-              "long_desc": null,
-              "hint": [],
-              "tags": [],
-              "modifiers": "",
-              "default": null,
-              "is_by_ref": false
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 56,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
             }
-          }
         },
         "store": {
             "name": "store",
-          "line": 64,
+            "line": 67,
             "short_desc": "Store a newly created resource in storage.",
             "long_desc": "",
             "hint": [
@@ -152,23 +152,23 @@
             "is_by_ref": "",
             "exceptions": [],
             "errors": [],
-          "parameters": {
-            "data": {
-              "name": "data",
-              "line": 64,
-              "short_desc": "",
-              "long_desc": null,
-              "hint": [],
-              "tags": [],
-              "modifiers": "",
-              "default": null,
-              "is_by_ref": false
+            "parameters": {
+                "data": {
+                    "name": "data",
+                    "line": 67,
+                    "short_desc": "",
+                    "long_desc": null,
+                    "hint": [],
+                    "tags": [],
+                    "modifiers": "",
+                    "default": null,
+                    "is_by_ref": false
+                }
             }
-          }
         },
         "show": {
             "name": "show",
-          "line": 75,
+            "line": 78,
             "short_desc": "Display the specified resource.",
             "long_desc": "",
             "hint": [
@@ -186,7 +186,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 75,
+                    "line": 78,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -204,7 +204,7 @@
         },
         "edit": {
             "name": "edit",
-          "line": 86,
+            "line": 89,
             "short_desc": "Show the form for editing the specified resource.",
             "long_desc": "",
             "hint": [
@@ -222,7 +222,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 86,
+                    "line": 89,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -240,7 +240,7 @@
         },
         "update": {
             "name": "update",
-          "line": 97,
+            "line": 100,
             "short_desc": "Update the specified resource in storage.",
             "long_desc": "",
             "hint": [
@@ -258,7 +258,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 97,
+                    "line": 100,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -276,7 +276,7 @@
         },
         "destroy": {
             "name": "destroy",
-          "line": 108,
+            "line": 111,
             "short_desc": "Remove the specified resource from storage.",
             "long_desc": "",
             "hint": [
@@ -294,7 +294,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 108,
+                    "line": 111,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

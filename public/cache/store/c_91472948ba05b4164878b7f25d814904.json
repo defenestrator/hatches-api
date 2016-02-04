@@ -49,7 +49,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Role.php",
-  "hash": "727d7ea9359d4f15551b1b2418f87558c6f25f02",
+    "hash": "f1e7458a7c67d6494b245cf82dc527f7f4c3a673",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -63,20 +63,20 @@
     "properties": {
         "timestamps": {
             "name": "timestamps",
-            "line": 18,
+            "line": 19,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-          "default": {
-            "name": {
-              "parts": [
-                "false"
-              ]
-            }
-          },
+            "default": {
+                "name": {
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
             "errors": []
         },
         "id": {
@@ -134,7 +134,7 @@
     "methods": {
         "user": {
             "name": "user",
-            "line": 21,
+            "line": 22,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

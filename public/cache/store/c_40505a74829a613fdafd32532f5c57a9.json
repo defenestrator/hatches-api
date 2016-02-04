@@ -7,7 +7,7 @@
     "tags": [],
     "namespace": "Hatches\\Transformers",
     "file": "app\/Http\/Transformers\/FishSpeciesTransformer.php",
-    "hash": "0c929fb1f5002d2e747aa0bfe7a4bae9bd605636",
+    "hash": "aad72ac72e342e6a07d022f6c20927efbe4e7be6",
     "parent": "League\\Fractal\\TransformerAbstract",
     "modifiers": 0,
     "is_trait": false,
@@ -23,7 +23,7 @@
     "methods": {
         "transform": {
             "name": "transform",
-            "line": 8,
+            "line": 9,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -36,17 +36,17 @@
             "parameters": {
                 "fishSpecies": {
                     "name": "fishSpecies",
-                    "line": 8,
+                    "line": 9,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Transformers\\Hatches\\FishSpecies",
+                            "Hatches\\Transformers\\Hatches\\FishSpecies",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\FishSpecies",
+                    "modifiers": "Hatches\\FishSpecies",
                     "default": null,
                     "is_by_ref": false
                 }

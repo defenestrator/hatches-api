@@ -1,7 +1,6 @@
 <?php
 
 return [
-
 	
 	'successActivated'	=> 'Success, your account has been activated.',
 	'unsuccessful'		=> 'Your account could not be activated; please try again.',

@@ -1,6 +1,6 @@
 {
     "name": "Hatches\\Http\\Controllers\\UsersController",
-  "line": 11,
+    "line": 11,
     "short_desc": "Class UsersController",
     "long_desc": "",
     "hint": null,
@@ -13,7 +13,7 @@
     },
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/UsersController.php",
-  "hash": "a2f1c87f65b96f24b6533bac10d8e40e8c164e4e",
+    "hash": "31b1339794b2478b1b4fb38f84ea4394a46cf6a7",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -30,7 +30,7 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-          "line": 16,
+            "line": 16,
             "short_desc": "Create a new controller instance.",
             "long_desc": "",
             "hint": null,
@@ -44,12 +44,12 @@
         },
         "index": {
             "name": "index",
-          "line": 32,
+            "line": 32,
             "short_desc": "Display a listing of the resource.",
             "long_desc": "GET \/users",
             "hint": [
                 [
-                  "\\Hatches\\Http\\Controllers\\Response",
+                    "\\Hatches\\Http\\Controllers\\Response",
                     false
                 ]
             ],
@@ -73,33 +73,33 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                  "line": 32,
+                    "line": 32,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
+                            "Hatches\\Http\\Controllers\\Illuminate\\Http\\Request",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Illuminate\\Http\\Request",
+                    "modifiers": "Illuminate\\Http\\Request",
                     "default": null,
                     "is_by_ref": false
                 },
                 "userTransformer": {
                     "name": "userTransformer",
-                  "line": 32,
+                    "line": 32,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\UserTransformer",
+                            "Hatches\\Http\\Controllers\\Hatches\\Transformers\\UserTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Transformers\\UserTransformer",
+                    "modifiers": "Hatches\\Transformers\\UserTransformer",
                     "default": null,
                     "is_by_ref": false
                 }
@@ -107,12 +107,12 @@
         },
         "show": {
             "name": "show",
-          "line": 61,
+            "line": 60,
             "short_desc": "Display the specified resource.",
             "long_desc": "GET \/users\/{id}",
             "hint": [
                 [
-                  "\\Hatches\\Http\\Controllers\\Response",
+                    "\\Hatches\\Http\\Controllers\\Response",
                     false
                 ]
             ],
@@ -132,7 +132,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 61,
+                    "line": 60,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -148,42 +148,42 @@
                 },
                 "userTransformer": {
                     "name": "userTransformer",
-                  "line": 61,
+                    "line": 60,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\Transformers\\UserTransformer",
+                            "Hatches\\Http\\Controllers\\Hatches\\Transformers\\UserTransformer",
                             false
                         ]
                     ],
                     "tags": [],
-                  "modifiers": "Hatches\\Transformers\\UserTransformer",
+                    "modifiers": "Hatches\\Transformers\\UserTransformer",
                     "default": null,
                     "is_by_ref": false
                 }
             }
         },
-      "destroy": {
-        "name": "destroy",
-        "line": 81,
-        "short_desc": "Remove the specified resource from storage.",
-        "long_desc": "DELETE \/users\/{id}",
+        "destroy": {
+            "name": "destroy",
+            "line": 81,
+            "short_desc": "Remove the specified resource from storage.",
+            "long_desc": "DELETE \/users\/{id}",
             "hint": [
                 [
-                  "\\Hatches\\Http\\Controllers\\Response",
+                    "\\Hatches\\Http\\Controllers\\Response",
                     false
                 ]
             ],
             "hint_desc": "",
-        "tags": {
-          "internal": [
-            [
-              "param",
-              "$"
-            ]
+            "tags": {
+                "internal": [
+                    [
+                        "param",
+                        "$"
+                    ]
                 ]
-        },
+            },
             "modifiers": "1",
             "is_by_ref": "",
             "exceptions": [],
@@ -191,7 +191,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                  "line": 81,
+                    "line": 81,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -205,19 +205,19 @@
                     "default": null,
                     "is_by_ref": false
                 },
-              "user": {
-                "name": "user",
-                "line": 81,
+                "user": {
+                    "name": "user",
+                    "line": 81,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
                         [
-                          "Hatches\\Http\\Controllers\\Hatches\\User",
+                            "Hatches\\Http\\Controllers\\Hatches\\User",
                             false
                         ]
                     ],
                     "tags": [],
-                "modifiers": "Hatches\\User",
+                    "modifiers": "Hatches\\User",
                     "default": null,
                     "is_by_ref": false
                 }

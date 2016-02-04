@@ -13,7 +13,7 @@
     },
     "namespace": "Hatches\\Http\\Controllers",
     "file": "app\/Http\/Controllers\/FlyboxesController.php",
-    "hash": "83983f04bbd84a0ac3643427069069e8a927184d",
+    "hash": "25e88fede1f6b862280f5276d2dee972e4784cdd",
     "parent": "Hatches\\Http\\Controllers\\Controller",
     "modifiers": 0,
     "is_trait": false,
@@ -32,7 +32,7 @@
     "methods": {
         "__construct": {
             "name": "__construct",
-            "line": 20,
+            "line": 21,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -45,7 +45,7 @@
             "parameters": {
                 "fractal": {
                     "name": "fractal",
-                    "line": 20,
+                    "line": 21,
                     "short_desc": null,
                     "long_desc": null,
                     "hint": [
@@ -63,7 +63,7 @@
         },
         "index": {
             "name": "index",
-            "line": 33,
+            "line": 34,
             "short_desc": "Display a listing of the resource.",
             "long_desc": "",
             "hint": [
@@ -88,7 +88,7 @@
             "parameters": {
                 "request": {
                     "name": "request",
-                    "line": 33,
+                    "line": 34,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -106,7 +106,7 @@
         },
         "create": {
             "name": "create",
-            "line": 52,
+            "line": 55,
             "short_desc": "Show the form for creating a new resource.",
             "long_desc": "",
             "hint": [
@@ -125,7 +125,7 @@
         },
         "store": {
             "name": "store",
-            "line": 62,
+            "line": 65,
             "short_desc": "Store a newly created resource in storage.",
             "long_desc": "",
             "hint": [
@@ -144,7 +144,7 @@
         },
         "show": {
             "name": "show",
-            "line": 73,
+            "line": 76,
             "short_desc": "Display the specified resource.",
             "long_desc": "",
             "hint": [
@@ -162,7 +162,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 73,
+                    "line": 76,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -180,7 +180,7 @@
         },
         "edit": {
             "name": "edit",
-            "line": 84,
+            "line": 87,
             "short_desc": "Show the form for editing the specified resource.",
             "long_desc": "",
             "hint": [
@@ -198,7 +198,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 84,
+                    "line": 87,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -216,7 +216,7 @@
         },
         "update": {
             "name": "update",
-            "line": 95,
+            "line": 98,
             "short_desc": "Update the specified resource in storage.",
             "long_desc": "",
             "hint": [
@@ -234,7 +234,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 95,
+                    "line": 98,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [
@@ -252,7 +252,7 @@
         },
         "destroy": {
             "name": "destroy",
-            "line": 106,
+            "line": 109,
             "short_desc": "Remove the specified resource from storage.",
             "long_desc": "",
             "hint": [
@@ -270,7 +270,7 @@
             "parameters": {
                 "id": {
                     "name": "id",
-                    "line": 106,
+                    "line": 109,
                     "short_desc": "",
                     "long_desc": null,
                     "hint": [

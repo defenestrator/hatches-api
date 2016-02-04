@@ -40,7 +40,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Habitat.php",
-    "hash": "4c40c59cfdf476eccb79a8c052f12af602ced639",
+    "hash": "2a28811de939f64784d9176873b415ec9cdf8339",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -54,20 +54,20 @@
     "properties": {
         "timestamps": {
             "name": "timestamps",
-            "line": 17,
+            "line": 18,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-          "default": {
-            "name": {
-              "parts": [
-                "false"
-              ]
-            }
-          },
+            "default": {
+                "name": {
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
             "errors": []
         },
         "id": {
@@ -108,7 +108,7 @@
     "methods": {
         "fishSpecies": {
             "name": "fishSpecies",
-            "line": 19,
+            "line": 20,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

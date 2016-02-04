@@ -83,7 +83,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Comment.php",
-  "hash": "3c4316b8b1b47b6b481d219a3d5b4a15d0bff628",
+    "hash": "7e465200cbf31772693ae0dcf27974344458fcce",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -184,7 +184,7 @@
     "methods": {
         "user": {
             "name": "user",
-            "line": 28,
+            "line": 29,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -198,7 +198,7 @@
         },
         "tripReport": {
             "name": "tripReport",
-            "line": 33,
+            "line": 34,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -212,7 +212,7 @@
         },
         "HatchReport": {
             "name": "HatchReport",
-            "line": 38,
+            "line": 39,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -226,7 +226,7 @@
         },
         "flyPattern": {
             "name": "flyPattern",
-            "line": 43,
+            "line": 44,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -240,7 +240,7 @@
         },
         "fishery": {
             "name": "fishery",
-            "line": 48,
+            "line": 49,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

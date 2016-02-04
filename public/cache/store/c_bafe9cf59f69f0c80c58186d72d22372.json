@@ -1,13 +1,13 @@
 {
     "name": "Hatches\\Tag",
-    "line": 24,
+    "line": 23,
     "short_desc": "",
     "long_desc": "",
     "hint": null,
     "tags": [],
     "namespace": "Hatches",
     "file": "app\/Tag.php",
-  "hash": "ad43340ccfc43742ac4b2ea97ce6391505d6187d",
+    "hash": "0d14cf903e0b78eca2ea2c88c41aeb0394c5bfca",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
@@ -28,13 +28,13 @@
             "hint_desc": null,
             "tags": [],
             "modifiers": 1,
-          "default": {
-            "name": {
-              "parts": [
-                "false"
-              ]
-            }
-          },
+            "default": {
+                "name": {
+                    "parts": [
+                        "false"
+                    ]
+                }
+            },
             "errors": []
         }
     },
@@ -55,7 +55,7 @@
         },
         "flyboxes": {
             "name": "flyboxes",
-            "line": 33,
+            "line": 34,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -69,7 +69,7 @@
         },
         "flyPatterns": {
             "name": "flyPatterns",
-            "line": 37,
+            "line": 39,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -83,7 +83,7 @@
         },
         "fisheries": {
             "name": "fisheries",
-            "line": 41,
+            "line": 44,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -97,7 +97,7 @@
         },
         "hatches": {
             "name": "hatches",
-            "line": 45,
+            "line": 49,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -111,7 +111,7 @@
         },
         "hatchReport": {
             "name": "hatchReport",
-            "line": 48,
+            "line": 54,
             "short_desc": "",
             "long_desc": "",
             "hint": null,
@@ -125,7 +125,7 @@
         },
         "TripReport": {
             "name": "TripReport",
-            "line": 52,
+            "line": 59,
             "short_desc": "",
             "long_desc": "",
             "hint": null,

@@ -90,7 +90,7 @@
     },
     "namespace": "Hatches",
     "file": "app\/Map.php",
-    "hash": "87633a2601c1eb1add302730e9d4312f4686c837",
+    "hash": "e673821d76cf7c5ab48fb6572c6805420b436987",
     "parent": "Illuminate\\Database\\Eloquent\\Model",
     "modifiers": 0,
     "is_trait": false,
