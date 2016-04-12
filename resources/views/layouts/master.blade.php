@@ -70,7 +70,6 @@
         <h1 class="invisible ache-one">Fly fishing tools for your mobile device</h1>
     </div>
     <div class="content-main">
-        <hr class="top-separator">
         @yield('content')
     </div>
 </div>

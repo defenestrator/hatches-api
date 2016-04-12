@@ -29,10 +29,9 @@ Route::group(['prefix' => '', 'middleware' => 'auth'], function () {
     Route::get('administration', ['as' => 'administration', 'uses' => 'AdministratorPageController@index']);
 });
 
-/*
- * API routes /v1/ :
- */
-
+// this route group prefix /v1/ is temporary, we're
+// moving to a more RESTful approach using the
+// HTTP Acceptance header for versioning.
 Route::group(['prefix' => 'v1', 'middleware' => 'auth'], function () {
     Route::get('/', function () {
         return 'hey fishies!';

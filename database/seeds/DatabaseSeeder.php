@@ -52,6 +52,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        if (App::environment() === 'production') {
+            exit('I just stopped you getting fired. Love, Jeremy.');
+        }
+
         $this->cleanDatabase();
 
         Model::unguard();
@@ -115,7 +119,6 @@ class DatabaseSeeder extends Seeder
 
         $this->call('LookupTableSeeder');
         $this->command->info('Lookup tables seeded!');
-
 
     }
 
